@@ -1,0 +1,47 @@
+﻿@{
+	Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+
+@await Component.InvokeAsync("_UserLayoutHeaderPartial");
+
+<body class="nav-md">
+    <div class="container body">
+        <div class="main_container">
+            
+            @await Component.InvokeAsync("_UserLayoutSidebarPartial");
+
+            <!-- top navigation -->
+            @await Component.InvokeAsync("_UserLayoutNavbarPartial");
+            <!-- /top navigation -->
+            <!-- page content -->
+            @RenderBody();
+            <!-- /page content -->
+            <!-- footer content -->
+            <footer>
+                <div class="pull-right">
+                    Gentelella - Bootstrap Admin Template by <a href="https://colorlib.com">Colorlib</a>
+                </div>
+                <div class="clearfix"></div>
+            </footer>
+            <!-- /footer content -->
+        </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="~/gentelella-master/gentelella-master/vendors/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="~/gentelella-master/gentelella-master/vendors/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- FastClick -->
+    <script src="~/gentelella-master/gentelella-master/vendors/fastclick/lib/fastclick.js"></script>
+    <!-- NProgress -->
+    <script src="~/gentelella-master/gentelella-master/vendors/nprogress/nprogress.js"></script>
+    <!-- jQuery custom content scroller -->
+    <script src="~/gentelella-master/gentelella-master/vendors/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js"></script>
+
+    <!-- Custom Theme Scripts -->
+    <script src="~/gentelella-master/gentelella-master/build/js/custom.min.js"></script>
+</body>
+</html>
