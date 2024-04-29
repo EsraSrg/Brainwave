@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Brainwave</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="background-animation"></div>
+<div class="background"></div>
+<div class="slogan-container">
+  <h1 class="slogan"></h1>
+</div>
+<div class="container">
+  <h2> Devam etmek için lütfen hesabınıza giriş yapın.</h2>
+  <form id="loginForm">
+    <div class="form-group">
+      <label for="username">Kullanıcı Adı:</label>
+      <input type="text" id="username" name="username" required>
+    </div>
+    <div class="form-group">
+      <label for="password">Şifre:</label>
+      <input type="password" id="password" name="password" required>
+    </div>
+    <button type="submit">Giriş Yap</button>
+  </form>
+  <hr>
+  <h2><a href="hesapOlustur.html">Hesabınız yok mu? Hemen Oluşturun.</a></h2> <!-- Yeni sayfaya yönlendirme linki -->
+</div>
+<script src="three.r134.min.js"></script>
+<script src="vanta.net.min.js"></script>
+<script>
+VANTA.NET({
+  el: "#background-animation",
+  mouseControls: true,
+  touchControls: true,
+  gyroControls: false,
+  minHeight: 200.00,
+  minWidth: 200.00,
+  scale: 1.00,
+  scaleMobile: 1.00,
+  color: 0xe6e6e6,
+  backgroundColor: 0xc0b25
+});
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
