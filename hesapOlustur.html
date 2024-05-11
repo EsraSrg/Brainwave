@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hesap Oluştur</title>
+<link rel="stylesheet" href="style.css">
+<style>
+.container {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+  max-width: 500px; 
+  padding: 40px;
+  background-color: rgba(255, 255, 255, 0.062);
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center; 
+}
+
+.form-group {
+  margin-bottom: 20px; 
+}
+
+label {
+  display: block;
+  margin-bottom: 10px; 
+  color: #cccccc94;
+  text-align: left; 
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"]{
+  width: 100%; 
+  padding: 15px; 
+  border: 5px solid #ccc;
+  border-radius: 3px;
+  box-sizing: border-box; /* Kenarlık ve dolgu dahil genişlik hesaplama? */
+}
+
+button {
+  display: block;
+  width: 100%; 
+  padding: 15px; 
+  background-color: #1e3145;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #1e3145;
+}
+</style>
+</head>
+<body>
+<div id="background-animation"></div>
+<div class="background"></div>
+<div class="slogan-container">
+  <h1 class="slogan"></h1>
+</div>
+<div class="container">
+  <h2> Hesap Oluştur</h2>
+  <form id="signupForm">
+    <div class="form-group">
+      <label for="newUsername">Kullanıcı Adı:</label>
+      <input type="text" id="newUsername" name="newUsername" required>
+    </div>
+    <div class="form-group">
+      <label for="newEmail">E-Mail:</label>
+      <input type="email" id="newEmail" name="newEmail" required>
+    </div>
+    <div class="form-group">
+      <label for="newPassword">Şifre:</label>
+      <input type="password" id="newPassword" name="newPassword" required>
+    </div>
+    <button type="submit">Üye Ol</button>
+  </form>
+</div>
+<script src="three.r134.min.js"></script>
+<script src="vanta.net.min.js"></script>
+<script>
+VANTA.NET({
+  el: "#background-animation",
+  mouseControls: true,
+  touchControls: true,
+  gyroControls: false,
+  minHeight: 200.00,
+  minWidth: 200.00,
+  scale: 1.00,
+  scaleMobile: 1.00,
+  color: 0xe6e6e6,
+  backgroundColor: 0xc0b25
+});
+</script>
+</body>
+</html>
