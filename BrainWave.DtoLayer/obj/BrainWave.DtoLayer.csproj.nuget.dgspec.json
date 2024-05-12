@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\atayb\\OneDrive\\Masaüstü\\CSharpOOP\\BrainWave\\BrainWave.DtoLayer\\BrainWave.DtoLayer.csproj": {}
+    "C:\\Users\\atayb\\OneDrive\\Masaüstü\\ders c#\\BrainWave\\Brainwave\\BrainWave.DtoLayer\\BrainWave.DtoLayer.csproj": {}
   },
   "projects": {
-    "C:\\Users\\atayb\\OneDrive\\Masaüstü\\CSharpOOP\\BrainWave\\BrainWave.DtoLayer\\BrainWave.DtoLayer.csproj": {
+    "C:\\Users\\atayb\\OneDrive\\Masaüstü\\ders c#\\BrainWave\\Brainwave\\BrainWave.DtoLayer\\BrainWave.DtoLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\atayb\\OneDrive\\Masaüstü\\CSharpOOP\\BrainWave\\BrainWave.DtoLayer\\BrainWave.DtoLayer.csproj",
+        "projectUniqueName": "C:\\Users\\atayb\\OneDrive\\Masaüstü\\ders c#\\BrainWave\\Brainwave\\BrainWave.DtoLayer\\BrainWave.DtoLayer.csproj",
         "projectName": "BrainWave.DtoLayer",
-        "projectPath": "C:\\Users\\atayb\\OneDrive\\Masaüstü\\CSharpOOP\\BrainWave\\BrainWave.DtoLayer\\BrainWave.DtoLayer.csproj",
+        "projectPath": "C:\\Users\\atayb\\OneDrive\\Masaüstü\\ders c#\\BrainWave\\Brainwave\\BrainWave.DtoLayer\\BrainWave.DtoLayer.csproj",
         "packagesPath": "C:\\Users\\atayb\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\atayb\\OneDrive\\Masaüstü\\CSharpOOP\\BrainWave\\BrainWave.DtoLayer\\obj\\",
+        "outputPath": "C:\\Users\\atayb\\OneDrive\\Masaüstü\\ders c#\\BrainWave\\Brainwave\\BrainWave.DtoLayer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\atayb\\AppData\\Roaming\\NuGet\\NuGet.Config",

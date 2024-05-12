@@ -12,3 +12,17 @@ C:\Users\atayb\OneDrive\Masaüstü\CSharpOOP\BrainWave\BrainWave.EntityLayer\obj
 C:\Users\atayb\OneDrive\Masaüstü\CSharpOOP\BrainWave\BrainWave.EntityLayer\obj\Debug\net6.0\BrainWave.EntityLayer.pdb
 C:\Users\atayb\OneDrive\Masaüstü\CSharpOOP\BrainWave\BrainWave.EntityLayer\obj\Debug\net6.0\BrainWave.EntityLayer.genruntimeconfig.cache
 C:\Users\atayb\OneDrive\Masaüstü\CSharpOOP\BrainWave\BrainWave.EntityLayer\obj\Debug\net6.0\ref\BrainWave.EntityLayer.dll
+C:\Users\atayb\OneDrive\Masaüstü\ders c#\BrainWave\Brainwave\BrainWave.EntityLayer\bin\Debug\net6.0\BrainWave.EntityLayer.deps.json
+C:\Users\atayb\OneDrive\Masaüstü\ders c#\BrainWave\Brainwave\BrainWave.EntityLayer\bin\Debug\net6.0\BrainWave.EntityLayer.runtimeconfig.json
+C:\Users\atayb\OneDrive\Masaüstü\ders c#\BrainWave\Brainwave\BrainWave.EntityLayer\bin\Debug\net6.0\BrainWave.EntityLayer.dll
+C:\Users\atayb\OneDrive\Masaüstü\ders c#\BrainWave\Brainwave\BrainWave.EntityLayer\bin\Debug\net6.0\BrainWave.EntityLayer.pdb
+C:\Users\atayb\OneDrive\Masaüstü\ders c#\BrainWave\Brainwave\BrainWave.EntityLayer\obj\Debug\net6.0\BrainWave.EntityLayer.csproj.AssemblyReference.cache
+C:\Users\atayb\OneDrive\Masaüstü\ders c#\BrainWave\Brainwave\BrainWave.EntityLayer\obj\Debug\net6.0\BrainWave.EntityLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\atayb\OneDrive\Masaüstü\ders c#\BrainWave\Brainwave\BrainWave.EntityLayer\obj\Debug\net6.0\BrainWave.EntityLayer.AssemblyInfoInputs.cache
+C:\Users\atayb\OneDrive\Masaüstü\ders c#\BrainWave\Brainwave\BrainWave.EntityLayer\obj\Debug\net6.0\BrainWave.EntityLayer.AssemblyInfo.cs
+C:\Users\atayb\OneDrive\Masaüstü\ders c#\BrainWave\Brainwave\BrainWave.EntityLayer\obj\Debug\net6.0\BrainWave.EntityLayer.csproj.CoreCompileInputs.cache
+C:\Users\atayb\OneDrive\Masaüstü\ders c#\BrainWave\Brainwave\BrainWave.EntityLayer\obj\Debug\net6.0\BrainWave.EntityLayer.dll
+C:\Users\atayb\OneDrive\Masaüstü\ders c#\BrainWave\Brainwave\BrainWave.EntityLayer\obj\Debug\net6.0\refint\BrainWave.EntityLayer.dll
+C:\Users\atayb\OneDrive\Masaüstü\ders c#\BrainWave\Brainwave\BrainWave.EntityLayer\obj\Debug\net6.0\BrainWave.EntityLayer.pdb
+C:\Users\atayb\OneDrive\Masaüstü\ders c#\BrainWave\Brainwave\BrainWave.EntityLayer\obj\Debug\net6.0\BrainWave.EntityLayer.genruntimeconfig.cache
+C:\Users\atayb\OneDrive\Masaüstü\ders c#\BrainWave\Brainwave\BrainWave.EntityLayer\obj\Debug\net6.0\ref\BrainWave.EntityLayer.dll

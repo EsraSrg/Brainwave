@@ -15,3 +15,20 @@ C:\Users\atayb\OneDrive\Masaüstü\CSharpOOP\BrainWave\BrainWave.DataAccessLayer
 C:\Users\atayb\OneDrive\Masaüstü\CSharpOOP\BrainWave\BrainWave.DataAccessLayer\obj\Debug\net6.0\BrainWave.DataAccessLayer.pdb
 C:\Users\atayb\OneDrive\Masaüstü\CSharpOOP\BrainWave\BrainWave.DataAccessLayer\obj\Debug\net6.0\BrainWave.DataAccessLayer.genruntimeconfig.cache
 C:\Users\atayb\OneDrive\Masaüstü\CSharpOOP\BrainWave\BrainWave.DataAccessLayer\obj\Debug\net6.0\ref\BrainWave.DataAccessLayer.dll
+C:\Users\atayb\OneDrive\Masaüstü\ders c#\BrainWave\Brainwave\BrainWave.DataAccessLayer\bin\Debug\net6.0\BrainWave.DataAccessLayer.deps.json
+C:\Users\atayb\OneDrive\Masaüstü\ders c#\BrainWave\Brainwave\BrainWave.DataAccessLayer\bin\Debug\net6.0\BrainWave.DataAccessLayer.runtimeconfig.json
+C:\Users\atayb\OneDrive\Masaüstü\ders c#\BrainWave\Brainwave\BrainWave.DataAccessLayer\bin\Debug\net6.0\BrainWave.DataAccessLayer.dll
+C:\Users\atayb\OneDrive\Masaüstü\ders c#\BrainWave\Brainwave\BrainWave.DataAccessLayer\bin\Debug\net6.0\BrainWave.DataAccessLayer.pdb
+C:\Users\atayb\OneDrive\Masaüstü\ders c#\BrainWave\Brainwave\BrainWave.DataAccessLayer\bin\Debug\net6.0\BrainWave.EntityLayer.dll
+C:\Users\atayb\OneDrive\Masaüstü\ders c#\BrainWave\Brainwave\BrainWave.DataAccessLayer\bin\Debug\net6.0\BrainWave.EntityLayer.pdb
+C:\Users\atayb\OneDrive\Masaüstü\ders c#\BrainWave\Brainwave\BrainWave.DataAccessLayer\obj\Debug\net6.0\BrainWave.DataAccessLayer.csproj.AssemblyReference.cache
+C:\Users\atayb\OneDrive\Masaüstü\ders c#\BrainWave\Brainwave\BrainWave.DataAccessLayer\obj\Debug\net6.0\BrainWave.DataAccessLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\atayb\OneDrive\Masaüstü\ders c#\BrainWave\Brainwave\BrainWave.DataAccessLayer\obj\Debug\net6.0\BrainWave.DataAccessLayer.AssemblyInfoInputs.cache
+C:\Users\atayb\OneDrive\Masaüstü\ders c#\BrainWave\Brainwave\BrainWave.DataAccessLayer\obj\Debug\net6.0\BrainWave.DataAccessLayer.AssemblyInfo.cs
+C:\Users\atayb\OneDrive\Masaüstü\ders c#\BrainWave\Brainwave\BrainWave.DataAccessLayer\obj\Debug\net6.0\BrainWave.DataAccessLayer.csproj.CoreCompileInputs.cache
+C:\Users\atayb\OneDrive\Masaüstü\ders c#\BrainWave\Brainwave\BrainWave.DataAccessLayer\obj\Debug\net6.0\BrainWave.DataAccessLayer.csproj.CopyComplete
+C:\Users\atayb\OneDrive\Masaüstü\ders c#\BrainWave\Brainwave\BrainWave.DataAccessLayer\obj\Debug\net6.0\BrainWave.DataAccessLayer.dll
+C:\Users\atayb\OneDrive\Masaüstü\ders c#\BrainWave\Brainwave\BrainWave.DataAccessLayer\obj\Debug\net6.0\refint\BrainWave.DataAccessLayer.dll
+C:\Users\atayb\OneDrive\Masaüstü\ders c#\BrainWave\Brainwave\BrainWave.DataAccessLayer\obj\Debug\net6.0\BrainWave.DataAccessLayer.pdb
+C:\Users\atayb\OneDrive\Masaüstü\ders c#\BrainWave\Brainwave\BrainWave.DataAccessLayer\obj\Debug\net6.0\BrainWave.DataAccessLayer.genruntimeconfig.cache
+C:\Users\atayb\OneDrive\Masaüstü\ders c#\BrainWave\Brainwave\BrainWave.DataAccessLayer\obj\Debug\net6.0\ref\BrainWave.DataAccessLayer.dll

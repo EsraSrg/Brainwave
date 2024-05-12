@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "4qOhCGevuAOlBDCyDC8JJ5RiokOWpf57TppIOqgVhqjUlJ6r/m8Iw94jv3xWSIAMCAuuXlRNfIAVo2rcu6NWkg==",
+  "dgSpecHash": "G9yn5TtAmi4T7B+olbxhkTvrcbriWwNteHZ7J9/pJUk0s/DRawtYgesiCin1dRTzRZKFZUJna/R5U3NFhef+uQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\atayb\\OneDrive\\Masaüstü\\CSharpOOP\\BrainWave\\BrainWave.BusinessLayer\\BrainWave.BusinessLayer.csproj",
+  "projectFilePath": "C:\\Users\\atayb\\OneDrive\\Masaüstü\\ders c#\\BrainWave\\Brainwave\\BrainWave.BusinessLayer\\BrainWave.BusinessLayer.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\atayb\\.nuget\\packages\\fluentvalidation\\11.9.1\\fluentvalidation.11.9.1.nupkg.sha512",
     "C:\\Users\\atayb\\.nuget\\packages\\fluentvalidation.aspnetcore\\11.3.0\\fluentvalidation.aspnetcore.11.3.0.nupkg.sha512",

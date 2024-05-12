@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "AwCkiLNCwILnjAwxsPYiTP8/Ikeh9CleIT2aX8JJp1i+2tyQMhkOfIg0c65sYV2wzT6kVjgupFkxJAMlLkb7QA==",
+  "dgSpecHash": "3zcLoC96ZR/vQwVawXj9qB/+YyGa38AG9WdmGRf4opvCq6vplJiJElk8R+hFkMYt9xLGa8AvKyrdsHnVztCcFA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\atayb\\OneDrive\\Masaüstü\\CSharpOOP\\BrainWave\\BrainWave.DtoLayer\\BrainWave.DtoLayer.csproj",
+  "projectFilePath": "C:\\Users\\atayb\\OneDrive\\Masaüstü\\ders c#\\BrainWave\\Brainwave\\BrainWave.DtoLayer\\BrainWave.DtoLayer.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\atayb\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\atayb\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",

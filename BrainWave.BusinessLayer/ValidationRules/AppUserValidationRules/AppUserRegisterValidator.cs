@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace BrainWave.BusinessLayer.ValidationRules.AppUserValidationRules
 {
-    public class AppUserRegisterValidator : AbstractValidator<AppUserReqisterDto>
+    public class AppUserRegisterValidator : AbstractValidator<AppUserRegisterDto>
     {
         public AppUserRegisterValidator()
         {
