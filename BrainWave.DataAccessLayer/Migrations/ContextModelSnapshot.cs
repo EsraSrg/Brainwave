@@ -167,21 +167,36 @@ namespace BrainWave.DataAccessLayer.Migrations
                     b.Property<int>("AppUserID")
                         .HasColumnType("int");
 
+                    b.Property<string>("ProjectCategories")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("ProjectDescription")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<DateTime>("ProjectEndDate")
+                    b.Property<DateTime?>("ProjectEndDate")
                         .HasColumnType("datetime2");
+
+                    b.Property<bool?>("ProjectPrivacy")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("ProjectSources")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime>("ProjectStartDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<bool>("ProjectStatus")
+                    b.Property<bool?>("ProjectStatus")
                         .HasColumnType("bit");
+
+                    b.Property<string>("ProjectTasks")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("ProjectTitle")
                         .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ProjectTools")
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("UserProjectID");
@@ -296,13 +311,11 @@ namespace BrainWave.DataAccessLayer.Migrations
 
             modelBuilder.Entity("BrainWave.EntityLayer.Concrete.UserProject", b =>
                 {
-                    b.HasOne("BrainWave.EntityLayer.Concrete.AppUser", "AppUser")
+                    b.HasOne("BrainWave.EntityLayer.Concrete.AppUser", null)
                         .WithMany("UserProjects")
                         .HasForeignKey("AppUserID")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
-
-                    b.Navigation("AppUser");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<int>", b =>

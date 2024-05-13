@@ -26,3 +26,6 @@ C:\Users\atayb\OneDrive\Masaüstü\ders c#\BrainWave\Brainwave\BrainWave.DtoLaye
 C:\Users\atayb\OneDrive\Masaüstü\ders c#\BrainWave\Brainwave\BrainWave.DtoLayer\obj\Debug\net6.0\BrainWave.DtoLayer.pdb
 C:\Users\atayb\OneDrive\Masaüstü\ders c#\BrainWave\Brainwave\BrainWave.DtoLayer\obj\Debug\net6.0\BrainWave.DtoLayer.genruntimeconfig.cache
 C:\Users\atayb\OneDrive\Masaüstü\ders c#\BrainWave\Brainwave\BrainWave.DtoLayer\obj\Debug\net6.0\ref\BrainWave.DtoLayer.dll
+C:\Users\atayb\OneDrive\Masaüstü\ders c#\BrainWave\Brainwave\BrainWave.DtoLayer\bin\Debug\net6.0\BrainWave.EntityLayer.dll
+C:\Users\atayb\OneDrive\Masaüstü\ders c#\BrainWave\Brainwave\BrainWave.DtoLayer\bin\Debug\net6.0\BrainWave.EntityLayer.pdb
+C:\Users\atayb\OneDrive\Masaüstü\ders c#\BrainWave\Brainwave\BrainWave.DtoLayer\obj\Debug\net6.0\BrainWave.DtoLayer.csproj.CopyComplete

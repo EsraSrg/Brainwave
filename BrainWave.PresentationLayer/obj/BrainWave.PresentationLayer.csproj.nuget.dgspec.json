@@ -215,7 +215,11 @@
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\atayb\\OneDrive\\Masaüstü\\ders c#\\BrainWave\\Brainwave\\BrainWave.EntityLayer\\BrainWave.EntityLayer.csproj": {
+                "projectPath": "C:\\Users\\atayb\\OneDrive\\Masaüstü\\ders c#\\BrainWave\\Brainwave\\BrainWave.EntityLayer\\BrainWave.EntityLayer.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

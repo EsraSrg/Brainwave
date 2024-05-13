@@ -1,4 +1,8 @@
+using BrainWave.BusinessLayer.Abstract;
+using BrainWave.BusinessLayer.Concrete;
+using BrainWave.DataAccessLayer.Abstract;
 using BrainWave.DataAccessLayer.Concrete;
+using BrainWave.DataAccessLayer.EntityFramework;
 using BrainWave.EntityLayer.Concrete;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -7,6 +11,9 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<Context>();
 builder.Services.AddIdentity<AppUser, AppRole>().AddEntityFrameworkStores<Context>();
+
+builder.Services.AddScoped<IProjectRequestDal, EfProjectRequestDal>();
+builder.Services.AddScoped<IProjectRequestService, ProjectRequestManager>();
 
 var app = builder.Build();
 
