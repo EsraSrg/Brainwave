@@ -1,0 +1,61 @@
+﻿@using BrainWave.EntityLayer.Concrete;
+@model List<UserProject>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>AllProjects</title>
+	<link rel="stylesheet" type="text/css" href="~/css/Style.css">
+</head>
+<body>
+	<h2>All Reviews</h2>
+	<div>
+		@foreach (var project in Model)
+		{
+			<div class="review">
+				@if (!string.IsNullOrEmpty(project.ProjectTitle))
+				{
+					<h4>Title</h4>
+					<hr />
+					<p>@project.ProjectTitle</p>
+
+					<h6>Desc</h6>
+					<p>@project.ProjectDescription</p>
+
+					<h6>Categories</h6>
+					<p>@project.ProjectCategories</p>
+
+					<h6>Tools</h6>
+					<p>@project.ProjectTools</p>
+
+					<h6>Sources</h6>
+					<p>@project.ProjectTasks</p>
+
+					<h6>Privacy</h6>
+					@if(project.ProjectPrivacy == true)
+					{
+						<p>Profilde gösterilecek.</p>
+					}
+					else
+					{
+						<p>Profilde gösterilmeyecek.</p>
+					}
+
+					<h6>Status</h6>
+					@if (project.ProjectStatus == true)
+					{
+						<p>Aktif proje</p>
+					}
+					else
+					{
+						<p>Pasif proje.</p>
+					}
+				}
+			</div>
+		}
+	</div>
+
+</body>
+</html>
