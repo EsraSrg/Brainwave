@@ -29,3 +29,21 @@ C:\Users\atayb\OneDrive\Masaüstü\ders c#\BrainWave\Brainwave\BrainWave.DtoLaye
 C:\Users\atayb\OneDrive\Masaüstü\ders c#\BrainWave\Brainwave\BrainWave.DtoLayer\bin\Debug\net6.0\BrainWave.EntityLayer.dll
 C:\Users\atayb\OneDrive\Masaüstü\ders c#\BrainWave\Brainwave\BrainWave.DtoLayer\bin\Debug\net6.0\BrainWave.EntityLayer.pdb
 C:\Users\atayb\OneDrive\Masaüstü\ders c#\BrainWave\Brainwave\BrainWave.DtoLayer\obj\Debug\net6.0\BrainWave.DtoLayer.csproj.CopyComplete
+C:\Users\Esra\Desktop\repos\Brainwave\BrainWave.DtoLayer\bin\Debug\net6.0\BrainWave.DtoLayer.deps.json
+C:\Users\Esra\Desktop\repos\Brainwave\BrainWave.DtoLayer\bin\Debug\net6.0\BrainWave.DtoLayer.runtimeconfig.json
+C:\Users\Esra\Desktop\repos\Brainwave\BrainWave.DtoLayer\bin\Debug\net6.0\BrainWave.DtoLayer.dll
+C:\Users\Esra\Desktop\repos\Brainwave\BrainWave.DtoLayer\bin\Debug\net6.0\BrainWave.DtoLayer.pdb
+C:\Users\Esra\Desktop\repos\Brainwave\BrainWave.DtoLayer\bin\Debug\net6.0\BrainWave.EntityLayer.dll
+C:\Users\Esra\Desktop\repos\Brainwave\BrainWave.DtoLayer\bin\Debug\net6.0\BrainWave.EntityLayer.pdb
+C:\Users\Esra\Desktop\repos\Brainwave\BrainWave.DtoLayer\obj\Debug\net6.0\BrainWave.DtoLayer.csproj.AssemblyReference.cache
+C:\Users\Esra\Desktop\repos\Brainwave\BrainWave.DtoLayer\obj\Debug\net6.0\BrainWave.DtoLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Esra\Desktop\repos\Brainwave\BrainWave.DtoLayer\obj\Debug\net6.0\BrainWave.DtoLayer.AssemblyInfoInputs.cache
+C:\Users\Esra\Desktop\repos\Brainwave\BrainWave.DtoLayer\obj\Debug\net6.0\BrainWave.DtoLayer.AssemblyInfo.cs
+C:\Users\Esra\Desktop\repos\Brainwave\BrainWave.DtoLayer\obj\Debug\net6.0\BrainWave.DtoLayer.csproj.CoreCompileInputs.cache
+C:\Users\Esra\Desktop\repos\Brainwave\BrainWave.DtoLayer\obj\Debug\net6.0\BrainWave.DtoLayer.sourcelink.json
+C:\Users\Esra\Desktop\repos\Brainwave\BrainWave.DtoLayer\obj\Debug\net6.0\BrainWave.DtoLayer.csproj.CopyComplete
+C:\Users\Esra\Desktop\repos\Brainwave\BrainWave.DtoLayer\obj\Debug\net6.0\BrainWave.DtoLayer.dll
+C:\Users\Esra\Desktop\repos\Brainwave\BrainWave.DtoLayer\obj\Debug\net6.0\refint\BrainWave.DtoLayer.dll
+C:\Users\Esra\Desktop\repos\Brainwave\BrainWave.DtoLayer\obj\Debug\net6.0\BrainWave.DtoLayer.pdb
+C:\Users\Esra\Desktop\repos\Brainwave\BrainWave.DtoLayer\obj\Debug\net6.0\BrainWave.DtoLayer.genruntimeconfig.cache
+C:\Users\Esra\Desktop\repos\Brainwave\BrainWave.DtoLayer\obj\Debug\net6.0\ref\BrainWave.DtoLayer.dll
