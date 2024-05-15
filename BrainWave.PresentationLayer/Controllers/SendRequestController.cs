@@ -24,21 +24,41 @@ namespace BrainWave.PresentationLayer.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> Index(SendRequestDto sendRequestDto)
+        public async Task<IActionResult> Index(SendRequestDto sendRequestDto, int appUserId, int projectId)
         {
-            var context = new Context();
-            var receiverProjectId = context.UserProjects.Where(p => p.UserProjectID == sendRequestDto.ProjectID).Select(y=>y.UserProjectID).FirstOrDefault();
-            var values = new ProjectRequest();
+            if (ModelState.IsValid)
+            {
+				ViewData["UserProjectID"] = projectId;
+				ViewData["AppUserID"] = appUserId;
 
-            values.RequestMessage = "Text";
-            values.RequestStatus = true;
-            values.ReceiverID = receiverProjectId;
-            values.ProjectID = 333;
-            values.SenderID = 8;
+				var user = await _userManager.FindByNameAsync(User.Identity.Name);
+				var context = new Context();
+				//var receiverId = context.UserProjects.Where(x=>x.UserProjectID == AppUserId).Select(x => x.AppUserID).FirstOrDefault();
+				//var projectId = context.UserProjects.Where(p => p.UserProjectID == sendRequestDto.ProjectID).Select(y => y.UserProjectID).FirstOrDefault();
+				//var projectIdd = context.UserProjects.FindAsync();
+				var values = new ProjectRequest();
 
-            _projectRequestService.TInsert(values);
+				values.RequestMessage = sendRequestDto.RequestMessage;
+				values.RequestStatus = false;
+				values.ReceiverID = appUserId;
+				values.ProjectID = projectId;
+				values.SenderID = user.Id;
 
-            return RedirectToAction("Index", "Deneme");
-        }
+				_projectRequestService.TInsert(values);
+
+				return RedirectToAction("Index", "Deneme");
+			}
+			else
+			{
+				// ModelState.IsValid false ise, hata mesajları ekle
+				foreach (var error in ModelState.Values.SelectMany(x => x.Errors))
+				{
+					// Hata mesajlarını ModelState'e ekleyin
+					ModelState.AddModelError(string.Empty, error.ErrorMessage);
+				}
+			}
+			return View();
+		}
+
     }
 }

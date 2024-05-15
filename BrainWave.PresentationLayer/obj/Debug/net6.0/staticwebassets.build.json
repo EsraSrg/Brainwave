@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "krFCn4XUsgtwDGrh467/wwEywsAHt7pdnGEsXKTJ4xY=",
+  "Hash": "39grYnvdtCPc7/sjjZDUKtfb/TWOtf4JZDJoZTwFhio=",
   "Source": "BrainWave.PresentationLayer",
   "BasePath": "_content/BrainWave.PresentationLayer",
   "Mode": "Default",
@@ -66,23 +66,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
-    },
-    {
-      "Identity": "C:\\Users\\atayb\\OneDrive\\Masaüstü\\ders c#\\BrainWave\\Brainwave\\BrainWave.PresentationLayer\\wwwroot\\css\\styles.css",
-      "SourceId": "BrainWave.PresentationLayer",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\atayb\\OneDrive\\Masaüstü\\ders c#\\BrainWave\\Brainwave\\BrainWave.PresentationLayer\\wwwroot\\",
-      "BasePath": "_content/BrainWave.PresentationLayer",
-      "RelativePath": "css/styles.css",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\css\\styles.css"
     },
     {
       "Identity": "C:\\Users\\atayb\\OneDrive\\Masaüstü\\ders c#\\BrainWave\\Brainwave\\BrainWave.PresentationLayer\\wwwroot\\favicon.ico",

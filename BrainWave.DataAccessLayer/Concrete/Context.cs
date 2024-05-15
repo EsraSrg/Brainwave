@@ -16,22 +16,23 @@ namespace BrainWave.DataAccessLayer.Concrete
             optionsBuilder.UseSqlServer("server=LAPTOP-ONCVC9CR; initial catalog=BrainWave; integrated Security=true");
         }
         public DbSet<UserProject> UserProjects { get; set; }
+        public DbSet<ProjectRequest> ProjectRequests { get; set; }
 
-        //ilişkileri tanımlıyoruz
-        //protected override void OnModelCreating(ModelBuilder builder)
-        //{
-        //    builder.Entity<ProjectRequest>()
-        //        .HasOne(x => x.SenderUser)
-        //        .WithMany(y => y.RequestSender)
-        //        .HasForeignKey(z => z.SenderID)
-        //        .OnDelete(DeleteBehavior.ClientSetNull);
+		//ilişkileri tanımlıyoruz
+		//protected override void OnModelCreating(ModelBuilder builder)
+		//{
+		//    builder.Entity<ProjectRequest>()
+		//        .HasOne(x => x.SenderUser)
+		//        .WithMany(y => y.RequestSender)
+		//        .HasForeignKey(z => z.SenderID)
+		//        .OnDelete(DeleteBehavior.ClientSetNull);
 
-        //    builder.Entity<ProjectRequest>()
-        //        .HasOne(x => x.ReceiverUser)
-        //        .WithMany(y => y.RequestReceiver)
-        //        .HasForeignKey(z => z.ReceiverID)
-        //        .OnDelete(DeleteBehavior.ClientSetNull);
-        //    base.OnModelCreating(builder);
-        //}
-    }
+		//    builder.Entity<ProjectRequest>()
+		//        .HasOne(x => x.ReceiverUser)
+		//        .WithMany(y => y.RequestReceiver)
+		//        .HasForeignKey(z => z.ReceiverID)
+		//        .OnDelete(DeleteBehavior.ClientSetNull);
+		//    base.OnModelCreating(builder);
+		//}
+	}
 }

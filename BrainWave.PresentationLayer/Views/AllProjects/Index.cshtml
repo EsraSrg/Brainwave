@@ -1,0 +1,46 @@
+﻿@using BrainWave.EntityLayer.Concrete;
+@model List<UserProject>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>AllProjects</title>
+	<link rel="stylesheet" type="text/css" href="~/css/Style.css">
+</head>
+<body>
+	<h2>All Reviews</h2>
+	<div>
+		@foreach (var project in Model)
+		{
+			<div class="review">
+				@if (!string.IsNullOrEmpty(project.ProjectTitle))
+				{
+					<h4>Title</h4>
+					<hr />
+					<p>@project.ProjectTitle</p>
+
+					<h6>Desc</h6>
+					<p>@project.ProjectDescription</p>
+
+					<h6>Categories</h6>
+					<p>@project.ProjectCategories</p>
+
+					<h6>Tools</h6>
+					<p>@project.ProjectTools</p>
+				}
+			</div>
+			<form action="/SendRequest/Index" method="post">
+				<input type="text"/>
+				<input type="hidden" name="projectId" value="@project.UserProjectID" />
+				<input type="hidden" name="appUserId" value="@project.AppUserID" />
+				<input type="submit" value="Proje İstek Gönder" class="btn btn-primary" />
+			</form>
+
+
+		}
+	</div>
+
+</body>
+</html>

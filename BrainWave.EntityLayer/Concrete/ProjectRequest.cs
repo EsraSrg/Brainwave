@@ -14,7 +14,5 @@ namespace BrainWave.EntityLayer.Concrete
         public int? ReceiverID { get; set; }
         public string RequestMessage { get; set; }
         public bool RequestStatus { get; set; }
-        public UserProject SenderUser { get; set; }
-        public UserProject ReceiverUser { get; set; }
     }
 }
