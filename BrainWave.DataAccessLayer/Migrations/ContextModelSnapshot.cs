@@ -93,7 +93,6 @@ namespace BrainWave.DataAccessLayer.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Interests")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<bool>("LockoutEnabled")
@@ -180,9 +179,12 @@ namespace BrainWave.DataAccessLayer.Migrations
                     b.Property<int?>("SenderID")
                         .HasColumnType("int");
 
+                    b.Property<string>("SenderUsername")
+                        .HasColumnType("nvarchar(max)");
+
                     b.HasKey("ProjectRequestID");
 
-                    b.ToTable("ProjectRequests");
+                    b.ToTable("ProjectRequests", (string)null);
                 });
 
             modelBuilder.Entity("BrainWave.EntityLayer.Concrete.UserProject", b =>
@@ -232,7 +234,45 @@ namespace BrainWave.DataAccessLayer.Migrations
 
                     b.HasIndex("AppUserID");
 
-                    b.ToTable("UserProjects");
+                    b.ToTable("UserProjects", (string)null);
+                });
+
+            modelBuilder.Entity("BrainWave.EntityLayer.Concrete.UserResource", b =>
+                {
+                    b.Property<int>("UserResourceID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("UserResourceID"), 1L, 1);
+
+                    b.Property<int>("AppUserID")
+                        .HasColumnType("int");
+
+                    b.Property<string>("ResourceAuthor")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ResourceCategories")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ResourceDescription")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ResourceImage")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("ResourcePublishDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("ResourceTitle")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ResourceUrl")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("UserResourceID");
+
+                    b.ToTable("UserResources", (string)null);
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<int>", b =>

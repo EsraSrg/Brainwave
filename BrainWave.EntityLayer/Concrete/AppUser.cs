@@ -17,7 +17,7 @@ namespace BrainWave.EntityLayer.Concrete
         public string? Education { get; set; }
         public string? Experience { get; set; }
         public string? Skills { get; set; }
-		public string Interests { get; set; }
+		public string? Interests { get; set; }
 		public string? Socials { get; set; }
         public int ConfirmCode { get; set; }
 

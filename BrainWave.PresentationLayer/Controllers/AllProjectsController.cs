@@ -8,14 +8,14 @@ using Microsoft.EntityFrameworkCore;
 
 namespace BrainWave.PresentationLayer.Controllers
 {
-	public class AllProjects : Controller
+	public class AllProjectsController : Controller
 	{
 		private readonly UserManager<AppUser> _userManager;
 		private readonly Context _context;
 		private readonly IProjectRequestService _projectRequestService;
 
 
-		public AllProjects(UserManager<AppUser> userManager, Context context, IProjectRequestService projectRequestService)
+		public AllProjectsController(UserManager<AppUser> userManager, Context context, IProjectRequestService projectRequestService)
 		{
 			_userManager = userManager;
 			_context = context;
@@ -31,20 +31,19 @@ namespace BrainWave.PresentationLayer.Controllers
 
 			return View(allProjects);
 		}
-
+		//send request
 		[HttpPost]
-		public async Task<IActionResult> Index(SendRequestDto sendRequestDto)
+		public async Task<IActionResult> Index(int projectId, int userId, string message)
 		{
 			var user = await _userManager.FindByNameAsync(User.Identity.Name);
-			var context = new Context();
-			var receiverProjectId = context.UserProjects.Where(p => p.UserProjectID == sendRequestDto.ProjectID).Select(y => y.UserProjectID).FirstOrDefault();
-			
+
 			var values = new ProjectRequest();
-			values.RequestMessage = "Text";
-			values.RequestStatus = true;
-			values.ReceiverID = receiverProjectId;
-			values.ProjectID = 333;
+			values.RequestMessage = message;
+			values.RequestStatus = false;
+			values.ReceiverID = userId; // Proje sahibinin ID'si
+			values.ProjectID = projectId;
 			values.SenderID = user.Id;
+			values.SenderUsername = user.UserName;
 
 			_projectRequestService.TInsert(values);
 

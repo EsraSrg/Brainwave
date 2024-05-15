@@ -7,7 +7,6 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>AllProjects</title>
-	<link rel="stylesheet" type="text/css" href="~/css/Style.css">
 </head>
 <body>
 	<h2>All Reviews</h2>
@@ -29,13 +28,16 @@
 
 					<h6>Tools</h6>
 					<p>@project.ProjectTools</p>
+
+					<p>Project ID: @project.UserProjectID</p>
+					<p>User ID: @project.AppUserID</p>
 				}
 			</div>
-			<form action="/SendRequest/Index" method="post">
-				<input type="text"/>
+			<form action="/AllProjects/Index" method="post">
 				<input type="hidden" name="projectId" value="@project.UserProjectID" />
-				<input type="hidden" name="appUserId" value="@project.AppUserID" />
-				<input type="submit" value="Proje İstek Gönder" class="btn btn-primary" />
+				<input type="hidden" name="userId" value="@project.AppUserID" />
+				<input type="text" name="message" placeholder="Enter your message" />
+				<input type="submit" value="Send Project Request" class="btn btn-primary" />
 			</form>
 
 

@@ -6,24 +6,23 @@ using Microsoft.EntityFrameworkCore;
 
 namespace BrainWave.PresentationLayer.Controllers
 {
-    public class MyProjects : Controller
+    public class AllResourcesController : Controller
     {
         private readonly UserManager<AppUser> _userManager;
         private readonly Context _context;
-        public MyProjects(UserManager<AppUser> userManager, Context context)
+
+        public AllResourcesController(UserManager<AppUser> userManager, Context context)
         {
             _userManager = userManager;
             _context = context;
         }
-
+        [HttpGet]
         public async Task<IActionResult> Index()
         {
-            var user = await _userManager.FindByNameAsync(User.Identity.Name);
-            var myProjects = await _context.UserProjects
-                .Where(b => b.ProjectStatus == true && b.AppUserID == user.Id)
+            var allProjects = await _context.UserResources
                 .ToListAsync();
 
-            return View(myProjects);
+            return View(allProjects);
         }
     }
 }

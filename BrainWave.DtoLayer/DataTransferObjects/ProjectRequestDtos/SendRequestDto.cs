@@ -10,7 +10,8 @@ namespace BrainWave.DtoLayer.DataTransferObjects.ProjectRequestDtos
     {
         public int ProjectID { get; set; }
         public int SenderID { get; set; }
-        public int ReceiverID { get; set; }
+		public string SenderUsername { get; set; }
+		public int ReceiverID { get; set; }
         //public DateTime RequestDate { get; set; }
         public string RequestMessage { get; set; }
         public bool RequestStatus { get; set; }

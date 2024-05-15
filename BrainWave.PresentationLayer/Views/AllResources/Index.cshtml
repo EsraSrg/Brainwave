@@ -1,0 +1,53 @@
+﻿@using BrainWave.EntityLayer.Concrete;
+@model List<UserResource>
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+
+    <div>
+		@foreach (var resource in Model)
+		{
+			<div class="review">
+				@if (!string.IsNullOrEmpty(resource.ResourceTitle))
+				{
+					<h4>Title</h4>
+					<hr />
+					<p>@resource.ResourceTitle</p>
+
+					<h6>Desc</h6>
+					<p>@resource.ResourceDescription</p>
+
+					<h6>Author</h6>
+					<p>@resource.ResourceAuthor</p>
+
+					<h6>Categories</h6>
+					<p>@resource.ResourceCategories</p>
+
+					<h6>Publish Date</h6>
+					<p>@resource.ResourcePublishDate</p>
+
+					<h6>Url</h6>
+					<p>@resource.ResourceUrl</p>
+
+					<h6>Image</h6>
+					<p>@resource.ResourceImage</p>
+
+					<p>Resource ID: @resource.UserResourceID</p>
+					<p>User ID: @resource.AppUserID</p>
+				}
+			</div>
+			
+		}
+	</div>
+
+</body>
+</html>

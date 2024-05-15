@@ -20,6 +20,10 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWxsUHJvamVjdHNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/atayb/OneDrive/Masaüstü/ders c\#/BrainWave/Brainwave/BrainWave.PresentationLayer/Views/AllResources/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWxsUmVzb3VyY2VzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/atayb/OneDrive/Masaüstü/ders c\#/BrainWave/Brainwave/BrainWave.PresentationLayer/Views/ConfirmMail/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29uZmlybU1haWxcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -28,12 +32,8 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3JlYXRlUHJvamVjdFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/atayb/OneDrive/Masaüstü/ders c\#/BrainWave/Brainwave/BrainWave.PresentationLayer/Views/Home/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/atayb/OneDrive/Masaüstü/ders c\#/BrainWave/Brainwave/BrainWave.PresentationLayer/Views/Home/Privacy.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+[C:/Users/atayb/OneDrive/Masaüstü/ders c\#/BrainWave/Brainwave/BrainWave.PresentationLayer/Views/CreateResource/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3JlYXRlUmVzb3VyY2VcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/atayb/OneDrive/Masaüstü/ders c\#/BrainWave/Brainwave/BrainWave.PresentationLayer/Views/Login/Index.cshtml]
@@ -50,6 +50,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/atayb/OneDrive/Masaüstü/ders c\#/BrainWave/Brainwave/BrainWave.PresentationLayer/Views/Register/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVnaXN0ZXJcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/atayb/OneDrive/Masaüstü/ders c\#/BrainWave/Brainwave/BrainWave.PresentationLayer/Views/SeeRequests/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VlUmVxdWVzdHNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/atayb/OneDrive/Masaüstü/ders c\#/BrainWave/Brainwave/BrainWave.PresentationLayer/Views/SendRequest/Index.cshtml]

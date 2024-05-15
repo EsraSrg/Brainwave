@@ -17,6 +17,7 @@ namespace BrainWave.DataAccessLayer.Concrete
         }
         public DbSet<UserProject> UserProjects { get; set; }
         public DbSet<ProjectRequest> ProjectRequests { get; set; }
+		public DbSet<UserResource> UserResources { get; set; }
 
 		//ilişkileri tanımlıyoruz
 		//protected override void OnModelCreating(ModelBuilder builder)

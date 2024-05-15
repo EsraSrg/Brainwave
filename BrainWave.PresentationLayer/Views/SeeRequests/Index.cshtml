@@ -1,0 +1,30 @@
+﻿@using BrainWave.EntityLayer.Concrete;
+@model List<ProjectRequest>
+
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta name="viewport" content="width=device-width" />
+	<title>Index</title>
+</head>
+<body>
+	<h2>All Reviews</h2>
+	<div>
+		@foreach (var request in Model)
+		{
+		<div class="review">
+			<h3>@request.SenderUsername</h3>
+			<h6>Mesaj</h6>
+			<p>@request.RequestMessage</p>
+
+			<form asp-controller="SeeRequests" asp-action="Index" method="post">
+				<input type="hidden" name="requestId" value="@request.ProjectRequestID" />
+				<button type="submit">Accept</button>
+			</form>
+		</div>
+		}
+	</div>
+
+</body>
+</html>
