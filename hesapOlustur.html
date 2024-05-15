@@ -81,6 +81,7 @@ button:hover {
     <button type="submit">Üye Ol</button>
   </form>
 </div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="three.r134.min.js"></script>
 <script src="vanta.net.min.js"></script>
 <script>
@@ -96,6 +97,33 @@ VANTA.NET({
   color: 0xe6e6e6,
   backgroundColor: 0xc0b25
 });
+
+$(document).ready(function() {
+  $('#signupForm').submit(function(event) {
+    event.preventDefault();
+    
+    const newUsername = $('#newUsername').val();
+    const newEmail = $('#newEmail').val();
+    const newPassword = $('#newPassword').val();
+
+    $.ajax({
+      url: '/Register/Index',
+      method: 'POST',
+      data: {
+        Username: newUsername,
+        Email: newEmail,
+        Password: newPassword
+      },
+      success: function(response) {
+        alert('Hesap başarıyla oluşturuldu. Lütfen e-posta adresinizi kontrol edin ve hesabınızı etkinleştirin.');
+      },
+      error: function(xhr, status, error) {
+        alert('Hesap oluşturulurken bir hata oluştu. Lütfen tekrar deneyin.');
+      }
+    });
+  });
+});
 </script>
 </body>
 </html>
+

@@ -28,6 +28,7 @@
   <hr>
   <h2><a href="hesapOlustur.html">Hesabınız yok mu? Hemen Oluşturun.</a></h2> <!-- Yeni sayfaya yönlendirme linki -->
 </div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="three.r134.min.js"></script>
 <script src="vanta.net.min.js"></script>
 <script>
@@ -43,9 +44,37 @@ VANTA.NET({
   color: 0xe6e6e6,
   backgroundColor: 0xc0b25
 });
+
+$(document).ready(function() {
+  $('#loginForm').submit(function(event) {
+    event.preventDefault();
+    
+    const username = $('#username').val();
+    const password = $('#password').val();
+
+    $.ajax({
+      url: '/Login/Index',
+      method: 'POST',
+      data: {
+        Username: username,
+        Password: password
+      },
+      success: function(response) {
+        
+        alert('Giriş başarılı!');
+      },
+      error: function(xhr, status, error) {
+        // Giriş başarısız
+        alert('Giriş başarısız. Lütfen kullanıcı adı ve şifrenizi kontrol edin.');
+      }
+    });
+  });
+});
 </script>
 </body>
 </html>
+
+
 
 
 
