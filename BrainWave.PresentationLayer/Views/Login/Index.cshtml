@@ -5,44 +5,62 @@
 }
 
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BrainWave - Kullanıcı Girişi</title>
-    <link rel="stylesheet" href="/template/LoginPage.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <title>Brainwave</title>
+    <link rel="stylesheet" href="~/css/Style.css">
 </head>
 <body>
-    <div class="container">
-        <div class="wrapper">
-            <div class="title"><span>Kayıt Ol</span></div>
-            <form method="post">
-                <div class="row">
-                    <i class="fas fa-user"></i>
-                    <input type="text" asp-for="Username" placeholder="Kullanıcı Adınız" required>
-                    <span asp-validation-for="Username"></span>
-                </div>
-                <div class="row">
-                    <i class="fas fa-lock"></i>
-                    <input type="password" asp-for="Password" placeholder="Şifreniz" required>
-                    <span asp-validation-for="Password"></span>
-                </div>
-                <ol style="list-style-type: none">
-                    <li>
-                        <input type="checkbox" />
-                        <label><span></span> Beni Hatırla</label>
-                        <div class="pass"><span></span><a href="#">Forgot password?</a></div>
-                    </li>
-                </ol>
-                <div class="row button">
-                    <input type="submit" value="Giriş Yap">
-                </div>
-                <div class="register-link">Hesabın yok mu?<a href="/Register/Index">Kayıt Ol</a></div>
-                <button id="send" type="submit" class="btn btn-success">Bilgileri Güncelle</button>
-            </form>
-        </div>
+    <div id="background-animation"></div>
+    <div class="background"></div>
+    <div class="slogan-container">
+        <h1 class="slogan"></h1>
     </div>
-
+    <div class="container">
+        <h2> Devam etmek için lütfen hesabınıza giriş yapın.</h2>
+        <form method="post" id="loginForm">
+            <div class="form-group">
+                <label for="username">Kullanıcı Adı:</label>
+                <input type="text" asp-for="Username" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Şifre:</label>
+                <input type="password" asp-for="Password" id="password" name="password" required>
+            </div>
+            <button type="submit">Giriş Yap</button>
+        </form>
+        <hr>
+        <h2><a href="hesapOlustur.html">Hesabınız yok mu? Hemen Oluşturun.</a></h2> <!-- Yeni sayfaya yönlendirme linki -->
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="~/js/three.r134.min.js"></script>
+    <script src="~/js/vanta.net.min.js"></script>
+    <script>
+        VANTA.NET({
+          el: "#background-animation",
+          mouseControls: true,
+          touchControls: true,
+          gyroControls: false,
+          minHeight: 200.00,
+          minWidth: 200.00,
+          scale: 1.00,
+          scaleMobile: 1.00,
+          color: 0xe6e6e6,
+          backgroundColor: 0xc0b25
+        });
+    </script>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
