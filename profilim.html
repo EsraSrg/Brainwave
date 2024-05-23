@@ -3,11 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Anasayfa</title>
+<title>Profilim</title>
 <link rel="stylesheet" href="style.css">
 <style>
     h2 {
-        color: #000000c4; 
+        color: #f2f2f2c4; 
     }
     h1 {
         color: #ffffff;
@@ -24,12 +24,15 @@
         top: 50%;
         left: 50%; 
         transform: translate(-50%, -50%); 
-        max-width: 800px; 
+        width: 750px;  /* Adjusted width for a wider layout */
         padding: 40px;
         background-color: rgba(255, 255, 255, 0.11);
         border-radius: 5px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        text-align: center; 
+        text-align: center;
+        overflow-y: auto;
+        max-height: 80vh;
+        color: #ffffff;  /* Text color set to white */
     }
     .options {
         display: flex;
@@ -45,7 +48,7 @@
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         cursor: pointer;
         text-decoration: none;
-        color: black;
+        color: rgb(224, 224, 224);
     }
     .option:hover {
         background-color: rgba(224, 224, 224, 0.38);
@@ -110,6 +113,21 @@
     .top-right a:hover {
         background-color: rgba(169, 169, 169, 0.332);
     }
+    .profile-section {
+        text-align: left;
+        margin-bottom: 20px;
+    }
+    .profile-section img {
+        max-width: 150px;
+        border-radius: 50%;
+        margin-bottom: 20px;
+    }
+    .profile-section h2 {
+        margin-bottom: 10px;
+    }
+    .profile-section p {
+        margin: 5px 0;
+    }
 </style>
 </head>
 <body>
@@ -133,24 +151,45 @@
     <a href="#">Ayarlar</a>
 </div>
 <div class="container">
-    <h1>Hoş Geldiniz!</h1>
-    <div class="options">
-        <a href="ekiparkadasi-ara.html" class="option">
-            <h2>Ekip Arkadaşı Ara</h2>
-            
-        </a>
-        <a href="proje-ara.html" class="option">
-            <h2>Proje Ara</h2>
-            
-        </a>
-        <a href="mentor-ara.html" class="option">
-            <h2>Mentor Ara</h2>
-           
-        </a>
-        <a href="kaynakincele.html" class="option">
-            <h2>Kaynak İncele</h2>
-            
-        </a>
+    <div class="profile-section">
+        <img src="images/profile.jpg" alt="Profile Picture">
+        <h2>İsim Soyisim</h2>
+    </div>
+    <div class="profile-section">
+        <h2>Deneyim</h2>
+        <p>Şirket A - Pozisyon A (Tarih)</p>
+        <p>Şirket B - Pozisyon B (Tarih)</p>
+        <!-- Add more experience as needed -->
+    </div>
+    <div class="profile-section">
+        <h2>Eğitim</h2>
+        <p>Üniversite A - Derece (Tarih)</p>
+        <p>Üniversite B - Derece (Tarih)</p>
+        <!-- Add more education as needed -->
+    </div>
+    <div class="profile-section">
+        <h2>Projeler</h2>
+        <p>Proje A - Açıklama</p>
+        <p>Proje B - Açıklama</p>
+        <!-- Add more projects as needed -->
+    </div>
+    <div class="profile-section">
+        <h2>Beceriler</h2>
+        <p>Beceri A</p>
+        <p>Beceri B</p>
+        <!-- Add more skills as needed -->
+    </div>
+    <div class="profile-section">
+        <h2>İlgi Alanları</h2>
+        <p>İlgi Alanı A</p>
+        <p>İlgi Alanı B</p>
+        <!-- Add more interests as needed -->
+    </div>
+    <div class="profile-section">
+        <h2>Yorumlar</h2>
+        <p>Yorum A</p>
+        <p>Yorum B</p>
+        <!-- Add more comments as needed -->
     </div>
 </div>
 
@@ -172,4 +211,6 @@ VANTA.NET({
 </script>
 </body>
 </html>
+
+
 

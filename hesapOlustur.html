@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Hesap Oluştur</title>
+<title>Brainwave</title>
 <link rel="stylesheet" href="style.css">
 <style>
 .container {
@@ -11,7 +11,8 @@
   z-index: 1;
   top: 50%;
   left: 50%; 
-  transform: translate(-50%, -50%); 
+  transform: translate(-50%, -50%);
+  width: 80%; /* Container'ın genişliğini ayarla */
   max-width: 500px; 
   padding: 40px;
   background-color: rgba(255, 255, 255, 0.062);
@@ -24,26 +25,29 @@
   margin-bottom: 20px; 
 }
 
+h2{
+  color:#ffffff5f
+}
 label {
   display: block;
   margin-bottom: 10px; 
-  color: #cccccc94;
+  color: #ccccccd7;
   text-align: left; 
 }
 
 input[type="text"],
 input[type="password"],
-input[type="email"]{
-  width: 100%; 
+input[type="email"] {
+  width: calc(100% - 30px); /* Genişlik hesabını düzelt */
   padding: 15px; 
   border: 5px solid #ccc;
   border-radius: 3px;
-  box-sizing: border-box; /* Kenarlık ve dolgu dahil genişlik hesaplama? */
+  box-sizing: border-box; 
 }
 
 button {
-  display: block;
-  width: 100%; 
+  display: inline-block; 
+  width: calc(100% - 30px); 
   padding: 15px; 
   background-color: #1e3145;
   color: #fff;
@@ -53,9 +57,10 @@ button {
 }
 
 button:hover {
-  background-color: #1e3145;
+  background-color: #313f4dd4;
 }
-</style>
+
+  </style>
 </head>
 <body>
 <div id="background-animation"></div>
@@ -98,32 +103,9 @@ VANTA.NET({
   backgroundColor: 0xc0b25
 });
 
-$(document).ready(function() {
-  $('#signupForm').submit(function(event) {
-    event.preventDefault();
-    
-    const newUsername = $('#newUsername').val();
-    const newEmail = $('#newEmail').val();
-    const newPassword = $('#newPassword').val();
 
-    $.ajax({
-      url: '/Register/Index',
-      method: 'POST',
-      data: {
-        Username: newUsername,
-        Email: newEmail,
-        Password: newPassword
-      },
-      success: function(response) {
-        alert('Hesap başarıyla oluşturuldu. Lütfen e-posta adresinizi kontrol edin ve hesabınızı etkinleştirin.');
-      },
-      error: function(xhr, status, error) {
-        alert('Hesap oluşturulurken bir hata oluştu. Lütfen tekrar deneyin.');
-      }
-    });
-  });
-});
 </script>
 </body>
 </html>
+
 
