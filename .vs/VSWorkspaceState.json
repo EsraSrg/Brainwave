@@ -1,0 +1,12 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\BrainWave.PresentationLayer",
+    "\\BrainWave.PresentationLayer\\Controllers",
+    "\\BrainWave.PresentationLayer\\Views",
+    "\\BrainWave.PresentationLayer\\Views\\AllProjects",
+    "\\BrainWave.PresentationLayer\\Views\\MyProjects"
+  ],
+  "SelectedNode": "\\BrainWave.PresentationLayer\\Controllers\\SeeRequestsController.cs",
+  "PreviewInSolutionExplorer": false
+}
