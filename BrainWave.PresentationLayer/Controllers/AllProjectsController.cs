@@ -21,13 +21,29 @@ namespace BrainWave.PresentationLayer.Controllers
 			_context = context;
 			_projectRequestService = projectRequestService;
 		}
+
+		//kategoriye göre proje aratma
 		[HttpGet]
-		public async Task<IActionResult> Index()
+		public async Task<IActionResult> Index(string category)
 		{
 			var user = await _userManager.FindByNameAsync(User.Identity.Name);
-			var allProjects = await _context.UserProjects
+			var projectsQuery = _context.UserProjects.AsQueryable();
+
+			if (!string.IsNullOrEmpty(category))
+			{
+				projectsQuery = projectsQuery.Where(b => b.ProjectCategories.Contains(category));
+			}
+
+			var allProjects = await projectsQuery
 				.Where(b => b.ProjectStatus == true)
 				.ToListAsync();
+
+			var categories = await _context.UserProjects
+				.Select(p => p.ProjectCategories)
+				.Distinct()
+				.ToListAsync();
+
+			ViewBag.Categories = categories;
 
 			return View(allProjects);
 		}

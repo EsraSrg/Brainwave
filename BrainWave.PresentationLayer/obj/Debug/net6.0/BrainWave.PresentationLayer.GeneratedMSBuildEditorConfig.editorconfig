@@ -9,75 +9,73 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = BrainWave.PresentationLayer
 build_property.RootNamespace = BrainWave.PresentationLayer
-build_property.ProjectDir = c:\Users\Esra\Desktop\repos\Brainwave\BrainWave.PresentationLayer\
-build_property.EnableComHosting = 
-build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.ProjectDir = C:\Users\atayb\OneDrive\Masaüstü\ders c#\BrainWave\Brainwave\BrainWave.PresentationLayer\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = c:\Users\Esra\Desktop\repos\Brainwave\BrainWave.PresentationLayer
+build_property.MSBuildProjectDirectory = C:\Users\atayb\OneDrive\Masaüstü\ders c#\BrainWave\Brainwave\BrainWave.PresentationLayer
 build_property._RazorSourceGeneratorDebug = 
 
-[c:/Users/Esra/Desktop/repos/Brainwave/BrainWave.PresentationLayer/Views/AllProjects/Index.cshtml]
+[C:/Users/atayb/OneDrive/Masaüstü/ders c\#/BrainWave/Brainwave/BrainWave.PresentationLayer/Views/AllProjects/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWxsUHJvamVjdHNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Esra/Desktop/repos/Brainwave/BrainWave.PresentationLayer/Views/AllResources/Index.cshtml]
+[C:/Users/atayb/OneDrive/Masaüstü/ders c\#/BrainWave/Brainwave/BrainWave.PresentationLayer/Views/AllResources/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWxsUmVzb3VyY2VzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Esra/Desktop/repos/Brainwave/BrainWave.PresentationLayer/Views/ConfirmMail/Index.cshtml]
+[C:/Users/atayb/OneDrive/Masaüstü/ders c\#/BrainWave/Brainwave/BrainWave.PresentationLayer/Views/ConfirmMail/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29uZmlybU1haWxcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Esra/Desktop/repos/Brainwave/BrainWave.PresentationLayer/Views/CreateProject/Index.cshtml]
+[C:/Users/atayb/OneDrive/Masaüstü/ders c\#/BrainWave/Brainwave/BrainWave.PresentationLayer/Views/CreateProject/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3JlYXRlUHJvamVjdFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Esra/Desktop/repos/Brainwave/BrainWave.PresentationLayer/Views/CreateResource/Index.cshtml]
+[C:/Users/atayb/OneDrive/Masaüstü/ders c\#/BrainWave/Brainwave/BrainWave.PresentationLayer/Views/CreateResource/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3JlYXRlUmVzb3VyY2VcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Esra/Desktop/repos/Brainwave/BrainWave.PresentationLayer/Views/Login/Index.cshtml]
+[C:/Users/atayb/OneDrive/Masaüstü/ders c\#/BrainWave/Brainwave/BrainWave.PresentationLayer/Views/Login/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Esra/Desktop/repos/Brainwave/BrainWave.PresentationLayer/Views/MyProjects/Index.cshtml]
+[C:/Users/atayb/OneDrive/Masaüstü/ders c\#/BrainWave/Brainwave/BrainWave.PresentationLayer/Views/MyProjects/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTXlQcm9qZWN0c1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Esra/Desktop/repos/Brainwave/BrainWave.PresentationLayer/Views/Profile/Index.cshtml]
+[C:/Users/atayb/OneDrive/Masaüstü/ders c\#/BrainWave/Brainwave/BrainWave.PresentationLayer/Views/Profile/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZmlsZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Esra/Desktop/repos/Brainwave/BrainWave.PresentationLayer/Views/Register/Index.cshtml]
+[C:/Users/atayb/OneDrive/Masaüstü/ders c\#/BrainWave/Brainwave/BrainWave.PresentationLayer/Views/Register/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVnaXN0ZXJcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Esra/Desktop/repos/Brainwave/BrainWave.PresentationLayer/Views/SeeRequests/Index.cshtml]
+[C:/Users/atayb/OneDrive/Masaüstü/ders c\#/BrainWave/Brainwave/BrainWave.PresentationLayer/Views/SeeRequests/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VlUmVxdWVzdHNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Esra/Desktop/repos/Brainwave/BrainWave.PresentationLayer/Views/SendRequest/Index.cshtml]
+[C:/Users/atayb/OneDrive/Masaüstü/ders c\#/BrainWave/Brainwave/BrainWave.PresentationLayer/Views/SendRequest/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VuZFJlcXVlc3RcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Esra/Desktop/repos/Brainwave/BrainWave.PresentationLayer/Views/Shared/Error.cshtml]
+[C:/Users/atayb/OneDrive/Masaüstü/ders c\#/BrainWave/Brainwave/BrainWave.PresentationLayer/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Esra/Desktop/repos/Brainwave/BrainWave.PresentationLayer/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/atayb/OneDrive/Masaüstü/ders c\#/BrainWave/Brainwave/BrainWave.PresentationLayer/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Esra/Desktop/repos/Brainwave/BrainWave.PresentationLayer/Views/_ViewImports.cshtml]
+[C:/Users/atayb/OneDrive/Masaüstü/ders c\#/BrainWave/Brainwave/BrainWave.PresentationLayer/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Esra/Desktop/repos/Brainwave/BrainWave.PresentationLayer/Views/_ViewStart.cshtml]
+[C:/Users/atayb/OneDrive/Masaüstü/ders c\#/BrainWave/Brainwave/BrainWave.PresentationLayer/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Esra/Desktop/repos/Brainwave/BrainWave.PresentationLayer/Views/Shared/_Layout.cshtml]
+[C:/Users/atayb/OneDrive/Masaüstü/ders c\#/BrainWave/Brainwave/BrainWave.PresentationLayer/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-uco66gbsg7

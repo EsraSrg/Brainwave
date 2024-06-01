@@ -24,5 +24,5 @@ namespace BrainWave.EntityLayer.Concrete
         //one to many relationship
         public List<UserProject> UserProjects { get; set; }
 
-    }
+	}
 }

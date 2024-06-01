@@ -12,8 +12,24 @@
     <title>Index</title>
 </head>
 <body>
-
+	<h2>All Resouces</h2>
     <div>
+		<form method="get" action="/AllProjects/Index">
+			<select name="category" id="category">
+				<option value="Web Development">Web Development</option>
+				<option value="Software Development">Software Development</option>
+				<option value="Data Science & AI">Data Science & AI</option>
+				<option value="Finance">Finance</option>
+				<option value="E-commerce">E-commerce</option>
+				<option value="Education">Education</option>
+				<option value="Social & Communication">Social & Communication</option>
+				<option value="Personal & Hobby">Personal & Hobby</option>
+				<option value="Research & Development">Research & Development</option>
+				<option value="Healthcare">Healthcare</option>
+				<option value="Entertainment & Media">Entertainment & Media</option>
+			</select>
+			<input type="submit" value="Search" />
+		</form>
 		@foreach (var resource in Model)
 		{
 			<div class="review">

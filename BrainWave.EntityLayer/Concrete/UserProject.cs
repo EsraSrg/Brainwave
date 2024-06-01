@@ -21,9 +21,10 @@ namespace BrainWave.EntityLayer.Concrete
         public bool? ProjectPrivacy { get; set; }
         public int AppUserID { get; set; }
 
-        //one to many relationship
-        //public AppUser AppUser { get; set; } = new AppUser();
-        //public List<ProjectRequest> RequestSender { get; set;}
-        //public List<ProjectRequest> RequestReceiver { get; set;}
-    }
+
+		//one to many relationship
+		//public AppUser AppUser { get; set; } = new AppUser();
+		//public List<ProjectRequest> RequestSender { get; set;}
+		//public List<ProjectRequest> RequestReceiver { get; set;}
+	}
 }

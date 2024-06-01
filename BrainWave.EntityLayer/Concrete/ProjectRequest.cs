@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -15,5 +16,6 @@ namespace BrainWave.EntityLayer.Concrete
 		public int? ReceiverID { get; set; }
         public string RequestMessage { get; set; }
         public bool RequestStatus { get; set; }
-    }
+		public List<ProjectRequest> ProjectRequests { get; set; }
+	}
 }

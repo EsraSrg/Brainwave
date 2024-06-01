@@ -166,6 +166,9 @@ namespace BrainWave.DataAccessLayer.Migrations
                     b.Property<int>("ProjectID")
                         .HasColumnType("int");
 
+                    b.Property<int?>("ProjectRequestID1")
+                        .HasColumnType("int");
+
                     b.Property<int?>("ReceiverID")
                         .HasColumnType("int");
 
@@ -184,7 +187,28 @@ namespace BrainWave.DataAccessLayer.Migrations
 
                     b.HasKey("ProjectRequestID");
 
-                    b.ToTable("ProjectRequests", (string)null);
+                    b.HasIndex("ProjectRequestID1");
+
+                    b.ToTable("ProjectRequests");
+                });
+
+            modelBuilder.Entity("BrainWave.EntityLayer.Concrete.UserParticipatingProject", b =>
+                {
+                    b.Property<int>("UserParticipatingProjectID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("UserParticipatingProjectID"), 1L, 1);
+
+                    b.Property<int>("ProjectID")
+                        .HasColumnType("int");
+
+                    b.Property<int>("UserID")
+                        .HasColumnType("int");
+
+                    b.HasKey("UserParticipatingProjectID");
+
+                    b.ToTable("UserParticipatingProjects");
                 });
 
             modelBuilder.Entity("BrainWave.EntityLayer.Concrete.UserProject", b =>
@@ -234,7 +258,7 @@ namespace BrainWave.DataAccessLayer.Migrations
 
                     b.HasIndex("AppUserID");
 
-                    b.ToTable("UserProjects", (string)null);
+                    b.ToTable("UserProjects");
                 });
 
             modelBuilder.Entity("BrainWave.EntityLayer.Concrete.UserResource", b =>
@@ -272,7 +296,7 @@ namespace BrainWave.DataAccessLayer.Migrations
 
                     b.HasKey("UserResourceID");
 
-                    b.ToTable("UserResources", (string)null);
+                    b.ToTable("UserResources");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<int>", b =>
@@ -378,6 +402,13 @@ namespace BrainWave.DataAccessLayer.Migrations
                     b.ToTable("AspNetUserTokens", (string)null);
                 });
 
+            modelBuilder.Entity("BrainWave.EntityLayer.Concrete.ProjectRequest", b =>
+                {
+                    b.HasOne("BrainWave.EntityLayer.Concrete.ProjectRequest", null)
+                        .WithMany("ProjectRequests")
+                        .HasForeignKey("ProjectRequestID1");
+                });
+
             modelBuilder.Entity("BrainWave.EntityLayer.Concrete.UserProject", b =>
                 {
                     b.HasOne("BrainWave.EntityLayer.Concrete.AppUser", null)
@@ -441,6 +472,11 @@ namespace BrainWave.DataAccessLayer.Migrations
             modelBuilder.Entity("BrainWave.EntityLayer.Concrete.AppUser", b =>
                 {
                     b.Navigation("UserProjects");
+                });
+
+            modelBuilder.Entity("BrainWave.EntityLayer.Concrete.ProjectRequest", b =>
+                {
+                    b.Navigation("ProjectRequests");
                 });
 #pragma warning restore 612, 618
         }

@@ -13,16 +13,16 @@
 	<div>
 		@foreach (var request in Model)
 		{
-		<div class="review">
-			<h3>@request.SenderUsername</h3>
-			<h6>Mesaj</h6>
-			<p>@request.RequestMessage</p>
+			<div class="review">
+				<h3>@request.SenderUsername</h3>
+				<h6>Mesaj</h6>
+				<p>@request.RequestMessage</p>
 
-			<form asp-controller="SeeRequests" asp-action="Index" method="post">
-				<input type="hidden" name="requestId" value="@request.ProjectRequestID" />
-				<button type="submit">Accept</button>
-			</form>
-		</div>
+				<form asp-controller="SeeRequests" asp-action="Index" method="post">
+					<input type="hidden" name="requestId" value="@request.ProjectRequestID" />
+					<button type="submit">Accept</button>
+				</form>
+			</div>
 		}
 	</div>
 

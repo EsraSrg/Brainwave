@@ -17,12 +17,26 @@ namespace BrainWave.PresentationLayer.Controllers
             _context = context;
         }
         [HttpGet]
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string category)
         {
-            var allProjects = await _context.UserResources
-                .ToListAsync();
 
-            return View(allProjects);
+            var resourcesQuery = _context.UserResources.AsQueryable();
+			if (!string.IsNullOrEmpty(category))
+			{
+				resourcesQuery = resourcesQuery.Where(b => b.ResourceCategories.Contains(category));
+			}
+			var allResources = await resourcesQuery.ToListAsync();
+
+			var categories = await _context.UserResources
+				.Select(p => p.ResourceCategories)
+				.Distinct()
+				.ToListAsync();
+
+			ViewBag.Categories = categories;
+
+
+			return View(allResources);
+
         }
     }
 }
