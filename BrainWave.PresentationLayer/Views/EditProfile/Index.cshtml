@@ -67,30 +67,34 @@
 <body>
 
 	<div class="container">
-		<div class="profile-header">
-			<img src="https://via.placeholder.com/150" alt="Profile Picture">
-			<h1>@Model.Name @Model.Surname</h1>
-		</div>
 
-		<div class="profile-info">
-			<h2>About Me</h2>
-			<p>@Model.About</p>
-			<h2>Experience</h2>
-			<p>@Model.Experience</p>
-			<h2>Education</h2>
-			<p>@Model.Education</p>
-			<h2>Skills</h2>
-			<p>@Model.Skills</p>
-			<h2>Interests</h2>
-			<p>@Model.Interests</p>
-			<h2>Social Media Accounts</h2>
-			<p>@Model.Socials</p>
-		</div>
-		<div class="form-group">
-			<a href="/EditProfile/Index" class="btn btn-primary">Edit Profile</a>
-		</div>
 
-	</div>
+		<form method="post">
+			<div class="profile-header">
+				<img src="https://via.placeholder.com/150" alt="Profile Picture">
+				<input asp-for="Name" type="text" />
+				<input asp-for="Surname" type="text" />
+			</div>
+
+			<div class="profile-info">
+				<h2>About Me</h2>
+				<input asp-for="About" type="text" />
+				<h2>Experience</h2>
+				<input asp-for="Experience" type="text" />
+				<h2>Education</h2>
+				<input asp-for="Education" type="text" />
+				<h2>Skills</h2>
+				<input asp-for="Skills" type="text" />
+				<h2>Interests</h2>
+				<input asp-for="Interests" type="text" />
+				<h2>Social Media Accounts</h2>
+				<input asp-for="Socials" type="text" />
+				<div class="form-group">
+					<button id="send" type="submit" class="btn btn-primary">Kaydet</button>
+				</div>
+			</div>
+		</form>
+
 	</div>
 
 </body>

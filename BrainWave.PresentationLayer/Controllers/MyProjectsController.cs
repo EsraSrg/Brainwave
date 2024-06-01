@@ -19,8 +19,15 @@ namespace BrainWave.PresentationLayer.Controllers
         public async Task<IActionResult> Index()
         {
             var user = await _userManager.FindByNameAsync(User.Identity.Name);
+            // ProjectRequest tablosundan ProjectStatus true olan projectId'leri alıyoruz
+            var projectRequestIds = await _context.ProjectRequests
+                .Where(pr => pr.RequestStatus == true)
+                .Select(pr => pr.ProjectID)
+                .ToListAsync();
+
+            // UserProjects tablosunda bu projectId'lere sahip projeleri alıyoruz
             var myProjects = await _context.UserProjects
-                .Where(b => b.ProjectStatus == true && b.AppUserID == user.Id)
+                .Where(up => projectRequestIds.Contains(up.UserProjectID) && up.AppUserID == user.Id)
                 .ToListAsync();
 
             return View(myProjects);
