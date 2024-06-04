@@ -1,202 +1,190 @@
+@model BrainWave.DtoLayer.DataTransferObjects.AppUserInfoDtos;
+@{
+    Layout = null;
+}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Profilim</title>
-<link rel="stylesheet" href="style.css">
-<style>
-    h2 {
-        color: #f2f2f2c4; 
-    }
-    h1 {
-        color: #ffffff;
-    }
-    body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-        background-color:#02031a;
-    }
-    .container {
-        position: absolute;
-        z-index: 1;
-        top: 50%;
-        left: 50%; 
-        transform: translate(-50%, -50%); 
-        width: 750px;  /* Adjusted width for a wider layout */
-        padding: 40px;
-        background-color: rgba(255, 255, 255, 0.11);
-        border-radius: 5px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        text-align: center;
-        overflow-y: auto;
-        max-height: 80vh;
-        color: #ffffff;  /* Text color set to white */
-    }
-    .options {
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-    }
-    .option {
-        width: calc(45% - 20px);
-        background-color: rgba(240, 240, 240, 0.8);
-        padding: 20px;
-        margin-bottom: 20px;
-        border-radius: 5px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        cursor: pointer;
-        text-decoration: none;
-        color: rgb(224, 224, 224);
-    }
-    .option:hover {
-        background-color: rgba(224, 224, 224, 0.38);
-    }
-    .sidebar {
-        position: fixed;
-        left: 0;
-        top: 0;
-        width: 200px;
-        height: 100%;
-        background-color: rgba(167, 167, 167, 0.192);
-        padding-top: 20px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .sidebar a {
-        display: block;
-        width: 100%;
-        padding: 15px 20px;
-        margin: 10px 0;
-        color: #fff;
-        text-decoration: none;
-        text-align: center;
-    }
-    .sidebar a:hover {
-        background-color: #86858545;
-    }
-    .logo {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-bottom: 20px;
-        text-align: center;
-    }
-    .logo img {
-        width: 120px;
-        height: auto;
-        margin-right: 5px;
-    }
-    .logo h1 {
-        margin: 0;
-        color: #fff;
-        font-size: 24px;
-        cursor: pointer;
-    }
-    .top-right {
-        position: fixed;
-        top: 10px;
-        right: 10px;
-        display: flex;
-        gap: 20px;
-    }
-    .top-right a {
-        color: white;
-        text-decoration: none;
-        background-color: rgba(0, 0, 0, 0.5);
-        padding: 10px 20px;
-        border-radius: 5px;
-        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-    }
-    .top-right a:hover {
-        background-color: rgba(169, 169, 169, 0.332);
-    }
-    .profile-section {
-        text-align: left;
-        margin-bottom: 20px;
-    }
-    .profile-section img {
-        max-width: 150px;
-        border-radius: 50%;
-        margin-bottom: 20px;
-    }
-    .profile-section h2 {
-        margin-bottom: 10px;
-    }
-    .profile-section p {
-        margin: 5px 0;
-    }
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kullanıcı Profili</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #02031a;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            position: absolute;
+            z-index: 1;
+            top: 50%;
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            max-width: 800px; 
+            padding: 40px;
+            background-color: rgba(255, 255, 255, 0.11);
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .profile-header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .profile-header img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+        .profile-header h1 {
+            margin: 0;
+            color: #ffffff;
+        }
+        .profile-header p {
+            margin: 5px 0;
+            color: #666;
+        }
+        .profile-info {
+            border-top: 1px solid #ccc;
+            margin-top: 20px;
+            padding-top: 20px;
+        }
+        .profile-info h2 {
+            margin-top: 0;
+            color: #f1f1f1;
+        }
+        .profile-info p {
+            margin: 5px 0;
+            color: #e1e1e1;
+        }
+        .form-group {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .btn-primary {
+            background-color: #007bff;
+            border: none;
+            padding: 10px 20px;
+            color: #fff;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .btn-primary:hover {
+            background-color: #0056b3;
+        }
+        .sidebar {
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 200px;
+            height: 100%;
+            background-color: rgba(167, 167, 167, 0.192);
+            padding-top: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .sidebar a {
+            display: block;
+            width: 100%;
+            padding: 15px 20px;
+            margin: 10px 0;
+            color: #fff;
+            text-decoration: none;
+            text-align: center;
+        }
+        .sidebar a:hover {
+            background-color: #86858545;
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .logo img {
+            width: 120px;
+            height: auto;
+            margin-right: 5px;
+        }
+        .logo h1 {
+            margin: 0;
+            color: #fff;
+            font-size: 24px;
+            cursor: pointer;
+        }
+        .top-right {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            display: flex;
+            gap: 20px;
+        }
+        .top-right a {
+            color: white;
+            text-decoration: none;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 10px 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+        .top-right a:hover {
+            background-color: rgba(169, 169, 169, 0.332);
+        }
+    </style>
 </head>
 <body>
-<div id="background-animation"></div>
-<div class="background"></div>
-<div class="sidebar">
-    <div class="logo">
-        <a href="anasayfa.html">
-            <img src="images/img1.png" alt="Brainwave Logo">
-            <h1>Brainwave</h1>
-        </a>
+    <div id="background-animation"></div>
+    <div class="background"></div>
+    <div class="sidebar">
+        <div class="logo">
+            <a href="anasayfa.html">
+                <img src="images/img1.png" alt="Brainwave Logo">
+                <h1>Brainwave</h1>
+            </a>
+        </div>
+        <a href="anasayfa.html">Anasayfa</a>
+        <a href="profilim.html">Profilim</a>
+        <a href="mesajlar.html">Mesajlar</a>
+        <a href="baglantilarim.html">Bağlantılarım</a>
+        <a href="projelerim.html">Projelerim</a>
     </div>
-    <a href="anasayfa.html">Anasayfa</a>
-    <a href="profilim.html">Profilim</a>
-    <a href="mesajlar.html">Mesajlar</a>
-    <a href="baglantilarim.html">Bağlantılarım</a>
-    <a href="projelerim.html">Projelerim</a>
-</div>
-<div class="top-right">
-    <a href="giris.html">Çıkış Yap</a>
-    <a href="#">Ayarlar</a>
-</div>
-<div class="container">
-    <div class="profile-section">
-        <img src="images/profile.jpg" alt="Profile Picture">
-        <h2>İsim Soyisim</h2>
+    <div class="top-right">
+        <a href="giris.html">Çıkış Yap</a>
+        <a href="#">Ayarlar</a>
     </div>
-    <div class="profile-section">
-        <h2>Deneyim</h2>
-        <p>Şirket A - Pozisyon A (Tarih)</p>
-        <p>Şirket B - Pozisyon B (Tarih)</p>
-        <!-- Add more experience as needed -->
-    </div>
-    <div class="profile-section">
-        <h2>Eğitim</h2>
-        <p>Üniversite A - Derece (Tarih)</p>
-        <p>Üniversite B - Derece (Tarih)</p>
-        <!-- Add more education as needed -->
-    </div>
-    <div class="profile-section">
-        <h2>Projeler</h2>
-        <p>Proje A - Açıklama</p>
-        <p>Proje B - Açıklama</p>
-        <!-- Add more projects as needed -->
-    </div>
-    <div class="profile-section">
-        <h2>Beceriler</h2>
-        <p>Beceri A</p>
-        <p>Beceri B</p>
-        <!-- Add more skills as needed -->
-    </div>
-    <div class="profile-section">
-        <h2>İlgi Alanları</h2>
-        <p>İlgi Alanı A</p>
-        <p>İlgi Alanı B</p>
-        <!-- Add more interests as needed -->
-    </div>
-    <div class="profile-section">
-        <h2>Yorumlar</h2>
-        <p>Yorum A</p>
-        <p>Yorum B</p>
-        <!-- Add more comments as needed -->
-    </div>
-</div>
+    <div class="container">
+        <div class="profile-header">
+            <img src="https://via.placeholder.com/150" alt="Profile Picture">
+            <h1>@Model.Name @Model.Surname</h1>
+        </div>
 
-
-</script>
+        <div class="profile-info">
+            <h2>About Me</h2>
+            <p>@Model.About</p>
+            <h2>Experience</h2>
+            <p>@Model.Experience</p>
+            <h2>Education</h2>
+            <p>@Model.Education</p>
+            <h2>Skills</h2>
+            <p>@Model.Skills</p>
+            <h2>Interests</h2>
+            <p>@Model.Interests</p>
+            <h2>Social Media Accounts</h2>
+            <p>@Model.Socials</p>
+        </div>
+        <div class="form-group">
+            <a href="/EditProfile/Index" class="btn btn-primary">Edit Profile</a>
+        </div>
+    </div>
 </body>
 </html>
+
 
 
 
