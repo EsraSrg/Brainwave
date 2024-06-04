@@ -1,0 +1,137 @@
+﻿@model BrainWave.EntityLayer.Concrete.UserProject;
+@{
+	Layout = null;
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Kullanıcı Profili</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			background-color: #f5f5f5;
+			margin: 0;
+			padding: 0;
+		}
+
+		.container {
+			max-width: 800px;
+			margin: 20px auto;
+			background-color: #fff;
+			padding: 20px;
+			border-radius: 8px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		}
+
+		.profile-header {
+			text-align: center;
+			margin-bottom: 20px;
+		}
+
+			.profile-header img {
+				width: 150px;
+				height: 150px;
+				border-radius: 50%;
+				margin-bottom: 10px;
+			}
+
+			.profile-header h1 {
+				margin: 0;
+				color: #333;
+			}
+
+			.profile-header p {
+				margin: 5px 0;
+				color: #666;
+			}
+
+		.profile-info {
+			border-top: 1px solid #ccc;
+			margin-top: 20px;
+			padding-top: 20px;
+		}
+
+			.profile-info h2 {
+				margin-top: 0;
+				color: #333;
+			}
+
+			.profile-info p {
+				margin: 5px 0;
+				color: #666;
+			}
+	</style>
+</head>
+<body>
+
+	<div class="container">
+
+
+
+		<form asp-action="Index" method="post">
+			<div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+
+			<div class="profile-info">
+				<label asp-for="ProjectTitle" class="control-label"> Project Title:</label>
+				<input asp-for="ProjectTitle" class="form-control" />
+				<span asp-validation-for="ProjectTitle" class="text-danger"></span>
+			</div>
+
+			<div class="form-group">
+				<label asp-for="ProjectDescription" class="control-label"> Project Desc:</label>
+				<input asp-for="ProjectDescription" class="form-control" />
+				<span asp-validation-for="ProjectDescription" class="text-danger"></span>
+			</div>
+			<div class="form-group">
+				<label asp-for="ProjectCategories" class="control-label"> Project Categories:</label>
+				<select asp-for="ProjectCategories" class="form-control">
+					<option value="Web Development">Web Development</option>
+					<option value="Software Development">Software Development</option>
+					<option value="Data Science & AI">Data Science & AI</option>
+					<option value="Finance">Finance</option>
+					<option value="E-commerce">E-commerce</option>
+					<option value="Education">Education</option>
+					<option value="Social & Communication">Social & Communication</option>
+					<option value="Personal & Hobby">Personal & Hobby</option>
+					<option value="Research & Development">Research & Development</option>
+					<option value="Healthcare">Healthcare</option>
+					<option value="Entertainment & Media">Entertainment & Media</option>
+				</select>
+			</div>
+			<div class="form-group">
+				<label asp-for="ProjectTools" class="control-label">Project Tools:</label>
+				<input asp-for="ProjectTools" class="form-control" />
+			</div>
+			<div class="form-group">
+				<label asp-for="ProjectSources" class="control-label">Project Sources:</label>
+				<input asp-for="ProjectSources" class="form-control" />
+			</div>
+
+			<div class="form-group">
+				<label asp-for="ProjectPrivacy" class="control-label">Project Privacy:</label>
+				<input asp-for="ProjectPrivacy" class="form-control" type="radio" value="true" /> Profilde Göster
+				<input asp-for="ProjectPrivacy" class="form-control" type="radio" value="false" /> Profilde Gösterme
+			</div>
+
+			<div class="form-group">
+				<label asp-for="ProjectStatus" class="control-label">Project Status:</label>
+				<input asp-for="ProjectStatus" class="form-control" type="radio" value="true" /> Aktif
+				<input asp-for="ProjectStatus" class="form-control" type="radio" value="false" /> Pasif
+			</div>
+
+			<div class="form-group">
+				<a asp-action="Task" asp-route-id="@Model.UserProjectID" class="btn btn-primary">Görev ekle</a>
+			</div>
+			<br />
+			<div class="form-group">
+				<button id="send" type="submit" class="btn btn-primary">Kaydet</button>
+			</div>
+		</form>
+
+	</div>
+
+</body>
+</html>

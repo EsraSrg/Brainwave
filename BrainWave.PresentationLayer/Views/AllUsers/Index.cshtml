@@ -1,0 +1,63 @@
+﻿@using BrainWave.EntityLayer.Concrete;
+@model List<AppUser>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>AllUsers</title>
+</head>
+<body>
+	<h2>All Users</h2>
+	<div>
+		<!-- kategori ekle -->
+		<form method="get" action="/AllUsers/Index">
+			<select name="category" id="category">
+				<option value="Web Development">Web Development</option>
+				<option value="Software Development">Software Development</option>
+				<option value="Data Science & AI">Data Science & AI</option>
+				<option value="Finance">Finance</option>
+				<option value="E-commerce">E-commerce</option>
+				<option value="Education">Education</option>
+				<option value="Social & Communication">Social & Communication</option>
+				<option value="Personal & Hobby">Personal & Hobby</option>
+				<option value="Research & Development">Research & Development</option>
+				<option value="Healthcare">Healthcare</option>
+				<option value="Entertainment & Media">Entertainment & Media</option>
+			</select>
+			<input type="submit" value="Search" />
+		</form>
+		@foreach (var user in Model)
+		{
+			<div class="review">
+				@if (!string.IsNullOrEmpty(user.UserName))
+				{
+					<h4>Title</h4>
+					<hr />
+					<p>@user.Name</p>
+
+					<h6>Desc</h6>
+					<p>@user.Surname</p>
+
+					<h6>Categories</h6>
+					<p>@user.UserName</p>
+
+					<h6>Tools</h6>
+					<p>@user.About</p>
+
+					<p>User ID: @user.Id</p>
+				}
+			</div>
+			<form action="/AllUsers/Index" method="post">
+				<input type="hidden" name="userId" value="@user.Id" />
+				<input type="text" name="message" placeholder="Enter your message" />
+				<input type="submit" value="Send Friend Request" class="btn btn-primary" />
+			</form>
+
+
+		}
+	</div>
+
+</body>
+</html>

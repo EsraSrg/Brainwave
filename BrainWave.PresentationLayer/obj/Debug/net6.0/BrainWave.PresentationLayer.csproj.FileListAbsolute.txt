@@ -618,3 +618,5 @@ C:\Users\Esra\Desktop\repos\Brainwave\BrainWave.PresentationLayer\obj\Debug\net6
 C:\Users\Esra\Desktop\repos\Brainwave\BrainWave.PresentationLayer\obj\Debug\net6.0\BrainWave.PresentationLayer.pdb
 C:\Users\Esra\Desktop\repos\Brainwave\BrainWave.PresentationLayer\obj\Debug\net6.0\BrainWave.PresentationLayer.genruntimeconfig.cache
 C:\Users\Esra\Desktop\repos\Brainwave\BrainWave.PresentationLayer\obj\Debug\net6.0\ref\BrainWave.PresentationLayer.dll
+C:\Users\atayb\OneDrive\Masaüstü\ders c#\BrainWave\Brainwave\BrainWave.PresentationLayer\bin\Debug\net6.0\MySqlConnector.dll
+C:\Users\atayb\OneDrive\Masaüstü\ders c#\BrainWave\Brainwave\BrainWave.PresentationLayer\bin\Debug\net6.0\Pomelo.EntityFrameworkCore.MySql.dll

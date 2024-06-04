@@ -1,0 +1,53 @@
+﻿@using BrainWave.EntityLayer.Concrete;
+@model List<ProjectRequest>
+
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta name="viewport" content="width=device-width" />
+	<title>Index</title>
+</head>
+<body>
+	<h2>Tasks</h2>
+    </h2>
+    @if (Model == null)
+    {
+        <p>An error occurred while loading participants for this project.</p>
+    }
+    else if (Model.Any())
+    {
+        foreach (var user in Model)
+        {
+            <div class="review">
+                @if (!string.IsNullOrEmpty(user.SenderUsername))
+                {
+                    <p>@user.SenderUsername</p>
+                }
+            </div>
+            <form action="/MyProjects/Task" method="post">
+                <input type="hidden" name="projectId" value="@user.ProjectID" />
+                <input type="hidden" name="userId" value="@user.ReceiverID" />
+                <input type="hidden" name="username" value="@user.SenderUsername" />
+                <input type="text" name="message" placeholder="Enter Task" />
+                <input type="submit"  value="Send Task" class="btn btn-primary" />
+            </form>
+        }
+    }
+    else
+    {
+        <p>No participants found for this project.</p>
+    }
+
+
+	@if (ViewData.ModelState.ErrorCount > 0)
+	{
+
+		@foreach (var error in ViewData.ModelState.Values.SelectMany(v => v.Errors))
+		{
+			<p style="color:red;">@error.ErrorMessage</p>
+		}
+
+	}
+</body>
+</html>

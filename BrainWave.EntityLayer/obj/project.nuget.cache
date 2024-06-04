@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "PkkzfHqnytdwDQSJJvubVWv7jMcUOxjx91z0WGU9MUzviAhHF6RwG3VqC03ZbyofJ/EySri9SIu7KrJ/n0Q2Hw==",
+  "dgSpecHash": "jGzLcxCLa9WZn3+Gk+zDh2oQ/wFBq3l6xkePMRfi0SaPIRm47NZ/rTha3M0uZeKrrGsxA/1oCTkMWMUZ5sQQIA==",
   "success": true,
   "projectFilePath": "C:\\Users\\atayb\\OneDrive\\Masaüstü\\ders c#\\BrainWave\\Brainwave\\BrainWave.EntityLayer\\BrainWave.EntityLayer.csproj",
   "expectedPackageFiles": [
@@ -57,6 +57,8 @@
     "C:\\Users\\atayb\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\atayb\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
     "C:\\Users\\atayb\\.nuget\\packages\\microsoft.win32.systemevents\\4.7.0\\microsoft.win32.systemevents.4.7.0.nupkg.sha512",
+    "C:\\Users\\atayb\\.nuget\\packages\\mysqlconnector\\2.0.0\\mysqlconnector.2.0.0.nupkg.sha512",
+    "C:\\Users\\atayb\\.nuget\\packages\\pomelo.entityframeworkcore.mysql\\6.0.0\\pomelo.entityframeworkcore.mysql.6.0.0.nupkg.sha512",
     "C:\\Users\\atayb\\.nuget\\packages\\system.buffers\\4.5.0\\system.buffers.4.5.0.nupkg.sha512",
     "C:\\Users\\atayb\\.nuget\\packages\\system.collections.immutable\\6.0.0\\system.collections.immutable.6.0.0.nupkg.sha512",
     "C:\\Users\\atayb\\.nuget\\packages\\system.configuration.configurationmanager\\4.7.0\\system.configuration.configurationmanager.4.7.0.nupkg.sha512",

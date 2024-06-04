@@ -10,6 +10,7 @@ using Newtonsoft.Json.Linq;
 
 namespace BrainWave.PresentationLayer.Controllers
 {
+	//proje istekleri
 	public class SeeRequestsController : Controller
 	{
 		private readonly UserManager<AppUser> _userManager;
@@ -25,43 +26,58 @@ namespace BrainWave.PresentationLayer.Controllers
 		}
 
 		[HttpGet]
-		public async Task<IActionResult> Index(SendRequestDto sendRequestDto)
+		public async Task<IActionResult> Index()
 		{
-			var user = await _userManager.FindByNameAsync(User.Identity.Name);
-			var seeRequests = await _context.ProjectRequests
-				.Where(x => x.ReceiverID == user.Id && sendRequestDto.RequestStatus == false)
-				.ToListAsync();
+			try
+			{
+				var user = await _userManager.FindByNameAsync(User.Identity.Name);
+				if (user == null)
+				{
+					return RedirectToAction("Login", "Account"); // Kullanıcı bulunamazsa login sayfasına yönlendir
+				}
 
-			return View(seeRequests);
+				var seeRequests = await _context.ProjectRequests
+					.Where(x => x.ReceiverID == user.Id && x.RequestStatus == false)
+					.ToListAsync();
+
+				if (seeRequests == null || !seeRequests.Any())
+				{
+					ModelState.AddModelError(string.Empty, "No pending requests found.");
+				}
+
+				return View(seeRequests);
+			}
+			catch (Exception ex)
+			{
+				ModelState.AddModelError(string.Empty, $"An error occurred while processing your request: {ex.Message}");
+				return View(new List<ProjectRequest>());
+			}
 		}
 
-
-		//tekrarbakkkkkk istegi onaylamak için belki başka sayfaya yonlendirir
 		[HttpPost]
 		public async Task<IActionResult> Index(int requestId)
 		{
-			var request = await _context.ProjectRequests
-				.FirstOrDefaultAsync(x => x.ProjectRequestID == requestId);
+			try
+			{
+				var request = await _context.ProjectRequests
+					.FirstOrDefaultAsync(x => x.ProjectRequestID == requestId);
 
-			//var request = await _context.ProjectRequests.FindAsync(requestId);
-			if (request != null)
-			{
-				var values = new ProjectRequest();
-				values.RequestStatus = true;
-				//request.RequestStatus = true;
-				_context.SaveChanges(); // Save the changes to the database
-			}
-			else
-			{
-				// ModelState.IsValid false ise, hata mesajları ekle
-				foreach (var error in ModelState.Values.SelectMany(x => x.Errors))
+				if (request != null)
 				{
-					// Hata mesajlarını ModelState'e ekleyin
-					ModelState.AddModelError(string.Empty, error.ErrorMessage);
+					request.RequestStatus = true;
+					await _context.SaveChangesAsync();
+				}
+				else
+				{
+					ModelState.AddModelError(string.Empty, "Request not found.");
 				}
 			}
+			catch (Exception ex)
+			{
+				ModelState.AddModelError(string.Empty, $"An error occurred while processing your request: {ex.Message}");
+			}
 
-			return View(request);
+			return RedirectToAction("Index"); // İşlem tamamlandığında tekrar Index'e yönlendir
 		}
 	}
 }

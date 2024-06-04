@@ -2362,6 +2362,19 @@
           }
         }
       },
+      "MySqlConnector/2.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/MySqlConnector.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/MySqlConnector.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "NETCore.MailKit/2.1.0": {
         "type": "package",
         "dependencies": {
@@ -2545,6 +2558,24 @@
         },
         "runtime": {
           "lib/netstandard2.0/NuGet.Versioning.dll": {}
+        }
+      },
+      "Pomelo.EntityFrameworkCore.MySql/6.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.Relational": "[6.0.0, 7.0.0)",
+          "Microsoft.Extensions.DependencyInjection": "6.0.0",
+          "MySqlConnector": "2.0.0"
+        },
+        "compile": {
+          "lib/net6.0/Pomelo.EntityFrameworkCore.MySql.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Pomelo.EntityFrameworkCore.MySql.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Portable.BouncyCastle/1.9.0": {
@@ -4281,7 +4312,8 @@
           "FluentValidation.AspNetCore": "11.3.0",
           "FluentValidation.DependencyInjectionExtensions": "11.9.1",
           "Microsoft.EntityFrameworkCore": "6.0.16",
-          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.16"
+          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.16",
+          "Pomelo.EntityFrameworkCore.MySql": "6.0.0"
         },
         "compile": {
           "bin/placeholder/BrainWave.BusinessLayer.dll": {}
@@ -4298,7 +4330,8 @@
           "Microsoft.AspNetCore.Identity": "2.2.0",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "6.0.16",
           "Microsoft.EntityFrameworkCore": "6.0.16",
-          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.16"
+          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.16",
+          "Pomelo.EntityFrameworkCore.MySql": "6.0.0"
         },
         "compile": {
           "bin/placeholder/BrainWave.DataAccessLayer.dll": {}
@@ -4329,7 +4362,8 @@
           "Microsoft.AspNetCore.Identity": "2.2.0",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "6.0.16",
           "Microsoft.EntityFrameworkCore": "6.0.16",
-          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.16"
+          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.16",
+          "Pomelo.EntityFrameworkCore.MySql": "6.0.0"
         },
         "compile": {
           "bin/placeholder/BrainWave.EntityLayer.dll": {}
@@ -7554,6 +7588,35 @@
         "mimekit.nuspec"
       ]
     },
+    "MySqlConnector/2.0.0": {
+      "sha512": "EY0KXqQas+QvdZQU0NPkqBSfJitWAl8IUCg0v/Qn0P7f/KApJTFJFm8czYWoDPyewUjPHrAnE/cSYzzSFGc8Ng==",
+      "type": "package",
+      "path": "mysqlconnector/2.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "lib/net45/MySqlConnector.dll",
+        "lib/net45/MySqlConnector.xml",
+        "lib/net461/MySqlConnector.dll",
+        "lib/net461/MySqlConnector.xml",
+        "lib/net471/MySqlConnector.dll",
+        "lib/net471/MySqlConnector.xml",
+        "lib/net5.0/MySqlConnector.dll",
+        "lib/net5.0/MySqlConnector.xml",
+        "lib/net6.0/MySqlConnector.dll",
+        "lib/net6.0/MySqlConnector.xml",
+        "lib/netcoreapp3.1/MySqlConnector.dll",
+        "lib/netcoreapp3.1/MySqlConnector.xml",
+        "lib/netstandard2.0/MySqlConnector.dll",
+        "lib/netstandard2.0/MySqlConnector.xml",
+        "lib/netstandard2.1/MySqlConnector.dll",
+        "lib/netstandard2.1/MySqlConnector.xml",
+        "logo.png",
+        "mysqlconnector.2.0.0.nupkg.sha512",
+        "mysqlconnector.nuspec"
+      ]
+    },
     "NETCore.MailKit/2.1.0": {
       "sha512": "+1C0sg4YJQczp/2RVrVbKLIntg7Mou7Ie5M01UBiAsxmIarjfBRlCgKK4sEbPyGask52VRKV29/Zi+41B6LPXA==",
       "type": "package",
@@ -7743,6 +7806,20 @@
         "lib/netstandard2.0/NuGet.Versioning.dll",
         "nuget.versioning.6.6.1.nupkg.sha512",
         "nuget.versioning.nuspec"
+      ]
+    },
+    "Pomelo.EntityFrameworkCore.MySql/6.0.0": {
+      "sha512": "iWloXFjpN6BllZA9oPqZTW9mNtFV5Q6DFv0WwFyh1IuOJ71btS3ifTwpLmaFXSlXzuEU9o7Rul0dU0WiwkOq0Q==",
+      "type": "package",
+      "path": "pomelo.entityframeworkcore.mysql/6.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "icon.png",
+        "lib/net6.0/Pomelo.EntityFrameworkCore.MySql.dll",
+        "lib/net6.0/Pomelo.EntityFrameworkCore.MySql.xml",
+        "pomelo.entityframeworkcore.mysql.6.0.0.nupkg.sha512",
+        "pomelo.entityframeworkcore.mysql.nuspec"
       ]
     },
     "Portable.BouncyCastle/1.9.0": {
@@ -11842,7 +11919,8 @@
       "Microsoft.EntityFrameworkCore.SqlServer >= 6.0.16",
       "Microsoft.EntityFrameworkCore.Tools >= 6.0.16",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 6.0.16",
-      "NETCore.MailKit >= 2.1.0"
+      "NETCore.MailKit >= 2.1.0",
+      "Pomelo.EntityFrameworkCore.MySql >= 6.0.0"
     ]
   },
   "packageFolders": {
@@ -11929,6 +12007,10 @@
           "NETCore.MailKit": {
             "target": "Package",
             "version": "[2.1.0, )"
+          },
+          "Pomelo.EntityFrameworkCore.MySql": {
+            "target": "Package",
+            "version": "[6.0.0, )"
           }
         },
         "imports": [

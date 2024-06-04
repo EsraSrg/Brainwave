@@ -3,6 +3,7 @@ using BrainWave.BusinessLayer.Concrete;
 using BrainWave.DataAccessLayer.Abstract;
 using BrainWave.DataAccessLayer.Concrete;
 using BrainWave.DataAccessLayer.EntityFramework;
+using BrainWave.DataAccessLayer.Repostories;
 using BrainWave.EntityLayer.Concrete;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -14,6 +15,18 @@ builder.Services.AddIdentity<AppUser, AppRole>().AddEntityFrameworkStores<Contex
 
 builder.Services.AddScoped<IProjectRequestDal, EfProjectRequestDal>();
 builder.Services.AddScoped<IProjectRequestService, ProjectRequestManager>();
+builder.Services.AddScoped<IFriendRequestService, FriendRequestManager>();
+builder.Services.AddScoped<IFriendRequestDal, EfFriendRequestDal>();
+builder.Services.AddScoped<ITaskRequestService, TaskRequestManager>();
+builder.Services.AddScoped<ITaskRequestDal, EfTaskRequestDal>();
+
+builder.Services.AddScoped<ProjectRepostory>();
+
+
+//var connectionstring = builder.Configuration.GetConnectionString("MySqlConn");
+
+
+
 
 var app = builder.Build();
 

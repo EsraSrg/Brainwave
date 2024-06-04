@@ -63,7 +63,7 @@ namespace BrainWave.PresentationLayer.Controllers
 
 			_projectRequestService.TInsert(values);
 
-			return RedirectToAction("Index", "Deneme");
+			return RedirectToAction("Index", "AllProjects");
 		}
 	}
 }

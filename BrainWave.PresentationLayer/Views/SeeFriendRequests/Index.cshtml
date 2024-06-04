@@ -1,0 +1,41 @@
+﻿@using BrainWave.EntityLayer.Concrete;
+@model List<UserRequest>
+
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta name="viewport" content="width=device-width" />
+	<title>Index</title>
+</head>
+<body>
+	<h2>All Users</h2>
+	<div>
+		@foreach (var request in Model)
+		{
+			<div class="review">
+				<a asp-controller="UserProfile" asp-action="Index" asp-route-username="@request.SenderUsername">
+					<h3>@request.SenderUsername</h3>
+				</a>
+				<h6>Mesaj</h6>
+				<p>@request.RequestMessage</p>
+
+				<form asp-controller="SeeRequests" asp-action="Index" method="post">
+					<input type="hidden" name="requestId" value="@request.UserRequestID" />
+					<button type="submit">Accept</button>
+				</form>
+			</div>
+		}
+	</div>
+
+	@if (ViewData.ModelState.ErrorCount > 0)
+	{
+
+		@foreach (var error in ViewData.ModelState.Values.SelectMany(v => v.Errors))
+		{
+			<p style="color:red;">@error.ErrorMessage</p>
+		}
+
+	}
+</body>
+</html>

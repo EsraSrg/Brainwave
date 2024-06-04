@@ -27,6 +27,15 @@
 			</div>
 		}
 	</div>
+	
+	@if (ViewData.ModelState.ErrorCount > 0)
+	{
 
+			@foreach (var error in ViewData.ModelState.Values.SelectMany(v => v.Errors))
+			{
+				<p style="color:red;">@error.ErrorMessage</p>
+			}
+		
+	}
 </body>
 </html>

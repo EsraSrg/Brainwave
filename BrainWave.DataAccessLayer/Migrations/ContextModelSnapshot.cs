@@ -101,6 +101,9 @@ namespace BrainWave.DataAccessLayer.Migrations
                     b.Property<DateTimeOffset?>("LockoutEnd")
                         .HasColumnType("datetimeoffset");
 
+                    b.Property<string>("MainInterest")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -137,6 +140,9 @@ namespace BrainWave.DataAccessLayer.Migrations
 
                     b.Property<bool>("TwoFactorEnabled")
                         .HasColumnType("bit");
+
+                    b.Property<string>("Type")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("UserName")
                         .HasMaxLength(256)
@@ -192,23 +198,48 @@ namespace BrainWave.DataAccessLayer.Migrations
                     b.ToTable("ProjectRequests");
                 });
 
-            modelBuilder.Entity("BrainWave.EntityLayer.Concrete.UserParticipatingProject", b =>
+            modelBuilder.Entity("BrainWave.EntityLayer.Concrete.ProjectTask", b =>
                 {
-                    b.Property<int>("UserParticipatingProjectID")
+                    b.Property<int>("ProjectTaskID")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("UserParticipatingProjectID"), 1L, 1);
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ProjectTaskID"), 1L, 1);
 
-                    b.Property<int>("ProjectID")
+                    b.Property<int?>("ProjectID")
                         .HasColumnType("int");
 
-                    b.Property<int>("UserID")
+                    b.Property<int?>("ProjectTaskID1")
                         .HasColumnType("int");
 
-                    b.HasKey("UserParticipatingProjectID");
+                    b.Property<int?>("ReceiverID")
+                        .HasColumnType("int");
 
-                    b.ToTable("UserParticipatingProjects");
+                    b.Property<string>("ReceiverUsername")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int?>("SenderID")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime?>("TaskDeadline")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("TaskDescription")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("TaskFinishedNote")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("TaskStatus")
+                        .HasColumnType("bit");
+
+                    b.HasKey("ProjectTaskID");
+
+                    b.HasIndex("ProjectTaskID1");
+
+                    b.ToTable("ProjectTasks");
                 });
 
             modelBuilder.Entity("BrainWave.EntityLayer.Concrete.UserProject", b =>
@@ -259,6 +290,43 @@ namespace BrainWave.DataAccessLayer.Migrations
                     b.HasIndex("AppUserID");
 
                     b.ToTable("UserProjects");
+                });
+
+            modelBuilder.Entity("BrainWave.EntityLayer.Concrete.UserRequest", b =>
+                {
+                    b.Property<int>("UserRequestID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("UserRequestID"), 1L, 1);
+
+                    b.Property<int?>("ReceiverID")
+                        .HasColumnType("int");
+
+                    b.Property<string>("RelationshipType")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("RequestMessage")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("RequestStatus")
+                        .HasColumnType("bit");
+
+                    b.Property<int?>("SenderID")
+                        .HasColumnType("int");
+
+                    b.Property<string>("SenderUsername")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int?>("UserRequestID1")
+                        .HasColumnType("int");
+
+                    b.HasKey("UserRequestID");
+
+                    b.HasIndex("UserRequestID1");
+
+                    b.ToTable("UserRequests");
                 });
 
             modelBuilder.Entity("BrainWave.EntityLayer.Concrete.UserResource", b =>
@@ -409,6 +477,13 @@ namespace BrainWave.DataAccessLayer.Migrations
                         .HasForeignKey("ProjectRequestID1");
                 });
 
+            modelBuilder.Entity("BrainWave.EntityLayer.Concrete.ProjectTask", b =>
+                {
+                    b.HasOne("BrainWave.EntityLayer.Concrete.ProjectTask", null)
+                        .WithMany("ProjectTasks")
+                        .HasForeignKey("ProjectTaskID1");
+                });
+
             modelBuilder.Entity("BrainWave.EntityLayer.Concrete.UserProject", b =>
                 {
                     b.HasOne("BrainWave.EntityLayer.Concrete.AppUser", null)
@@ -416,6 +491,13 @@ namespace BrainWave.DataAccessLayer.Migrations
                         .HasForeignKey("AppUserID")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+                });
+
+            modelBuilder.Entity("BrainWave.EntityLayer.Concrete.UserRequest", b =>
+                {
+                    b.HasOne("BrainWave.EntityLayer.Concrete.UserRequest", null)
+                        .WithMany("UserRequests")
+                        .HasForeignKey("UserRequestID1");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<int>", b =>
@@ -477,6 +559,16 @@ namespace BrainWave.DataAccessLayer.Migrations
             modelBuilder.Entity("BrainWave.EntityLayer.Concrete.ProjectRequest", b =>
                 {
                     b.Navigation("ProjectRequests");
+                });
+
+            modelBuilder.Entity("BrainWave.EntityLayer.Concrete.ProjectTask", b =>
+                {
+                    b.Navigation("ProjectTasks");
+                });
+
+            modelBuilder.Entity("BrainWave.EntityLayer.Concrete.UserRequest", b =>
+                {
+                    b.Navigation("UserRequests");
                 });
 #pragma warning restore 612, 618
         }

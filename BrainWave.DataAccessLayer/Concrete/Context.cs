@@ -16,10 +16,13 @@ namespace BrainWave.DataAccessLayer.Concrete
 		{
 			optionsBuilder.UseSqlServer("server=LAPTOP-ONCVC9CR; initial catalog=BrainWave; integrated Security=true");
 		}
+		public DbSet<AppUser> AppUsers { get; set; }
 		public DbSet<UserProject> UserProjects { get; set; }
 		public DbSet<ProjectRequest> ProjectRequests { get; set; }
 		public DbSet<UserResource> UserResources { get; set; }
-		public DbSet<UserParticipatingProject> UserParticipatingProjects { get; set; }
+		public DbSet<UserRequest> UserRequests { get; set; }
+		public DbSet<ProjectTask> ProjectTasks { get; set; }
+
 
 		//ilişkileri tanımlıyoruz
 		//protected override void OnModelCreating(ModelBuilder builder)

@@ -81,6 +81,10 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[6.0.16, )"
+            },
+            "Pomelo.EntityFrameworkCore.MySql": {
+              "target": "Package",
+              "version": "[6.0.0, )"
             }
           },
           "imports": [
@@ -170,6 +174,10 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[6.0.16, )"
+            },
+            "Pomelo.EntityFrameworkCore.MySql": {
+              "target": "Package",
+              "version": "[6.0.0, )"
             }
           },
           "imports": [
@@ -336,6 +344,10 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[6.0.16, )"
+            },
+            "Pomelo.EntityFrameworkCore.MySql": {
+              "target": "Package",
+              "version": "[6.0.0, )"
             }
           },
           "imports": [

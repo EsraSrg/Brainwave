@@ -24,6 +24,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWxsUmVzb3VyY2VzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/atayb/OneDrive/Masaüstü/ders c\#/BrainWave/Brainwave/BrainWave.PresentationLayer/Views/AllUsers/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWxsVXNlcnNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/atayb/OneDrive/Masaüstü/ders c\#/BrainWave/Brainwave/BrainWave.PresentationLayer/Views/ConfirmMail/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29uZmlybU1haWxcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -40,12 +44,24 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRWRpdFByb2ZpbGVcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/atayb/OneDrive/Masaüstü/ders c\#/BrainWave/Brainwave/BrainWave.PresentationLayer/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/atayb/OneDrive/Masaüstü/ders c\#/BrainWave/Brainwave/BrainWave.PresentationLayer/Views/Login/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/atayb/OneDrive/Masaüstü/ders c\#/BrainWave/Brainwave/BrainWave.PresentationLayer/Views/MyProjects/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTXlQcm9qZWN0c1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/atayb/OneDrive/Masaüstü/ders c\#/BrainWave/Brainwave/BrainWave.PresentationLayer/Views/MyProjects/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTXlQcm9qZWN0c1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/atayb/OneDrive/Masaüstü/ders c\#/BrainWave/Brainwave/BrainWave.PresentationLayer/Views/MyProjects/Task.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTXlQcm9qZWN0c1xUYXNrLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/atayb/OneDrive/Masaüstü/ders c\#/BrainWave/Brainwave/BrainWave.PresentationLayer/Views/Profile/Index.cshtml]
@@ -54,6 +70,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/atayb/OneDrive/Masaüstü/ders c\#/BrainWave/Brainwave/BrainWave.PresentationLayer/Views/Register/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVnaXN0ZXJcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/atayb/OneDrive/Masaüstü/ders c\#/BrainWave/Brainwave/BrainWave.PresentationLayer/Views/SeeFriendRequests/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VlRnJpZW5kUmVxdWVzdHNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/atayb/OneDrive/Masaüstü/ders c\#/BrainWave/Brainwave/BrainWave.PresentationLayer/Views/SeeRequests/Index.cshtml]

@@ -7,10 +7,9 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>AllProjects</title>
-	<link rel="stylesheet" type="text/css" href="~/css/Style.css">
 </head>
 <body>
-	<h2>All Reviews</h2>
+	<h2>My Projects</h2>
 	<div>
 		@foreach (var project in Model)
 		{
@@ -42,16 +41,13 @@
 					{
 						<p>Profilde gösterilmeyecek.</p>
 					}
-
-					<h6>Status</h6>
+					
 					@if (project.ProjectStatus == true)
 					{
+						<h6>Status</h6>
 						<p>Aktif proje</p>
 					}
-					else
-					{
-						<p>Pasif proje.</p>
-					}
+					<a asp-action="Edit" asp-route-id="@project.UserProjectID" class="btn btn-primary">Düzenle</a>
 				}
 			</div>
 		}
