@@ -31,7 +31,7 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
         h2 {
-            color: #000000c4;
+            color: #ffffffc4;
         }
         .form-group {
             margin-bottom: 15px;
@@ -50,7 +50,7 @@
             color: #ff0000;
         }
         .btn-primary {
-            background-color: #007bff;
+            background-color: #4CAF50;
             border: none;
             padding: 10px 20px;
             color: #fff;
@@ -58,7 +58,7 @@
             cursor: pointer;
         }
         .btn-primary:hover {
-            background-color: #0056b3;
+            background-color: #2b8c2e6c;
         }
         .sidebar {
             position: fixed;
@@ -149,24 +149,24 @@
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
 
             <div class="form-group">
-                <label asp-for="ResourceTitle" class="control-label">Resource Title:</label>
+                <label asp-for="ResourceTitle" class="control-label">Başlık:</label>
                 <input asp-for="ResourceTitle" class="form-control" />
                 <span asp-validation-for="ResourceTitle" class="text-danger"></span>
             </div>
 
             <div class="form-group">
-                <label asp-for="ResourceDescription" class="control-label">Resource Desc:</label>
+                <label asp-for="ResourceDescription" class="control-label">Açıklama:</label>
                 <input asp-for="ResourceDescription" class="form-control" />
                 <span asp-validation-for="ResourceDescription" class="text-danger"></span>
             </div>
 
             <div class="form-group">
-                <label asp-for="ResourceAuthor" class="control-label">Resource Author:</label>
+                <label asp-for="ResourceAuthor" class="control-label">Yazar:</label>
                 <input asp-for="ResourceAuthor" class="form-control" />
             </div>
 
             <div class="form-group">
-                <label asp-for="ResourceCategories" class="control-label">Resource Categories:</label>
+                <label asp-for="ResourceCategories" class="control-label">Kategori:</label>
                 <select asp-for="ResourceCategories" class="form-control">
                     <option value="Web Development">Web Development</option>
                     <option value="Software Development">Software Development</option>
@@ -183,18 +183,18 @@
             </div>
 
             <div class="form-group">
-                <label asp-for="ResourceImage" class="control-label">Resource Image:</label>
+                <label asp-for="ResourceImage" class="control-label">Medya:</label>
                 <input asp-for="ResourceImage" class="form-control" type="file"/>
             </div>
 
             <div class="form-group">
-                <label asp-for="ResourceUrl" class="control-label">Resource Url:</label>
+                <label asp-for="ResourceUrl" class="control-label">URL:</label>
                 <input asp-for="ResourceUrl" class="form-control" type="url" />
             </div>
 
             <br />
             <div class="form-group">
-                <input type="submit" value="Add Resource" class="btn btn-primary" />
+                <input type="submit" value="Kaynak Ekle" class="btn btn-primary" />
             </div>
         </form>
     </div>
