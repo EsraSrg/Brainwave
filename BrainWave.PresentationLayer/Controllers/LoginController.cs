@@ -32,7 +32,7 @@ namespace BrainWave.PresentationLayer.Controllers
 				var user = await _userManager.FindByNameAsync(loginViewModel.Username);
 				if (user.EmailConfirmed == true)
 				{
-					return RedirectToAction("Index", "Profile");
+					return RedirectToAction("Index", "Home");
 				}
 			}
 			return View();

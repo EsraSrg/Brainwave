@@ -3,37 +3,148 @@
     Layout = null;
 }
 
-<form method="post">
-    <div asp-validation-summary="All"></div>
-    <div>
-        <label asp-for="Name"></label>
-        <input asp-for="Name" />
-        <span asp-validation-for="Name"></span>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brainwave</title>
+    <link rel="stylesheet" href="~/css/Style.css">
+    <style>
+        .container {
+            position: absolute;
+            z-index: 1;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 80%; /* Container'ın genişliğini ayarla */
+            max-width: 500px;
+            padding: 40px;
+            background-color: rgba(255, 255, 255, 0.062);
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            margin:0px;
+            color: #ffffff5f
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            color: #ccccccd7;
+            text-align: left;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+            display: flex;
+            flex-direction: column;
+        }
+
+            .form-group label,
+            .form-group input,
+            .form-group select {
+                width: 100%;
+            }
+
+        button {
+            display: inline-block;
+            width: calc(100% - 30px);
+            padding: 15px;
+            background-color: #1e3145;
+            color: #fff;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+            button:hover {
+                background-color: #313f4dd4;
+            }
+
+    </style>
+</head>
+<body>
+    <div id="background-animation"></div>
+    <div class="background"></div>
+    <div class="slogan-container">
+        <h1 class="slogan"></h1>
     </div>
-    <div>
-        <label asp-for="Surname"></label>
-        <input asp-for="Surname" />
-        <span asp-validation-for="Surname"></span>
+    <div class="container">
+        <h2> Hesap Oluştur</h2>
+        <form id="signupForm" method="post">
+            <div asp-validation-summary="All"></div>
+
+            <div class="form-group">
+                <div style="display: flex;">
+                    <div style="flex: 1; margin-right: 10px;">
+                        <label asp-for="Name"></label>
+                        <input asp-for="Name" />
+                        <span asp-validation-for="Name"></span>
+                    </div>
+                    <div style="flex: 1;">
+                        <label asp-for="Surname"></label>
+                        <input asp-for="Surname" />
+                        <span asp-validation-for="Surname"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label asp-for="Username"></label>
+                <input asp-for="Username" />
+                <span asp-validation-for="Username"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Type" class="control-label"> Kullanıcı Tipi:</label>
+                <select asp-for="Type" class="form-control">
+                    <option value="Mentor">Mentor</option>
+                    <option value="Menti">Menti</option>
+                    <option value="Standart">Standart</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label asp-for="Email"></label>
+                <input asp-for="Email" />
+                <span asp-validation-for="Email"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Password"></label>
+                <input asp-for="Password" type="password" />
+                <span asp-validation-for="Password"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ConfirmPassword"></label>
+                <input asp-for="ConfirmPassword" type="password" />
+                <span asp-validation-for="ConfirmPassword"></span>
+            </div>
+            <button type="submit">Üye Ol</button>
+        </form>
     </div>
-    <div>
-        <label asp-for="Username"></label>
-        <input asp-for="Username" />
-        <span asp-validation-for="Username"></span>
-    </div>
-    <div>
-        <label asp-for="Email"></label>
-        <input asp-for="Email" />
-        <span asp-validation-for="Email"></span>
-    </div>
-    <div>
-        <label asp-for="Password"></label>
-        <input asp-for="Password" type="password" />
-        <span asp-validation-for="Password"></span>
-    </div>
-    <div>
-        <label asp-for="ConfirmPassword"></label>
-        <input asp-for="ConfirmPassword" type="password" />
-        <span asp-validation-for="ConfirmPassword"></span>
-    </div>
-    <button type="submit">Register</button>
-</form>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="~/js/three.r134.min.js"></script>
+    <script src="~/js/vanta.net.min.js"></script>
+    <script>
+        VANTA.NET({
+            el: "#background-animation",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            scale: 1.00,
+            scaleMobile: 1.00,
+            color: 0xe6e6e6,
+            backgroundColor: 0xc0b25
+        });
+
+
+    </script>
+</body>
+</html>

@@ -39,6 +39,7 @@ namespace BrainWave.PresentationLayer.Controllers
                     Email = appUserRegisterDto.Email,
                     Name = appUserRegisterDto.Name,
                     Surname = appUserRegisterDto.Surname,
+                    Type = appUserRegisterDto.Type,
                     ConfirmCode = code
                 };
                 var result = await _userManager.CreateAsync(appUser, appUserRegisterDto.Password);

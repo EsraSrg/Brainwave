@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Esra\\Desktop\\repos\\Brainwave\\Brainwave\\BrainWave.PresentationLayer\\BrainWave.PresentationLayer.csproj": {}
+    "C:\\Users\\atayb\\OneDrive\\Masaüstü\\ders c#\\BrainWave\\Brainwave\\BrainWave.PresentationLayer\\BrainWave.PresentationLayer.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Esra\\Desktop\\repos\\Brainwave\\Brainwave\\BrainWave.BusinessLayer\\BrainWave.BusinessLayer.csproj": {
+    "C:\\Users\\atayb\\OneDrive\\Masaüstü\\ders c#\\BrainWave\\Brainwave\\BrainWave.BusinessLayer\\BrainWave.BusinessLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Esra\\Desktop\\repos\\Brainwave\\Brainwave\\BrainWave.BusinessLayer\\BrainWave.BusinessLayer.csproj",
+        "projectUniqueName": "C:\\Users\\atayb\\OneDrive\\Masaüstü\\ders c#\\BrainWave\\Brainwave\\BrainWave.BusinessLayer\\BrainWave.BusinessLayer.csproj",
         "projectName": "BrainWave.BusinessLayer",
-        "projectPath": "C:\\Users\\Esra\\Desktop\\repos\\Brainwave\\Brainwave\\BrainWave.BusinessLayer\\BrainWave.BusinessLayer.csproj",
-        "packagesPath": "C:\\Users\\Esra\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Esra\\Desktop\\repos\\Brainwave\\Brainwave\\BrainWave.BusinessLayer\\obj\\",
+        "projectPath": "C:\\Users\\atayb\\OneDrive\\Masaüstü\\ders c#\\BrainWave\\Brainwave\\BrainWave.BusinessLayer\\BrainWave.BusinessLayer.csproj",
+        "packagesPath": "C:\\Users\\atayb\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\atayb\\OneDrive\\Masaüstü\\ders c#\\BrainWave\\Brainwave\\BrainWave.BusinessLayer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Esra\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\atayb\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,21 +22,20 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Esra\\Desktop\\repos\\Brainwave\\Brainwave\\BrainWave.DataAccessLayer\\BrainWave.DataAccessLayer.csproj": {
-                "projectPath": "C:\\Users\\Esra\\Desktop\\repos\\Brainwave\\Brainwave\\BrainWave.DataAccessLayer\\BrainWave.DataAccessLayer.csproj"
+              "C:\\Users\\atayb\\OneDrive\\Masaüstü\\ders c#\\BrainWave\\Brainwave\\BrainWave.DataAccessLayer\\BrainWave.DataAccessLayer.csproj": {
+                "projectPath": "C:\\Users\\atayb\\OneDrive\\Masaüstü\\ders c#\\BrainWave\\Brainwave\\BrainWave.DataAccessLayer\\BrainWave.DataAccessLayer.csproj"
               },
-              "C:\\Users\\Esra\\Desktop\\repos\\Brainwave\\Brainwave\\BrainWave.DtoLayer\\BrainWave.DtoLayer.csproj": {
-                "projectPath": "C:\\Users\\Esra\\Desktop\\repos\\Brainwave\\Brainwave\\BrainWave.DtoLayer\\BrainWave.DtoLayer.csproj"
+              "C:\\Users\\atayb\\OneDrive\\Masaüstü\\ders c#\\BrainWave\\Brainwave\\BrainWave.DtoLayer\\BrainWave.DtoLayer.csproj": {
+                "projectPath": "C:\\Users\\atayb\\OneDrive\\Masaüstü\\ders c#\\BrainWave\\Brainwave\\BrainWave.DtoLayer\\BrainWave.DtoLayer.csproj"
               },
-              "C:\\Users\\Esra\\Desktop\\repos\\Brainwave\\Brainwave\\BrainWave.EntityLayer\\BrainWave.EntityLayer.csproj": {
-                "projectPath": "C:\\Users\\Esra\\Desktop\\repos\\Brainwave\\Brainwave\\BrainWave.EntityLayer\\BrainWave.EntityLayer.csproj"
+              "C:\\Users\\atayb\\OneDrive\\Masaüstü\\ders c#\\BrainWave\\Brainwave\\BrainWave.EntityLayer\\BrainWave.EntityLayer.csproj": {
+                "projectPath": "C:\\Users\\atayb\\OneDrive\\Masaüstü\\ders c#\\BrainWave\\Brainwave\\BrainWave.EntityLayer\\BrainWave.EntityLayer.csproj"
               }
             }
           }
@@ -104,21 +103,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Esra\\Desktop\\repos\\Brainwave\\Brainwave\\BrainWave.DataAccessLayer\\BrainWave.DataAccessLayer.csproj": {
+    "C:\\Users\\atayb\\OneDrive\\Masaüstü\\ders c#\\BrainWave\\Brainwave\\BrainWave.DataAccessLayer\\BrainWave.DataAccessLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Esra\\Desktop\\repos\\Brainwave\\Brainwave\\BrainWave.DataAccessLayer\\BrainWave.DataAccessLayer.csproj",
+        "projectUniqueName": "C:\\Users\\atayb\\OneDrive\\Masaüstü\\ders c#\\BrainWave\\Brainwave\\BrainWave.DataAccessLayer\\BrainWave.DataAccessLayer.csproj",
         "projectName": "BrainWave.DataAccessLayer",
-        "projectPath": "C:\\Users\\Esra\\Desktop\\repos\\Brainwave\\Brainwave\\BrainWave.DataAccessLayer\\BrainWave.DataAccessLayer.csproj",
-        "packagesPath": "C:\\Users\\Esra\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Esra\\Desktop\\repos\\Brainwave\\Brainwave\\BrainWave.DataAccessLayer\\obj\\",
+        "projectPath": "C:\\Users\\atayb\\OneDrive\\Masaüstü\\ders c#\\BrainWave\\Brainwave\\BrainWave.DataAccessLayer\\BrainWave.DataAccessLayer.csproj",
+        "packagesPath": "C:\\Users\\atayb\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\atayb\\OneDrive\\Masaüstü\\ders c#\\BrainWave\\Brainwave\\BrainWave.DataAccessLayer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Esra\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\atayb\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -126,15 +125,14 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Esra\\Desktop\\repos\\Brainwave\\Brainwave\\BrainWave.EntityLayer\\BrainWave.EntityLayer.csproj": {
-                "projectPath": "C:\\Users\\Esra\\Desktop\\repos\\Brainwave\\Brainwave\\BrainWave.EntityLayer\\BrainWave.EntityLayer.csproj"
+              "C:\\Users\\atayb\\OneDrive\\Masaüstü\\ders c#\\BrainWave\\Brainwave\\BrainWave.EntityLayer\\BrainWave.EntityLayer.csproj": {
+                "projectPath": "C:\\Users\\atayb\\OneDrive\\Masaüstü\\ders c#\\BrainWave\\Brainwave\\BrainWave.EntityLayer\\BrainWave.EntityLayer.csproj"
               }
             }
           }
@@ -198,21 +196,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Esra\\Desktop\\repos\\Brainwave\\Brainwave\\BrainWave.DtoLayer\\BrainWave.DtoLayer.csproj": {
+    "C:\\Users\\atayb\\OneDrive\\Masaüstü\\ders c#\\BrainWave\\Brainwave\\BrainWave.DtoLayer\\BrainWave.DtoLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Esra\\Desktop\\repos\\Brainwave\\Brainwave\\BrainWave.DtoLayer\\BrainWave.DtoLayer.csproj",
+        "projectUniqueName": "C:\\Users\\atayb\\OneDrive\\Masaüstü\\ders c#\\BrainWave\\Brainwave\\BrainWave.DtoLayer\\BrainWave.DtoLayer.csproj",
         "projectName": "BrainWave.DtoLayer",
-        "projectPath": "C:\\Users\\Esra\\Desktop\\repos\\Brainwave\\Brainwave\\BrainWave.DtoLayer\\BrainWave.DtoLayer.csproj",
-        "packagesPath": "C:\\Users\\Esra\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Esra\\Desktop\\repos\\Brainwave\\Brainwave\\BrainWave.DtoLayer\\obj\\",
+        "projectPath": "C:\\Users\\atayb\\OneDrive\\Masaüstü\\ders c#\\BrainWave\\Brainwave\\BrainWave.DtoLayer\\BrainWave.DtoLayer.csproj",
+        "packagesPath": "C:\\Users\\atayb\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\atayb\\OneDrive\\Masaüstü\\ders c#\\BrainWave\\Brainwave\\BrainWave.DtoLayer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Esra\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\atayb\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -220,15 +218,14 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Esra\\Desktop\\repos\\Brainwave\\Brainwave\\BrainWave.EntityLayer\\BrainWave.EntityLayer.csproj": {
-                "projectPath": "C:\\Users\\Esra\\Desktop\\repos\\Brainwave\\Brainwave\\BrainWave.EntityLayer\\BrainWave.EntityLayer.csproj"
+              "C:\\Users\\atayb\\OneDrive\\Masaüstü\\ders c#\\BrainWave\\Brainwave\\BrainWave.EntityLayer\\BrainWave.EntityLayer.csproj": {
+                "projectPath": "C:\\Users\\atayb\\OneDrive\\Masaüstü\\ders c#\\BrainWave\\Brainwave\\BrainWave.EntityLayer\\BrainWave.EntityLayer.csproj"
               }
             }
           }
@@ -280,21 +277,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Esra\\Desktop\\repos\\Brainwave\\Brainwave\\BrainWave.EntityLayer\\BrainWave.EntityLayer.csproj": {
+    "C:\\Users\\atayb\\OneDrive\\Masaüstü\\ders c#\\BrainWave\\Brainwave\\BrainWave.EntityLayer\\BrainWave.EntityLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Esra\\Desktop\\repos\\Brainwave\\Brainwave\\BrainWave.EntityLayer\\BrainWave.EntityLayer.csproj",
+        "projectUniqueName": "C:\\Users\\atayb\\OneDrive\\Masaüstü\\ders c#\\BrainWave\\Brainwave\\BrainWave.EntityLayer\\BrainWave.EntityLayer.csproj",
         "projectName": "BrainWave.EntityLayer",
-        "projectPath": "C:\\Users\\Esra\\Desktop\\repos\\Brainwave\\Brainwave\\BrainWave.EntityLayer\\BrainWave.EntityLayer.csproj",
-        "packagesPath": "C:\\Users\\Esra\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Esra\\Desktop\\repos\\Brainwave\\Brainwave\\BrainWave.EntityLayer\\obj\\",
+        "projectPath": "C:\\Users\\atayb\\OneDrive\\Masaüstü\\ders c#\\BrainWave\\Brainwave\\BrainWave.EntityLayer\\BrainWave.EntityLayer.csproj",
+        "packagesPath": "C:\\Users\\atayb\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\atayb\\OneDrive\\Masaüstü\\ders c#\\BrainWave\\Brainwave\\BrainWave.EntityLayer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Esra\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\atayb\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -302,7 +299,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -370,21 +366,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Esra\\Desktop\\repos\\Brainwave\\Brainwave\\BrainWave.PresentationLayer\\BrainWave.PresentationLayer.csproj": {
+    "C:\\Users\\atayb\\OneDrive\\Masaüstü\\ders c#\\BrainWave\\Brainwave\\BrainWave.PresentationLayer\\BrainWave.PresentationLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Esra\\Desktop\\repos\\Brainwave\\Brainwave\\BrainWave.PresentationLayer\\BrainWave.PresentationLayer.csproj",
+        "projectUniqueName": "C:\\Users\\atayb\\OneDrive\\Masaüstü\\ders c#\\BrainWave\\Brainwave\\BrainWave.PresentationLayer\\BrainWave.PresentationLayer.csproj",
         "projectName": "BrainWave.PresentationLayer",
-        "projectPath": "C:\\Users\\Esra\\Desktop\\repos\\Brainwave\\Brainwave\\BrainWave.PresentationLayer\\BrainWave.PresentationLayer.csproj",
-        "packagesPath": "C:\\Users\\Esra\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Esra\\Desktop\\repos\\Brainwave\\Brainwave\\BrainWave.PresentationLayer\\obj\\",
+        "projectPath": "C:\\Users\\atayb\\OneDrive\\Masaüstü\\ders c#\\BrainWave\\Brainwave\\BrainWave.PresentationLayer\\BrainWave.PresentationLayer.csproj",
+        "packagesPath": "C:\\Users\\atayb\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\atayb\\OneDrive\\Masaüstü\\ders c#\\BrainWave\\Brainwave\\BrainWave.PresentationLayer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Esra\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\atayb\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -392,21 +388,20 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Esra\\Desktop\\repos\\Brainwave\\Brainwave\\BrainWave.BusinessLayer\\BrainWave.BusinessLayer.csproj": {
-                "projectPath": "C:\\Users\\Esra\\Desktop\\repos\\Brainwave\\Brainwave\\BrainWave.BusinessLayer\\BrainWave.BusinessLayer.csproj"
+              "C:\\Users\\atayb\\OneDrive\\Masaüstü\\ders c#\\BrainWave\\Brainwave\\BrainWave.BusinessLayer\\BrainWave.BusinessLayer.csproj": {
+                "projectPath": "C:\\Users\\atayb\\OneDrive\\Masaüstü\\ders c#\\BrainWave\\Brainwave\\BrainWave.BusinessLayer\\BrainWave.BusinessLayer.csproj"
               },
-              "C:\\Users\\Esra\\Desktop\\repos\\Brainwave\\Brainwave\\BrainWave.DataAccessLayer\\BrainWave.DataAccessLayer.csproj": {
-                "projectPath": "C:\\Users\\Esra\\Desktop\\repos\\Brainwave\\Brainwave\\BrainWave.DataAccessLayer\\BrainWave.DataAccessLayer.csproj"
+              "C:\\Users\\atayb\\OneDrive\\Masaüstü\\ders c#\\BrainWave\\Brainwave\\BrainWave.DataAccessLayer\\BrainWave.DataAccessLayer.csproj": {
+                "projectPath": "C:\\Users\\atayb\\OneDrive\\Masaüstü\\ders c#\\BrainWave\\Brainwave\\BrainWave.DataAccessLayer\\BrainWave.DataAccessLayer.csproj"
               },
-              "C:\\Users\\Esra\\Desktop\\repos\\Brainwave\\Brainwave\\BrainWave.EntityLayer\\BrainWave.EntityLayer.csproj": {
-                "projectPath": "C:\\Users\\Esra\\Desktop\\repos\\Brainwave\\Brainwave\\BrainWave.EntityLayer\\BrainWave.EntityLayer.csproj"
+              "C:\\Users\\atayb\\OneDrive\\Masaüstü\\ders c#\\BrainWave\\Brainwave\\BrainWave.EntityLayer\\BrainWave.EntityLayer.csproj": {
+                "projectPath": "C:\\Users\\atayb\\OneDrive\\Masaüstü\\ders c#\\BrainWave\\Brainwave\\BrainWave.EntityLayer\\BrainWave.EntityLayer.csproj"
               }
             }
           }
@@ -481,7 +476,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }

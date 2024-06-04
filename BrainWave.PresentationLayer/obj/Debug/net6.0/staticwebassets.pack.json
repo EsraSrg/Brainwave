@@ -17,6 +17,10 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\atayb\\OneDrive\\Masaüstü\\ders c#\\BrainWave\\Brainwave\\BrainWave.PresentationLayer\\wwwroot\\images\\img1.png",
+      "PackagePath": "staticwebassets\\images\\img1.png"
+    },
+    {
       "Id": "C:\\Users\\atayb\\OneDrive\\Masaüstü\\ders c#\\BrainWave\\Brainwave\\BrainWave.PresentationLayer\\wwwroot\\js\\three.r134.min.js",
       "PackagePath": "staticwebassets\\js\\three.r134.min.js"
     },
