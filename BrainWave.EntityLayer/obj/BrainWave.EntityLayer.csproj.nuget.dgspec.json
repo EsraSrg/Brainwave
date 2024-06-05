@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\atayb\\OneDrive\\Masaüstü\\ders c#\\BrainWave\\Brainwave\\BrainWave.EntityLayer\\BrainWave.EntityLayer.csproj": {}
+    "C:\\Users\\Esra\\Desktop\\repos\\Brainwave\\Brainwave\\BrainWave.EntityLayer\\BrainWave.EntityLayer.csproj": {}
   },
   "projects": {
-    "C:\\Users\\atayb\\OneDrive\\Masaüstü\\ders c#\\BrainWave\\Brainwave\\BrainWave.EntityLayer\\BrainWave.EntityLayer.csproj": {
+    "C:\\Users\\Esra\\Desktop\\repos\\Brainwave\\Brainwave\\BrainWave.EntityLayer\\BrainWave.EntityLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\atayb\\OneDrive\\Masaüstü\\ders c#\\BrainWave\\Brainwave\\BrainWave.EntityLayer\\BrainWave.EntityLayer.csproj",
+        "projectUniqueName": "C:\\Users\\Esra\\Desktop\\repos\\Brainwave\\Brainwave\\BrainWave.EntityLayer\\BrainWave.EntityLayer.csproj",
         "projectName": "BrainWave.EntityLayer",
-        "projectPath": "C:\\Users\\atayb\\OneDrive\\Masaüstü\\ders c#\\BrainWave\\Brainwave\\BrainWave.EntityLayer\\BrainWave.EntityLayer.csproj",
-        "packagesPath": "C:\\Users\\atayb\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\atayb\\OneDrive\\Masaüstü\\ders c#\\BrainWave\\Brainwave\\BrainWave.EntityLayer\\obj\\",
+        "projectPath": "C:\\Users\\Esra\\Desktop\\repos\\Brainwave\\Brainwave\\BrainWave.EntityLayer\\BrainWave.EntityLayer.csproj",
+        "packagesPath": "C:\\Users\\Esra\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Esra\\Desktop\\repos\\Brainwave\\Brainwave\\BrainWave.EntityLayer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\atayb\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Esra\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,6 +22,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -89,7 +90,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }
