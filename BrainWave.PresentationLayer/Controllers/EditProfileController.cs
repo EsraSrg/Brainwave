@@ -43,6 +43,16 @@ namespace BrainWave.PresentationLayer.Controllers
 				user.Skills = appUserInfoDtos.Skills;
 				user.Interests = appUserInfoDtos.Interests;
 
+				//if(appUserInfoDtos.ProfileImage != null)
+				//{
+				//	var extention = Path.GetExtension(appUserInfoDtos.ProfileImage.FileName);
+				//	var newimagename = Guid.NewGuid()+extention;
+				//	var location = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/images/", newimagename);
+				//	var stream = new FileStream(location, FileMode.Create);
+				//	appUserInfoDtos.ProfileImage.CopyTo(stream);
+				//	user.ProfileImagePath = newimagename;
+				//}
+
 				var result = await _userManager.UpdateAsync(user);
 				if (result.Succeeded)
 				{
@@ -51,5 +61,7 @@ namespace BrainWave.PresentationLayer.Controllers
 			}
 			return View();
 		}
+
+
 	}
 }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.Http;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -16,5 +17,7 @@ namespace BrainWave.DtoLayer.DataTransferObjects.AppUserDtos
         public string Skills { get; set; }
 		public string Interests { get; set; } 
 		public string Socials { get; set; }
+		public IFormFile ProfileImage { get; set; }
+		public string ProfileImageName { get; set; }
 	}
 }

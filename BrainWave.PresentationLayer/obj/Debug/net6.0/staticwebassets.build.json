@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "/3RFib9arfRW91HutUj2EHKO6JbJAee6KDCzBYe+agw=",
+  "Hash": "jnHcl/rbtCDe4kMkgq4CsHhamMNDRmS7LsrfdgyrhU4=",
   "Source": "BrainWave.PresentationLayer",
   "BasePath": "_content/BrainWave.PresentationLayer",
   "Mode": "Default",
@@ -100,6 +100,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\atayb\\OneDrive\\Masaüstü\\ders c#\\BrainWave\\Brainwave\\BrainWave.PresentationLayer\\wwwroot\\images\\1f4b96a6-6ed1-4daf-aff5-c93d91261d00_anasayfa.png",
+      "SourceId": "BrainWave.PresentationLayer",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\atayb\\OneDrive\\Masaüstü\\ders c#\\BrainWave\\Brainwave\\BrainWave.PresentationLayer\\wwwroot\\",
+      "BasePath": "_content/BrainWave.PresentationLayer",
+      "RelativePath": "images/1f4b96a6-6ed1-4daf-aff5-c93d91261d00_anasayfa.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\1f4b96a6-6ed1-4daf-aff5-c93d91261d00_anasayfa.png"
     },
     {
       "Identity": "C:\\Users\\atayb\\OneDrive\\Masaüstü\\ders c#\\BrainWave\\Brainwave\\BrainWave.PresentationLayer\\wwwroot\\images\\img1.png",

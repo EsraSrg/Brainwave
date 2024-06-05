@@ -3,57 +3,217 @@
     Layout = null;
 }
 
-<h2>Kaynak Ekle</h2>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaynak Ekle</title>
+    <link rel="stylesheet" href="~/css/Style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #02031a;
+            color: #ffffff;
+        }
 
-<form asp-action="Index" method="post">
-    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        .container {
+            position: absolute;
+            z-index: 1;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            max-width: 800px;
+            padding: 40px;
+            background-color: rgba(255, 255, 255, 0.11);
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
 
-    <div class="form-group">
-        <label asp-for="ResourceTitle" class="control-label"> Resource Title:</label>
-        <input asp-for="ResourceTitle" class="form-control" />
-        <span asp-validation-for="ResourceTitle" class="text-danger"></span>
+        h2 {
+            color: #ffffffc4;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .control-label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .text-danger {
+            color: #ff0000;
+        }
+
+        .btn-primary {
+            background-color: #4CAF50;
+            border: none;
+            padding: 10px 20px;
+            color: #fff;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+            .btn-primary:hover {
+                background-color: #2b8c2e6c;
+            }
+
+        .sidebar {
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 200px;
+            height: 100%;
+            background-color: rgba(167, 167, 167, 0.192);
+            padding-top: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+            .sidebar a {
+                display: block;
+                width: 100%;
+                padding: 15px 20px;
+                margin: 10px 0;
+                color: #fff;
+                text-decoration: none;
+                text-align: center;
+            }
+
+                .sidebar a:hover {
+                    background-color: #86858545;
+                }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+            .logo img {
+                width: 120px;
+                height: auto;
+                margin-right: 5px;
+            }
+
+            .logo h1 {
+                margin: 0;
+                color: #fff;
+                font-size: 24px;
+                cursor: pointer;
+            }
+
+        .top-right {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            display: flex;
+            gap: 20px;
+        }
+
+            .top-right a {
+                color: white;
+                text-decoration: none;
+                background-color: rgba(0, 0, 0, 0.5);
+                padding: 10px 20px;
+                border-radius: 5px;
+                box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            }
+
+                .top-right a:hover {
+                    background-color: rgba(169, 169, 169, 0.332);
+                }
+    </style>
+</head>
+<body>
+    <div id="background-animation"></div>
+    <div class="background"></div>
+    <div class="sidebar">
+        <div class="logo">
+            <a href="/Home/Index">
+                <img src="~/images/img1.png" alt="Brainwave Logo">
+                <h1>Brainwave</h1>
+            </a>
+        </div>
+        <a href="/Home/Index">Anasayfa</a>
+        <a href="/Profile/Index">Profilim</a>
+        <a href="/Baglantilarim/Index">Bağlantılarım</a>
+        <a href="/MyProjects/Index">Projelerim</a>
     </div>
-
-    <div class="form-group">
-        <label asp-for="ResourceDescription" class="control-label"> Resource Desc:</label>
-        <input asp-for="ResourceDescription" class="form-control" />
-        <span asp-validation-for="ResourceDescription" class="text-danger"></span>
+    <div class="top-right">
+        <a href="/Login/Index">Çıkış Yap</a>
+        <a href="#">Ayarlar</a>
     </div>
+    <div class="container">
+        <h2>Kaynak Ekle</h2>
 
-    <div class="form-group">
-        <label asp-for="ResourceAuthor" class="control-label"> Resource Author:</label>
-        <input asp-for="ResourceAuthor" class="form-control" />
-    </div>
+        <form asp-action="Index" method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
 
-    <div class="form-group">
-        <label asp-for="ResourceCategories" class="control-label"> Resource Categories:</label>
-        <select asp-for="ResourceCategories" class="form-control">
-            <option value="Web Development">Web Development</option>
-            <option value="Software Development">Software Development</option>
-            <option value="Data Science & AI">Data Science & AI</option>
-            <option value="Finance">Finance</option>
-            <option value="E-commerce">E-commerce</option>
-            <option value="Education">Education</option>
-            <option value="Social & Communication">Social & Communication</option>
-            <option value="Personal & Hobby">Personal & Hobby</option>
-            <option value="Research & Development">Research & Development</option>
-            <option value="Healthcare">Healthcare</option>
-            <option value="Entertainment & Media">Entertainment & Media</option>
-        </select>
-    </div>
+            <div class="form-group">
+                <label asp-for="ResourceTitle" class="control-label">Başlık:</label>
+                <input asp-for="ResourceTitle" class="form-control" />
+                <span asp-validation-for="ResourceTitle" class="text-danger"></span>
+            </div>
 
-    <div class="form-group">
-        <label asp-for="ResourceImage" class="control-label">Resource Image:</label>
-        <input asp-for="ResourceImage" class="form-control" type="file"/>
-    </div>
+            <div class="form-group">
+                <label asp-for="ResourceDescription" class="control-label">Açıklama:</label>
+                <input asp-for="ResourceDescription" class="form-control" />
+                <span asp-validation-for="ResourceDescription" class="text-danger"></span>
+            </div>
 
-    <div class="form-group">
-        <label asp-for="ResourceUrl" class="control-label">Resource Url:</label>
-        <input asp-for="ResourceUrl" class="form-control" type="url" />
-    </div>
+            <div class="form-group">
+                <label asp-for="ResourceAuthor" class="control-label">Yazar:</label>
+                <input asp-for="ResourceAuthor" class="form-control" />
+            </div>
 
-    <br />
-    <div class="form-group">
-        <input type="submit" value="Add Resource" class="btn btn-primary" />
+            <div class="form-group">
+                <label asp-for="ResourceCategories" class="control-label">Kategori:</label>
+                <select asp-for="ResourceCategories" class="form-control">
+                    <option value="Web Development">Web Development</option>
+                    <option value="Software Development">Software Development</option>
+                    <option value="Data Science & AI">Data Science & AI</option>
+                    <option value="Finance">Finance</option>
+                    <option value="E-commerce">E-commerce</option>
+                    <option value="Education">Education</option>
+                    <option value="Social & Communication">Social & Communication</option>
+                    <option value="Personal & Hobby">Personal & Hobby</option>
+                    <option value="Research & Development">Research & Development</option>
+                    <option value="Healthcare">Healthcare</option>
+                    <option value="Entertainment & Media">Entertainment & Media</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="ResourceImage" class="control-label">Medya:</label>
+                <input asp-for="ResourceImage" class="form-control" type="file" />
+            </div>
+
+            <div class="form-group">
+                <label asp-for="ResourceUrl" class="control-label">URL:</label>
+                <input asp-for="ResourceUrl" class="form-control" type="url" />
+            </div>
+
+            <br />
+            <div class="form-group">
+                <input type="submit" value="Kaynak Ekle" class="btn btn-primary" />
+            </div>
+        </form>
     </div>
-</form>
+</body>
+</html>
+

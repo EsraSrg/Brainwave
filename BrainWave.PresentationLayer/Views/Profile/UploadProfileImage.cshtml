@@ -1,0 +1,18 @@
+﻿@model BrainWave.EntityLayer.Concrete.AppUser;
+
+<form asp-action="UploadProfileImage" method="post" enctype="multipart/form-data">
+    <div class="form-group">
+        <label for="profileImage">Profil Resmi</label>
+        <input type="file" class="form-control" id="profileImage" name="profileImage" />
+    </div>
+    <button type="submit" class="btn btn-primary">Yükle</button>
+</form>
+@* 
+@if (!string.IsNullOrEmpty(Model.ProfileImagePath))
+{
+    <div class="mt-4">
+        <h4>Mevcut Profil Resmi:</h4>
+        <img src="@Model.ProfileImagePath" alt="Profile Image" style="max-width: 200px; max-height: 200px;" />
+    </div>
+}
+ *@

@@ -1,63 +1,235 @@
 ﻿@using BrainWave.EntityLayer.Concrete;
 @model List<AppUser>
 
+@{
+    Layout = null;
+}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>AllUsers</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Users</title>
+    <link rel="stylesheet" type="text/css" href="~/css/Style.css">
+    <style>
+        h2 {
+            color: #4A4A4A;
+        }
+
+        h1 {
+            color: #FFFFFF;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #02031a;
+            overflow-y: scroll;
+        }
+
+        .container {
+            position: absolute;
+            z-index: 1;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            max-width: 800px;
+            padding: 40px;
+            background-color: rgba(255, 255, 255, 0.15);
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        .options {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .option {
+            width: calc(90% - 5%);
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+            text-decoration: none;
+            color: black;
+            transition: background-color 0.3s ease;
+        }
+
+            .option:hover {
+                background-color: rgba(224, 224, 224, 0.5);
+            }
+
+        .sidebar {
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 200px;
+            height: 100%;
+            background-color: rgba(167, 167, 167, 0.192);
+            padding-top: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+            .sidebar a {
+                display: block;
+                width: 100%;
+                padding: 15px 20px;
+                margin: 10px 0;
+                color: #fff;
+                text-decoration: none;
+                text-align: center;
+            }
+
+                .sidebar a:hover {
+                    background-color: #86858545;
+                }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+            .logo img {
+                width: 120px;
+                height: auto;
+                margin-right: 5px;
+            }
+
+            .logo h1 {
+                margin: 0;
+                color: #fff;
+                font-size: 24px;
+                cursor: pointer;
+            }
+
+        .top-right {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            display: flex;
+            gap: 20px;
+        }
+
+            .top-right a {
+                color: white;
+                text-decoration: none;
+                background-color: rgba(0, 0, 0, 0.5);
+                padding: 10px 20px;
+                border-radius: 5px;
+                box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+                transition: background-color 0.3s ease;
+            }
+
+                .top-right a:hover {
+                    background-color: #2b8c2eed;
+                }
+
+        .review {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            text-align: left;
+        }
+
+        form {
+            margin-top: 20px;
+        }
+
+        input[type="text"], select {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+            input[type="submit"]:hover {
+                background-color: #45a049;
+            }
+    </style>
 </head>
 <body>
-	<h2>All Users</h2>
-	<div>
-		<!-- kategori ekle -->
-		<form method="get" action="/AllUsers/Index">
-			<select name="category" id="category">
-				<option value="Web Development">Web Development</option>
-				<option value="Software Development">Software Development</option>
-				<option value="Data Science & AI">Data Science & AI</option>
-				<option value="Finance">Finance</option>
-				<option value="E-commerce">E-commerce</option>
-				<option value="Education">Education</option>
-				<option value="Social & Communication">Social & Communication</option>
-				<option value="Personal & Hobby">Personal & Hobby</option>
-				<option value="Research & Development">Research & Development</option>
-				<option value="Healthcare">Healthcare</option>
-				<option value="Entertainment & Media">Entertainment & Media</option>
-			</select>
-			<input type="submit" value="Search" />
-		</form>
-		@foreach (var user in Model)
-		{
-			<div class="review">
-				@if (!string.IsNullOrEmpty(user.UserName))
-				{
-					<h4>Title</h4>
-					<hr />
-					<p>@user.Name</p>
-
-					<h6>Desc</h6>
-					<p>@user.Surname</p>
-
-					<h6>Categories</h6>
-					<p>@user.UserName</p>
-
-					<h6>Tools</h6>
-					<p>@user.About</p>
-
-					<p>User ID: @user.Id</p>
-				}
-			</div>
-			<form action="/AllUsers/Index" method="post">
-				<input type="hidden" name="userId" value="@user.Id" />
-				<input type="text" name="message" placeholder="Enter your message" />
-				<input type="submit" value="Send Friend Request" class="btn btn-primary" />
-			</form>
-
-
-		}
-	</div>
-
+    <div class="sidebar">
+        <div class="logo">
+            <a href="/Home/Index">
+                <img src="~/images/img1.png" alt="Brainwave Logo">
+                <h1>Brainwave</h1>
+            </a>
+        </div>
+        <a href="/Home/Index">Anasayfa</a>
+        <a href="/Profile/Index">Profilim</a>
+        <a href="/Baglantilarim/Index">Bağlantılarım</a>
+        <a href="/MyProjects/Index">Projelerim</a>
+    </div>
+    <div class="top-right">
+        <a href="/Login/Index">Çıkış Yap</a>
+        <a href="#">Ayarlar</a>
+    </div>
+    <div class="container">
+        <h2>All Users</h2>
+        <div>
+            <!-- kategori ekle -->
+            <form method="get" action="/AllUsers/Index">
+                <select name="category" id="category">
+                    <option value="Web Development">Web Development</option>
+                    <option value="Software Development">Software Development</option>
+                    <option value="Data Science & AI">Data Science & AI</option>
+                    <option value="Finance">Finance</option>
+                    <option value="E-commerce">E-commerce</option>
+                    <option value="Education">Education</option>
+                    <option value="Social & Communication">Social & Communication</option>
+                    <option value="Personal & Hobby">Personal & Hobby</option>
+                    <option value="Research & Development">Research & Development</option>
+                    <option value="Healthcare">Healthcare</option>
+                    <option value="Entertainment & Media">Entertainment & Media</option>
+                </select>
+                <input type="submit" value="Ara" />
+            </form>
+            @foreach (var user in Model)
+            {
+                <div class="review option">
+                    @if (!string.IsNullOrEmpty(user.UserName))
+                    {
+                        <h4>@user.Name @user.Surname</h4>
+                        <hr />
+                        <p><strong>Kullanıcı Adı:</strong> @user.UserName</p>
+                        <p><strong>İlgi Alanı:</strong> @user.MainInterest</p>
+                        <p><strong>Hakkında:</strong> @user.About</p>
+                    }
+                </div>
+                <form action="/AllUsers/Index" method="post">
+                    <input type="hidden" name="userId" value="@user.Id" />
+                    <input type="text" name="message" placeholder="Mesajınızı girin..." />
+                    <input type="submit" value="Bağlantı İsteği" class="btn btn-primary" />
+                </form>
+            }
+        </div>
+    </div>
 </body>
 </html>

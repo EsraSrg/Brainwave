@@ -13,13 +13,13 @@ namespace BrainWave.PresentationLayer.Controllers
 		private readonly UserManager<AppUser> _userManager;
 		private readonly Context _context;
 		private readonly ITaskRequestService _taskRequestService;
-        public MyProjectsController(UserManager<AppUser> userManager, Context context, ITaskRequestService taskRequestService)
-        {
-            _userManager = userManager;
-            _context = context;
-            _taskRequestService = taskRequestService;
-        }
-        [HttpGet]
+		public MyProjectsController(UserManager<AppUser> userManager, Context context, ITaskRequestService taskRequestService)
+		{
+			_userManager = userManager;
+			_context = context;
+			_taskRequestService = taskRequestService;
+		}
+		[HttpGet]
 		public async Task<IActionResult> Index()
 		{
 			var user = await _userManager.FindByNameAsync(User.Identity.Name);
@@ -45,8 +45,10 @@ namespace BrainWave.PresentationLayer.Controllers
 
 			if (project == null)
 			{
-				return NotFound();
+
+				return View();
 			}
+
 
 			return View(project);
 		}
@@ -87,28 +89,21 @@ namespace BrainWave.PresentationLayer.Controllers
 		[HttpPost]
 		public async Task<IActionResult> Task(int userId, int projectId, string message, string username)
 		{
-			try
-			{
-				var user = await _userManager.FindByNameAsync(User.Identity.Name);
+			var user = await _userManager.FindByNameAsync(User.Identity.Name);
 
-				var values = new ProjectTask();
-				values.TaskDescription = message;
-				values.TaskStatus = false;
-				values.ReceiverID = userId; // istek gonderilen kullanıcının ID'si
-				values.SenderID = user.Id;
-				values.ProjectID = projectId;
-				values.ReceiverUsername = username;
+			var values = new ProjectTask();
+			values.TaskDescription = message;
+			values.TaskStatus = false;
+			values.ReceiverID = userId; // istek gonderilen kullanıcının ID'si
+			values.SenderID = user.Id;
+			values.ProjectID = projectId;
+			values.ReceiverUsername = username;
 
-                _taskRequestService.TInsert(values);
-
-                await _context.SaveChangesAsync();
-            }
-			catch (Exception ex)
-			{
-				//ModelState.AddModelError(string.Empty, $"An error occurred while processing your request: {ex.Message}");
-				//return View(); // Hata durumunda aynı sayfaya dönerek hatayı göster
-			}
+			_taskRequestService.TInsert(values);
 			return RedirectToAction("Index", "MyProjects");
 		}
+
+
+
 	}
 }

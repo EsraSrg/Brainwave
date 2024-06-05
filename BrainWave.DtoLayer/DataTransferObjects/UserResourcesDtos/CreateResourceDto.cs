@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.Http;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -16,6 +17,6 @@ namespace BrainWave.DtoLayer.DataTransferObjects.UserResourcesDtos
 		public string? ResourceCategories { get; set; }
 		public string? ResourceUrl { get; set; }
 		public string? ResourceImage { get; set; }
-		public int AppUserID { get; set; }
+        public int AppUserID { get; set; }
 	}
 }

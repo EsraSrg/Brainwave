@@ -44,7 +44,7 @@ namespace BrainWave.PresentationLayer.Controllers
 				};
 				await _context.AddAsync(userResource);
 				_context.SaveChanges();
-				return RedirectToAction("Index", "Deneme");
+				return RedirectToAction("Index", "AllResources");
 			}
 			else
 			{

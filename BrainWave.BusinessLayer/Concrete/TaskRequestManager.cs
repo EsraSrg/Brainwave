@@ -13,7 +13,12 @@ namespace BrainWave.BusinessLayer.Concrete
     {
         private readonly ITaskRequestDal _taskRequestDal;
 
-        public void TDelete(ProjectTask t)
+		public TaskRequestManager(ITaskRequestDal taskRequestDal)
+		{
+			_taskRequestDal = taskRequestDal;
+		}
+
+		public void TDelete(ProjectTask t)
         {
             _taskRequestDal.Delete(t);
         }

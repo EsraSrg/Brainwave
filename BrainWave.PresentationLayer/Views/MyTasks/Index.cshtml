@@ -1,0 +1,39 @@
+﻿@using BrainWave.EntityLayer.Concrete;
+@model List<ProjectTask>
+
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta name="viewport" content="width=device-width" />
+	<title>Index</title>
+</head>
+<body>
+	<h2>Görevlerim</h2>
+	<div>
+		@foreach (var task in Model)
+		{
+			<div class="review">
+				<p>@task.TaskDescription</p>
+
+				<form action="/MyTasks/Index" method="post">
+					<input type="hidden" name="projecttaskId" value="@task.ProjectTaskID" />
+					<input type="text" name="message" value="@task.TaskFinishedNote" placeholder="Enter your finish note" />
+					<input type="submit" value="Tamamlandı" class="btn btn-primary" />
+				</form>
+			</div>
+		}
+	</div>
+
+	@if (ViewData.ModelState.ErrorCount > 0)
+	{
+
+		@foreach (var error in ViewData.ModelState.Values.SelectMany(v => v.Errors))
+		{
+			<p style="color:red;">@error.ErrorMessage</p>
+		}
+
+	}
+</body>
+</html>
+

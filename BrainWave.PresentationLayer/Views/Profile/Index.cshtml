@@ -68,7 +68,16 @@
 
 	<div class="container">
 		<div class="profile-header">
-			<img src="https://via.placeholder.com/150" alt="Profile Picture">
+			@* <img src="https://via.placeholder.com/150" alt="Profile Picture"> *@
+
+			@* <h3>Profil Resmi</h3> *@
+			@* @if (ViewBag.UniqueFileName != null)
+			{
+				<img src="/images/@ViewBag.UniqueFileName alt="Profile Image" style="max-width: 200px; max-height: 200px;" />
+			} *@
+			@* <img src="~/images/@ViewBag.UniqueFileName.png" alt="Profile Image" style="max-width: 200px; max-height: 200px;" />
+			<a href="/Profile/UploadProfileImage" class="btn btn-primary">Edit Profile</a>
+ *@
 			<h1>@Model.Name @Model.Surname</h1>
 		</div>
 

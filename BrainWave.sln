@@ -3,15 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34003.232
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BrainWave.EntityLayer", "BrainWave.EntityLayer\BrainWave.EntityLayer.csproj", "{51819D9F-501F-4A35-830A-FF8434E08784}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BrainWave.EntityLayer", "BrainWave.EntityLayer\BrainWave.EntityLayer.csproj", "{51819D9F-501F-4A35-830A-FF8434E08784}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BrainWave.DataAccessLayer", "BrainWave.DataAccessLayer\BrainWave.DataAccessLayer.csproj", "{3710BD1A-F83F-4D90-9CDB-C9BBFFF841B8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BrainWave.DataAccessLayer", "BrainWave.DataAccessLayer\BrainWave.DataAccessLayer.csproj", "{3710BD1A-F83F-4D90-9CDB-C9BBFFF841B8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BrainWave.DtoLayer", "BrainWave.DtoLayer\BrainWave.DtoLayer.csproj", "{417B786D-5CA4-42EC-8BE1-85016FD30216}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BrainWave.DtoLayer", "BrainWave.DtoLayer\BrainWave.DtoLayer.csproj", "{417B786D-5CA4-42EC-8BE1-85016FD30216}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BrainWave.BusinessLayer", "BrainWave.BusinessLayer\BrainWave.BusinessLayer.csproj", "{F2554368-9136-4365-B658-D4A76290BCEB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BrainWave.BusinessLayer", "BrainWave.BusinessLayer\BrainWave.BusinessLayer.csproj", "{F2554368-9136-4365-B658-D4A76290BCEB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BrainWave.PresentationLayer", "BrainWave.PresentationLayer\BrainWave.PresentationLayer.csproj", "{8375B371-E582-4197-BC9A-3B1CB2AE79D6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BrainWave.PresentationLayer", "BrainWave.PresentationLayer\BrainWave.PresentationLayer.csproj", "{8375B371-E582-4197-BC9A-3B1CB2AE79D6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

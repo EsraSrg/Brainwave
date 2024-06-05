@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -22,9 +23,11 @@ namespace BrainWave.EntityLayer.Concrete
 		public string? Socials { get; set; }
 		public string? Type { get; set; }
 		public int ConfirmCode { get; set; }
+		//public ImageConverter? Image { get; set; }
+		public string? ProfileImagePath { get; set; }
 
-        //one to many relationship
-        public List<UserProject> UserProjects { get; set; }
+		//one to many relationship
+		public List<UserProject> UserProjects { get; set; }
 
 	}
 }
