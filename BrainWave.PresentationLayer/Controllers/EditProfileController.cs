@@ -25,6 +25,7 @@ namespace BrainWave.PresentationLayer.Controllers
 			appUserInfoDtos.Education = values.Education;
 			appUserInfoDtos.Skills = values.Skills;
 			appUserInfoDtos.Interests = values.Interests;
+			appUserInfoDtos.Socials = values.Socials;
 			return View(appUserInfoDtos);
 		}
 

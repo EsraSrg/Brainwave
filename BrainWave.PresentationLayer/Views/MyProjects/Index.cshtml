@@ -1,58 +1,215 @@
 ﻿@using BrainWave.EntityLayer.Concrete;
 @model List<UserProject>
+@{
+    Layout = null;
+}
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>AllProjects</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AllProjects</title>
+    @* <link rel="stylesheet" type="text/css" href="~/css/Style.css"> *@
+    <style>
+        h2 {
+            color: #000000c4;
+        }
+
+        h1 {
+            color: #ffffff;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #02031a;
+        }
+
+        .container {
+            max-width: 600px;
+            align-items: center;
+            margin: 20px auto;
+            background-color: #ffffff90;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .options {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .option {
+            width: calc(90% - 20px);
+            background-color: rgba(240, 240, 240, 0.8);
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            text-decoration: none;
+            color: black;
+        }
+
+            .option:hover {
+                background-color: rgba(224, 224, 224, 0.38);
+            }
+
+        .sidebar {
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 200px;
+            height: 100%;
+            background-color: rgba(167, 167, 167, 0.192);
+            padding-top: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+            .sidebar a {
+                display: block;
+                width: 100%;
+                padding: 15px 20px;
+                margin: 10px 0;
+                color: #fff;
+                text-decoration: none;
+                text-align: center;
+            }
+
+                .sidebar a:hover {
+                    background-color: #86858545;
+                }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+            .logo img {
+                width: 120px;
+                height: auto;
+                margin-right: 5px;
+            }
+
+            .logo h1 {
+                margin: 0;
+                color: #fff;
+                font-size: 24px;
+                cursor: pointer;
+            }
+
+        .top-right {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            display: flex;
+            gap: 20px;
+        }
+
+            .top-right a {
+                color: white;
+                text-decoration: none;
+                background-color: rgba(0, 0, 0, 0.5);
+                padding: 10px 20px;
+                border-radius: 5px;
+                box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            }
+
+                .top-right a:hover {
+                    background-color: rgba(169, 169, 169, 0.332);
+                }
+
+        .edit-button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 10px;
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+            .edit-button:hover {
+                background-color: #45a049;
+            }
+    </style>
 </head>
 <body>
+    <div class="sidebar">
+        <div class="logo">
+            <a href="/Home/Index">
+                <img src="~/images/img1.png" alt="Brainwave Logo">
+                <h1>Brainwave</h1>
+            </a>
+        </div>
+        <a href="/Home/Index">Anasayfa</a>
+        <a href="/Profile/Index">Profilim</a>
+        <a href="/Baglantilarim/Index">Bağlantılarım</a>
+        <a href="/MyProjects/Index">Projelerim</a>
+    </div>
+    <div class="top-right">
+        <a href="/Login/Index">Çıkış Yap</a>
+        <a href="#">Ayarlar</a>
+    </div>
+    <div class="container">
 
-	<h2>My Projects</h2>
-	<div>
-		@foreach (var project in Model)
-		{
-			<div class="review">
-				@if (!string.IsNullOrEmpty(project.ProjectTitle))
-				{
-					<h4>Title</h4>
-					<hr />
-					<p>@project.ProjectTitle</p>
+        @foreach (var project in Model)
+        {
+            <div class="review option">
+                @if (!string.IsNullOrEmpty(project.ProjectTitle))
+                {
+                    <h4>Başlık</h4>
+                    <hr />
+                    <p>@project.ProjectTitle</p>
 
-					<h6>Desc</h6>
-					<p>@project.ProjectDescription</p>
+                    <h4>Açıklama</h4>
+                    <p>@project.ProjectDescription</p>
 
-					<h6>Categories</h6>
-					<p>@project.ProjectCategories</p>
+                    <h4>Kategori</h4>
+                    <p>@project.ProjectCategories</p>
 
-					<h6>Tools</h6>
-					<p>@project.ProjectTools</p>
+                    <h4>Araçlar</h4>
+                    <p>@project.ProjectTools</p>
 
-					<h6>Sources</h6>
-					<p>@project.ProjectTasks</p>
+                    <h4>Kaynaklar</h4>
+                    <p>@project.ProjectTasks</p>
 
-					<h6>Privacy</h6>
-					@if(project.ProjectPrivacy == true)
-					{
-						<p>Profilde gösterilecek.</p>
-					}
-					else
-					{
-						<p>Profilde gösterilmeyecek.</p>
-					}
-					
-					@if (project.ProjectStatus == true)
-					{
-						<h6>Status</h6>
-						<p>Aktif proje</p>
-					}
-					<a asp-action="Edit" asp-route-id="@project.UserProjectID" class="btn btn-primary">Düzenle</a>
-				}
-			</div>
-		}
-	</div>
+                    <h4>Güvenlik</h4>
+                    @if (project.ProjectPrivacy == true)
+                    {
+                        <p>Profilde gösterilecek.</p>
+                    }
+                    else
+                    {
+                        <p>Profilde gösterilmeyecek.</p>
+                    }
 
+                    <h4>Status</h4>
+                    @if (project.ProjectStatus == true)
+                    {
+                        <p>Aktif proje</p>
+                    }
+                    else
+                    {
+                        <p>Pasif proje.</p>
+                    }
+                    <a href="/MyProjects/Edit" class="edit-button">Düzenle</a>
+                }
+            </div>
+        }
+    </div>
+    </div>
 </body>
 </html>
+
