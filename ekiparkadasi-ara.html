@@ -20,19 +20,15 @@
             margin: 0;
             padding: 0;
             background-color: #02031a;
+            overflow-y: auto; /* Dikey scroll bar eklenmesi için */
         }
         .container {
-            position: absolute;
-            z-index: 1;
-            top: 50%;
-            left: 50%; 
-            transform: translate(-50%, -50%); 
-            max-width: 800px; 
-            padding: 40px;
-            background-color: rgba(255, 255, 255, 0.15);
-            border-radius: 10px;
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-            text-align: center; 
+            max-width: 600px; 
+            margin: 20px auto;
+            background-color: #ffffff40;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
         .options {
             display: flex;
@@ -40,10 +36,10 @@
             flex-wrap: wrap;
         }
         .option {
-            width: calc(90% - 5%);
+            width: calc(80% - 10%); /* Genişliği azalttık */
             background-color: rgba(255, 255, 255, 0.9);
-            padding: 20px;
-            margin-bottom: 20px;
+            padding: 10px; /* Padding'i azalttık */
+            margin-bottom: 10px; /* Margin'i azalttık */
             border-radius: 10px;
             box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
             cursor: pointer;
@@ -65,6 +61,7 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+            overflow-y: auto; /* Yan scroll bar eklenmesi için */
         }
         .sidebar a {
             display: block;
@@ -117,8 +114,8 @@
         }
         .review {
             background-color: rgba(255, 255, 255, 0.9);
-            padding: 20px;
-            margin-bottom: 20px;
+            padding: 10px; /* Padding'i azalttık */
+            margin-bottom: 10px; /* Margin'i azalttık */
             border-radius: 10px;
             box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
             text-align: left;
@@ -168,8 +165,8 @@
         <a href="#">Ayarlar</a>
     </div>
     <div class="container">
-        <h2>All Users</h2>
-        <div>
+        
+        
             <!-- kategori ekle -->
             <form method="get" action="/AllUsers/Index">
                 <select name="category" id="category">

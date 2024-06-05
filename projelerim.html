@@ -22,17 +22,13 @@
             background-color: #02031a;
         }
         .container {
-            position: absolute;
-            z-index: 1;
-            top: 50%;
-            left: 50%; 
-            transform: translate(-50%, -50%); 
-            max-width: 800px; 
-            padding: 40px;
-            background-color: rgba(255, 255, 255, 0.11);
-            border-radius: 5px;
+            max-width: 600px;
+            align-items: center; 
+            margin: 20px auto;
+            background-color: #ffffff90;
+            padding: 20px;
+            border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            text-align: center; 
         }
         .options {
             display: flex;
@@ -40,7 +36,7 @@
             flex-wrap: wrap;
         }
         .option {
-            width: calc(45% - 20px);
+            width: calc(90% - 20px);
             background-color: rgba(240, 240, 240, 0.8);
             padding: 20px;
             margin-bottom: 20px;
@@ -113,6 +109,20 @@
         .top-right a:hover {
             background-color: rgba(169, 169, 169, 0.332);
         }
+        .edit-button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 10px;
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .edit-button:hover {
+            background-color: #45a049;
+        }
     </style>
 </head>
 <body>
@@ -134,30 +144,29 @@
         <a href="#">Ayarlar</a>
     </div>
     <div class="container">
-        <h2>All Reviews</h2>
-        <div>
+        
             @foreach (var project in Model)
             {
                 <div class="review option">
                     @if (!string.IsNullOrEmpty(project.ProjectTitle))
                     {
-                        <h4>Title</h4>
+                        <h4>Başlık</h4>
                         <hr />
                         <p>@project.ProjectTitle</p>
 
-                        <h6>Desc</h6>
+                        <h4>Açıklama</h4>
                         <p>@project.ProjectDescription</p>
 
-                        <h6>Categories</h6>
+                        <h4>Kategori</h4>
                         <p>@project.ProjectCategories</p>
 
-                        <h6>Tools</h6>
+                        <h4>Araçlar</h4>
                         <p>@project.ProjectTools</p>
 
-                        <h6>Sources</h6>
+                        <h4>Kaynaklar</h4>
                         <p>@project.ProjectTasks</p>
 
-                        <h6>Privacy</h6>
+                        <h4>Güvenlik</h4>
                         @if(project.ProjectPrivacy == true)
                         {
                             <p>Profilde gösterilecek.</p>
@@ -167,7 +176,7 @@
                             <p>Profilde gösterilmeyecek.</p>
                         }
 
-                        <h6>Status</h6>
+                        <h4>Status</h4>
                         @if (project.ProjectStatus == true)
                         {
                             <p>Aktif proje</p>
@@ -176,6 +185,7 @@
                         {
                             <p>Pasif proje.</p>
                         }
+                        <a href="projelerimidüzenle.html" class="edit-button">Düzenle</a>
                     }
                 </div>
             }
@@ -183,3 +193,4 @@
     </div>
 </body>
 </html>
+
