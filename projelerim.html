@@ -120,6 +120,17 @@
             border-radius: 5px;
             cursor: pointer;
         }
+        .createproject-button{
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 10px;
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
         .edit-button:hover {
             background-color: #45a049;
         }
@@ -144,7 +155,7 @@
         <a href="#">Ayarlar</a>
     </div>
     <div class="container">
-        
+        <a href="projeolustur.html" class="createproject-button">Proje Oluştur</a>
             @foreach (var project in Model)
             {
                 <div class="review option">
@@ -186,6 +197,7 @@
                             <p>Pasif proje.</p>
                         }
                         <a href="projelerimidüzenle.html" class="edit-button">Düzenle</a>
+
                     }
                 </div>
             }
