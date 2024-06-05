@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BrainWave.DtoLayer")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+60ce42507e306352bf17427f66159cd64770108f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1ad24f673c288c7f397f12c599296ce9a823f861")]
 [assembly: System.Reflection.AssemblyProductAttribute("BrainWave.DtoLayer")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BrainWave.DtoLayer")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
