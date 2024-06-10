@@ -2,101 +2,223 @@
 @{
 	Layout = null;
 }
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Kullanıcı Profili</title>
-	<style>
-		body {
-			font-family: Arial, sans-serif;
-			background-color: #f5f5f5;
-			margin: 0;
-			padding: 0;
-		}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-		.container {
-			max-width: 800px;
-			margin: 20px auto;
-			background-color: #fff;
-			padding: 20px;
-			border-radius: 8px;
-			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-		}
+    <title>Kullanıcı Profili</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #02031a;
+            margin: 0;
+            padding: 0;
+        }
 
-		.profile-header {
-			text-align: center;
-			margin-bottom: 20px;
-		}
+        .container {
+            position: absolute;
+            z-index: 1;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            max-width: 800px;
+            padding: 40px;
+            background-color: rgba(255, 255, 255, 0.11);
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
 
-			.profile-header img {
-				width: 150px;
-				height: 150px;
-				border-radius: 50%;
-				margin-bottom: 10px;
-			}
+        .profile-header {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #fff;
+        }
 
-			.profile-header h1 {
-				margin: 0;
-				color: #333;
-			}
+            .profile-header img {
+                width: 150px;
+                height: 150px;
+                border-radius: 50%;
+                margin-bottom: 10px;
+            }
 
-			.profile-header p {
-				margin: 5px 0;
-				color: #666;
-			}
+            .profile-header h1 {
+                margin: 0;
+                color: #ffffff;
+            }
 
-		.profile-info {
-			border-top: 1px solid #ccc;
-			margin-top: 20px;
-			padding-top: 20px;
-		}
+            .profile-header p {
+                margin: 5px 0;
+                color: #666;
+            }
 
-			.profile-info h2 {
-				margin-top: 0;
-				color: #333;
-			}
+        .profile-info {
+            border-top: 1px solid #ccc;
+            margin-top: 20px;
+            padding-top: 20px;
+        }
 
-			.profile-info p {
-				margin: 5px 0;
-				color: #666;
-			}
-	</style>
+            .profile-info h2 {
+                margin-top: 0;
+                color: #f1f1f1;
+            }
+
+            .profile-info p {
+                margin: 5px 0;
+                color: #e1e1e1;
+            }
+
+        .form-group {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .btn-primary {
+            background-color: #4CAF50;
+            border: none;
+            padding: 10px 20px;
+            color: #fff;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+            .btn-primary:hover {
+                background-color: #0056b3;
+            }
+
+        .sidebar {
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 200px;
+            height: 100%;
+            background-color: rgba(167, 167, 167, 0.192);
+            padding-top: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+            .sidebar a {
+                display: block;
+                width: 100%;
+                padding: 15px 20px;
+                margin: 10px 0;
+                color: #fff;
+                text-decoration: none;
+                text-align: center;
+            }
+
+                .sidebar a:hover {
+                    background-color: #86858545;
+                }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+            .logo img {
+                width: 120px;
+                height: auto;
+                margin-right: 5px;
+            }
+
+            .logo h1 {
+                margin: 0;
+                color: #fff;
+                font-size: 24px;
+                cursor: pointer;
+            }
+
+        .top-right {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            display: flex;
+            gap: 20px;
+        }
+
+            .top-right a {
+                color: white;
+                text-decoration: none;
+                background-color: rgba(0, 0, 0, 0.5);
+                padding: 10px 20px;
+                border-radius: 5px;
+                box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            }
+
+                .top-right a:hover {
+                    background-color: rgba(169, 169, 169, 0.332);
+                }
+
+        .profile-info input[type="text"] {
+            width: 80%;
+            height: 20px;
+            font-size: 16px;
+        }
+
+    </style>
 </head>
 <body>
+    <div id="background-animation"></div>
+    <div class="background"></div>
+    <div class="sidebar">
+        <div class="logo">
+            <a href="/Home/Index">
+                <img src="~/images/img1.png" alt="Brainwave Logo">
+                <h1>Brainwave</h1>
+            </a>
+        </div>
+        <a href="/Home/Index">Anasayfa</a>
+        <a href="/Profile/Index">Profilim</a>
+        <a href="/Baglantilarim/Index">Bağlantılarım</a>
+        <a href="/MyProjects/Index">Projelerim</a>
+    </div>
+    <div class="top-right">
+        <a href="/Login/Index">Çıkış Yap</a>
+        <a href="#">Ayarlar</a>
+    </div>
+    <div class="container">
 
-	<div class="container">
 
+        <form method="post">
+            <div class="profile-header">
 
-		<form method="post">
-			<div class="profile-header">
-				<img src="https://via.placeholder.com/150" alt="Profile Picture">
-				<input asp-for="ProfileImage" class="form-control" type="file" />
-				<input asp-for="Name" type="text" />
-				<input asp-for="Surname" type="text" />
-			</div>
+                <h2>Ad Soyad:</h2>
+                <input asp-for="Name" type="text" />
+                <input asp-for="Surname" type="text" />
+            </div>
 
-			<div class="profile-info">
-				<h2>About Me</h2>
-				<input asp-for="About" type="text" />
-				<h2>Experience</h2>
-				<input asp-for="Experience" type="text" />
-				<h2>Education</h2>
-				<input asp-for="Education" type="text" />
-				<h2>Skills</h2>
-				<input asp-for="Skills" type="text" />
-				<h2>Interests</h2>
-				<input asp-for="Interests" type="text" />
-				<h2>Social Media Accounts</h2>
-				<input asp-for="Socials" type="text" />
-				<div class="form-group">
-					<button id="send" type="submit" class="btn btn-primary">Kaydet</button>
-				</div>
-			</div>
-		</form>
+            <div class="profile-info">
+                <h2>Hakkımda</h2>
+                <input asp-for="About" type="text" />
+                <h2>Deneyim</h2>
+                <input asp-for="Experience" type="text" />
+                <h2>Eğitim</h2>
+                <input asp-for="Education" type="text" />
+                <h2>Yetenekler</h2>
+                <input asp-for="Skills" type="text" />
+                <h2>İlgi Alanları</h2>
+                <input asp-for="Interests" type="text" />
+                <h2>Sosyal Medya</h2>
+                <input asp-for="Socials" type="text" />
+                <div class="form-group">
+                    <button id="send" type="submit" class="btn btn-primary">Kaydet</button>
+                </div>
+            </div>
+        </form>
 
-	</div>
-
+    </div>
 </body>
 </html>
+
+
+
