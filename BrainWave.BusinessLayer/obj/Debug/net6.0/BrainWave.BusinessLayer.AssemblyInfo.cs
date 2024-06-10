@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BrainWave.BusinessLayer")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1ad24f673c288c7f397f12c599296ce9a823f861")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e1a4ad1a487b44b1d82b3c19a5cd6eee944f1eb4")]
 [assembly: System.Reflection.AssemblyProductAttribute("BrainWave.BusinessLayer")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BrainWave.BusinessLayer")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

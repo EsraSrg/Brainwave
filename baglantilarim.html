@@ -6,8 +6,8 @@
 <title>Brainwave</title>
 <link rel="stylesheet" href="style.css">
 <style>
-    h2 {
-        color: #000000c4; 
+    h2 ,h3, li,ul,p {
+        color: #ffffffc4; 
     }
     h1 {
         color: #ffffff;
@@ -31,25 +31,25 @@
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         text-align: center; 
     }
-    .options {
+    .user-list {
         display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
     }
-    .option {
-        width: calc(45% - 20px);
+    .user {
+        display: flex;
+        align-items: center;
         background-color: rgba(240, 240, 240, 0.8);
         padding: 20px;
         margin-bottom: 20px;
         border-radius: 5px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        cursor: pointer;
-        text-decoration: none;
-        color: black;
+        width: 100%;
+        max-width: 700px;
+        text-align: left;
     }
-    .option:hover {
-        background-color: rgba(224, 224, 224, 0.38);
-    }
+   
+  
     .sidebar {
         position: fixed;
         left: 0;
@@ -110,6 +110,21 @@
     .top-right a:hover {
         background-color: rgba(169, 169, 169, 0.332);
     }
+
+    .button {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #2f8132;
+}
+
 </style>
 </head>
 <body>
@@ -130,13 +145,31 @@
 </div>
 <div class="top-right">
     <a href="giris.html">Çıkış Yap</a>
-    <a href="#">Ayarlar</a>
+    <a href="ayarlar.html">Ayarlar</a>
 </div>
 <div class="container">
-  
+
+    <button class="button" onclick="window.location.href='bisteklerim.html';">Bağlantı İsteklerini Gör</button>
+
+    <h2>Bağlantılarım</h2>
+    
+    @if (Model.Any())
+    {
+        <ul>
+            @foreach (var connection in Model)
+            {
+                <li>
+                    <h3>@connection.UserName</h3>
+                    <p>@connection.Email</p>
+                </li>
+            }
+        </ul>
+    }
+    else
+    {
+        <p>Hiç onaylanmış bağlantınız yok.</p>
+    }
+    
 </div>
-
-
-</script>
 </body>
 </html>

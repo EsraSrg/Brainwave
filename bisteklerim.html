@@ -3,14 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Anasayfa</title>
+<title>Brainwave</title>
 <link rel="stylesheet" href="style.css">
 <style>
     h2 {
         color: #000000c4; 
     }
-    h1 {
-        color: #ffffff;
+    h1 ,h2,h3 {
+        color: #ffffffd1;
     }
     body {
         font-family: Arial, sans-serif;
@@ -110,6 +110,34 @@
     .top-right a:hover {
         background-color: rgba(169, 169, 169, 0.332);
     }
+    .button {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #2f8132;
+}
+.button2 {
+    background-color: #a10c0c;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button2:hover {
+    background-color: #520909;
+}
+
+
 </style>
 </head>
 <body>
@@ -133,48 +161,33 @@
     <a href="ayarlar.html">Ayarlar</a>
 </div>
 <div class="container">
-    <h1>Hoş Geldiniz!</h1>
-    <div class="options">
-        <a href="ekiparkadasi-ara.html" class="option">
-            <h2>Ekip Arkadaşı Ara</h2>
-            
-        </a>
-        <a href="proje-ara.html" class="option">
-            <h2>Proje Ara</h2>
-            
-        </a>
-        <a href="mentor-ara.html" class="option">
-            <h2>Mentor/Menti Ara</h2>
-           
-        </a>
-        <a href="kaynakincele.html" class="option">
-            <h2>Kaynak İncele</h2>
-            
-        </a>
-    </div>
-    
+    <h2>Bekleyen İstekler</h2>
+
+    @if (Model.Any())
+    {
+        <ul>
+            @foreach (var request in Model)
+            {
+                <li>
+                    <h3>@request.SenderUsername</h3>
+                    <form asp-action="ApproveRequest" method="post">
+                        <input type="hidden" name="requestId" value="@request.UserRequestID" />
+                        <button class="button"type="submit">Onayla</button>
+                    </form>
+                    <form asp-action="RejectRequest" method="post">
+                        <input type="hidden" name="requestId" value="@request.UserRequestID" />
+                        <button class="button2" type="submit">Reddet</button>
+                    </form>
+                </li>
+            }
+        </ul>
+    }
+    else
+    {
+        <p>Bekleyen isteğiniz yok.</p>
+    }
 </div>
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="three.r134.min.js"></script>
-<script src="vanta.net.min.js"></script>
-<script>
-VANTA.NET({
-  el: "#background-animation",
-  mouseControls: true,
-  touchControls: true,
-  gyroControls: false,
-  minHeight: 200.00,
-  minWidth: 200.00,
-  scale: 1.00,
-  scaleMobile: 1.00,
-  color: 0xe6e6e6,
-  backgroundColor: 0xc0b25
-});
-
-
-</script>
 
 
 </body>
 </html>
-
