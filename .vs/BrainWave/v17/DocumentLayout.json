@@ -1,0 +1,853 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\mgund\\OneDrive\\Masa\u00FCst\u00FC\\brainwave\\Brainwave\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8375B371-E582-4197-BC9A-3B1CB2AE79D6}|BrainWave.PresentationLayer\\BrainWave.PresentationLayer.csproj|c:\\users\\mgund\\onedrive\\masa\u00FCst\u00FC\\brainwave\\brainwave\\brainwave.presentationlayer\\controllers\\registercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8375B371-E582-4197-BC9A-3B1CB2AE79D6}|BrainWave.PresentationLayer\\BrainWave.PresentationLayer.csproj|solutionrelative:brainwave.presentationlayer\\controllers\\registercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8375B371-E582-4197-BC9A-3B1CB2AE79D6}|BrainWave.PresentationLayer\\BrainWave.PresentationLayer.csproj|c:\\users\\mgund\\onedrive\\masa\u00FCst\u00FC\\brainwave\\brainwave\\brainwave.presentationlayer\\views\\register\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8375B371-E582-4197-BC9A-3B1CB2AE79D6}|BrainWave.PresentationLayer\\BrainWave.PresentationLayer.csproj|solutionrelative:brainwave.presentationlayer\\views\\register\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{417B786D-5CA4-42EC-8BE1-85016FD30216}|BrainWave.DtoLayer\\BrainWave.DtoLayer.csproj|c:\\users\\mgund\\onedrive\\masa\u00FCst\u00FC\\brainwave\\brainwave\\brainwave.dtolayer\\datatransferobjects\\appuserdtos\\appuserregisterdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{417B786D-5CA4-42EC-8BE1-85016FD30216}|BrainWave.DtoLayer\\BrainWave.DtoLayer.csproj|solutionrelative:brainwave.dtolayer\\datatransferobjects\\appuserdtos\\appuserregisterdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8375B371-E582-4197-BC9A-3B1CB2AE79D6}|BrainWave.PresentationLayer\\BrainWave.PresentationLayer.csproj|c:\\users\\mgund\\onedrive\\masa\u00FCst\u00FC\\brainwave\\brainwave\\brainwave.presentationlayer\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8375B371-E582-4197-BC9A-3B1CB2AE79D6}|BrainWave.PresentationLayer\\BrainWave.PresentationLayer.csproj|solutionrelative:brainwave.presentationlayer\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8375B371-E582-4197-BC9A-3B1CB2AE79D6}|BrainWave.PresentationLayer\\BrainWave.PresentationLayer.csproj|c:\\users\\mgund\\onedrive\\masa\u00FCst\u00FC\\brainwave\\brainwave\\brainwave.presentationlayer\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{8375B371-E582-4197-BC9A-3B1CB2AE79D6}|BrainWave.PresentationLayer\\BrainWave.PresentationLayer.csproj|solutionrelative:brainwave.presentationlayer\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51819D9F-501F-4A35-830A-FF8434E08784}|BrainWave.EntityLayer\\BrainWave.EntityLayer.csproj|c:\\users\\mgund\\onedrive\\masa\u00FCst\u00FC\\brainwave\\brainwave\\brainwave.entitylayer\\concrete\\approle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51819D9F-501F-4A35-830A-FF8434E08784}|BrainWave.EntityLayer\\BrainWave.EntityLayer.csproj|solutionrelative:brainwave.entitylayer\\concrete\\approle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51819D9F-501F-4A35-830A-FF8434E08784}|BrainWave.EntityLayer\\BrainWave.EntityLayer.csproj|c:\\users\\mgund\\onedrive\\masa\u00FCst\u00FC\\brainwave\\brainwave\\brainwave.entitylayer\\concrete\\appuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51819D9F-501F-4A35-830A-FF8434E08784}|BrainWave.EntityLayer\\BrainWave.EntityLayer.csproj|solutionrelative:brainwave.entitylayer\\concrete\\appuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3710BD1A-F83F-4D90-9CDB-C9BBFFF841B8}|BrainWave.DataAccessLayer\\BrainWave.DataAccessLayer.csproj|c:\\users\\mgund\\onedrive\\masa\u00FCst\u00FC\\brainwave\\brainwave\\brainwave.dataaccesslayer\\concrete\\context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3710BD1A-F83F-4D90-9CDB-C9BBFFF841B8}|BrainWave.DataAccessLayer\\BrainWave.DataAccessLayer.csproj|solutionrelative:brainwave.dataaccesslayer\\concrete\\context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2554368-9136-4365-B658-D4A76290BCEB}|BrainWave.BusinessLayer\\BrainWave.BusinessLayer.csproj|c:\\users\\mgund\\onedrive\\masa\u00FCst\u00FC\\brainwave\\brainwave\\brainwave.businesslayer\\concrete\\usersmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2554368-9136-4365-B658-D4A76290BCEB}|BrainWave.BusinessLayer\\BrainWave.BusinessLayer.csproj|solutionrelative:brainwave.businesslayer\\concrete\\usersmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2554368-9136-4365-B658-D4A76290BCEB}|BrainWave.BusinessLayer\\BrainWave.BusinessLayer.csproj|c:\\users\\mgund\\onedrive\\masa\u00FCst\u00FC\\brainwave\\brainwave\\brainwave.businesslayer\\concrete\\userprojectmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2554368-9136-4365-B658-D4A76290BCEB}|BrainWave.BusinessLayer\\BrainWave.BusinessLayer.csproj|solutionrelative:brainwave.businesslayer\\concrete\\userprojectmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2554368-9136-4365-B658-D4A76290BCEB}|BrainWave.BusinessLayer\\BrainWave.BusinessLayer.csproj|c:\\users\\mgund\\onedrive\\masa\u00FCst\u00FC\\brainwave\\brainwave\\brainwave.businesslayer\\concrete\\taskrequestmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2554368-9136-4365-B658-D4A76290BCEB}|BrainWave.BusinessLayer\\BrainWave.BusinessLayer.csproj|solutionrelative:brainwave.businesslayer\\concrete\\taskrequestmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2554368-9136-4365-B658-D4A76290BCEB}|BrainWave.BusinessLayer\\BrainWave.BusinessLayer.csproj|c:\\users\\mgund\\onedrive\\masa\u00FCst\u00FC\\brainwave\\brainwave\\brainwave.businesslayer\\concrete\\projectrequestmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2554368-9136-4365-B658-D4A76290BCEB}|BrainWave.BusinessLayer\\BrainWave.BusinessLayer.csproj|solutionrelative:brainwave.businesslayer\\concrete\\projectrequestmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2554368-9136-4365-B658-D4A76290BCEB}|BrainWave.BusinessLayer\\BrainWave.BusinessLayer.csproj|c:\\users\\mgund\\onedrive\\masa\u00FCst\u00FC\\brainwave\\brainwave\\brainwave.businesslayer\\concrete\\friendrequestmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2554368-9136-4365-B658-D4A76290BCEB}|BrainWave.BusinessLayer\\BrainWave.BusinessLayer.csproj|solutionrelative:brainwave.businesslayer\\concrete\\friendrequestmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2554368-9136-4365-B658-D4A76290BCEB}|BrainWave.BusinessLayer\\BrainWave.BusinessLayer.csproj|c:\\users\\mgund\\onedrive\\masa\u00FCst\u00FC\\brainwave\\brainwave\\brainwave.businesslayer\\abstract\\iusersservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2554368-9136-4365-B658-D4A76290BCEB}|BrainWave.BusinessLayer\\BrainWave.BusinessLayer.csproj|solutionrelative:brainwave.businesslayer\\abstract\\iusersservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2554368-9136-4365-B658-D4A76290BCEB}|BrainWave.BusinessLayer\\BrainWave.BusinessLayer.csproj|c:\\users\\mgund\\onedrive\\masa\u00FCst\u00FC\\brainwave\\brainwave\\brainwave.businesslayer\\abstract\\iuserprojectservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2554368-9136-4365-B658-D4A76290BCEB}|BrainWave.BusinessLayer\\BrainWave.BusinessLayer.csproj|solutionrelative:brainwave.businesslayer\\abstract\\iuserprojectservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2554368-9136-4365-B658-D4A76290BCEB}|BrainWave.BusinessLayer\\BrainWave.BusinessLayer.csproj|c:\\users\\mgund\\onedrive\\masa\u00FCst\u00FC\\brainwave\\brainwave\\brainwave.businesslayer\\abstract\\iprojectrequestservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2554368-9136-4365-B658-D4A76290BCEB}|BrainWave.BusinessLayer\\BrainWave.BusinessLayer.csproj|solutionrelative:brainwave.businesslayer\\abstract\\iprojectrequestservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2554368-9136-4365-B658-D4A76290BCEB}|BrainWave.BusinessLayer\\BrainWave.BusinessLayer.csproj|c:\\users\\mgund\\onedrive\\masa\u00FCst\u00FC\\brainwave\\brainwave\\brainwave.businesslayer\\abstract\\igenericservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2554368-9136-4365-B658-D4A76290BCEB}|BrainWave.BusinessLayer\\BrainWave.BusinessLayer.csproj|solutionrelative:brainwave.businesslayer\\abstract\\igenericservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2554368-9136-4365-B658-D4A76290BCEB}|BrainWave.BusinessLayer\\BrainWave.BusinessLayer.csproj|c:\\users\\mgund\\onedrive\\masa\u00FCst\u00FC\\brainwave\\brainwave\\brainwave.businesslayer\\abstract\\ifriendrequestservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2554368-9136-4365-B658-D4A76290BCEB}|BrainWave.BusinessLayer\\BrainWave.BusinessLayer.csproj|solutionrelative:brainwave.businesslayer\\abstract\\ifriendrequestservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8375B371-E582-4197-BC9A-3B1CB2AE79D6}|BrainWave.PresentationLayer\\BrainWave.PresentationLayer.csproj|C:\\Users\\mgund\\OneDrive\\Masa\u00FCst\u00FC\\brainwave\\Brainwave\\brainwave.presentationlayer\\views\\allusers\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8375B371-E582-4197-BC9A-3B1CB2AE79D6}|BrainWave.PresentationLayer\\BrainWave.PresentationLayer.csproj|solutionrelative:brainwave.presentationlayer\\views\\allusers\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8375B371-E582-4197-BC9A-3B1CB2AE79D6}|BrainWave.PresentationLayer\\BrainWave.PresentationLayer.csproj|C:\\Users\\mgund\\OneDrive\\Masa\u00FCst\u00FC\\brainwave\\Brainwave\\brainwave.presentationlayer\\views\\allresources\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8375B371-E582-4197-BC9A-3B1CB2AE79D6}|BrainWave.PresentationLayer\\BrainWave.PresentationLayer.csproj|solutionrelative:brainwave.presentationlayer\\views\\allresources\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3710BD1A-F83F-4D90-9CDB-C9BBFFF841B8}|BrainWave.DataAccessLayer\\BrainWave.DataAccessLayer.csproj|c:\\users\\mgund\\onedrive\\masa\u00FCst\u00FC\\brainwave\\brainwave\\brainwave.dataaccesslayer\\migrations\\20240511134952_appuser_approle_added.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3710BD1A-F83F-4D90-9CDB-C9BBFFF841B8}|BrainWave.DataAccessLayer\\BrainWave.DataAccessLayer.csproj|solutionrelative:brainwave.dataaccesslayer\\migrations\\20240511134952_appuser_approle_added.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3710BD1A-F83F-4D90-9CDB-C9BBFFF841B8}|BrainWave.DataAccessLayer\\BrainWave.DataAccessLayer.csproj|c:\\users\\mgund\\onedrive\\masa\u00FCst\u00FC\\brainwave\\brainwave\\brainwave.dataaccesslayer\\brainwave.dataaccesslayer.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{3710BD1A-F83F-4D90-9CDB-C9BBFFF841B8}|BrainWave.DataAccessLayer\\BrainWave.DataAccessLayer.csproj|solutionrelative:brainwave.dataaccesslayer\\brainwave.dataaccesslayer.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8375B371-E582-4197-BC9A-3B1CB2AE79D6}|BrainWave.PresentationLayer\\BrainWave.PresentationLayer.csproj|C:\\Users\\mgund\\OneDrive\\Masa\u00FCst\u00FC\\brainwave\\Brainwave\\brainwave.presentationlayer\\views\\confirmmail\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8375B371-E582-4197-BC9A-3B1CB2AE79D6}|BrainWave.PresentationLayer\\BrainWave.PresentationLayer.csproj|solutionrelative:brainwave.presentationlayer\\views\\confirmmail\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3710BD1A-F83F-4D90-9CDB-C9BBFFF841B8}|BrainWave.DataAccessLayer\\BrainWave.DataAccessLayer.csproj|c:\\users\\mgund\\onedrive\\masa\u00FCst\u00FC\\brainwave\\brainwave\\brainwave.dataaccesslayer\\repostories\\projectrepostory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3710BD1A-F83F-4D90-9CDB-C9BBFFF841B8}|BrainWave.DataAccessLayer\\BrainWave.DataAccessLayer.csproj|solutionrelative:brainwave.dataaccesslayer\\repostories\\projectrepostory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{417B786D-5CA4-42EC-8BE1-85016FD30216}|BrainWave.DtoLayer\\BrainWave.DtoLayer.csproj|c:\\users\\mgund\\onedrive\\masa\u00FCst\u00FC\\brainwave\\brainwave\\brainwave.dtolayer\\datatransferobjects\\appuserdtos\\appuserinfodtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{417B786D-5CA4-42EC-8BE1-85016FD30216}|BrainWave.DtoLayer\\BrainWave.DtoLayer.csproj|solutionrelative:brainwave.dtolayer\\datatransferobjects\\appuserdtos\\appuserinfodtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8375B371-E582-4197-BC9A-3B1CB2AE79D6}|BrainWave.PresentationLayer\\BrainWave.PresentationLayer.csproj|c:\\users\\mgund\\onedrive\\masa\u00FCst\u00FC\\brainwave\\brainwave\\brainwave.presentationlayer\\views\\admin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8375B371-E582-4197-BC9A-3B1CB2AE79D6}|BrainWave.PresentationLayer\\BrainWave.PresentationLayer.csproj|solutionrelative:brainwave.presentationlayer\\views\\admin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8375B371-E582-4197-BC9A-3B1CB2AE79D6}|BrainWave.PresentationLayer\\BrainWave.PresentationLayer.csproj|c:\\users\\mgund\\onedrive\\masa\u00FCst\u00FC\\brainwave\\brainwave\\brainwave.presentationlayer\\controllers\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8375B371-E582-4197-BC9A-3B1CB2AE79D6}|BrainWave.PresentationLayer\\BrainWave.PresentationLayer.csproj|solutionrelative:brainwave.presentationlayer\\controllers\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2554368-9136-4365-B658-D4A76290BCEB}|BrainWave.BusinessLayer\\BrainWave.BusinessLayer.csproj|c:\\users\\mgund\\onedrive\\masa\u00FCst\u00FC\\brainwave\\brainwave\\brainwave.businesslayer\\validationrules\\appuservalidationrules\\appuserregistervalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2554368-9136-4365-B658-D4A76290BCEB}|BrainWave.BusinessLayer\\BrainWave.BusinessLayer.csproj|solutionrelative:brainwave.businesslayer\\validationrules\\appuservalidationrules\\appuserregistervalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8375B371-E582-4197-BC9A-3B1CB2AE79D6}|BrainWave.PresentationLayer\\BrainWave.PresentationLayer.csproj|c:\\users\\mgund\\onedrive\\masa\u00FCst\u00FC\\brainwave\\brainwave\\brainwave.presentationlayer\\views\\pendingrequests\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8375B371-E582-4197-BC9A-3B1CB2AE79D6}|BrainWave.PresentationLayer\\BrainWave.PresentationLayer.csproj|solutionrelative:brainwave.presentationlayer\\views\\pendingrequests\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8375B371-E582-4197-BC9A-3B1CB2AE79D6}|BrainWave.PresentationLayer\\BrainWave.PresentationLayer.csproj|c:\\users\\mgund\\onedrive\\masa\u00FCst\u00FC\\brainwave\\brainwave\\brainwave.presentationlayer\\controllers\\pendingrequestcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8375B371-E582-4197-BC9A-3B1CB2AE79D6}|BrainWave.PresentationLayer\\BrainWave.PresentationLayer.csproj|solutionrelative:brainwave.presentationlayer\\controllers\\pendingrequestcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3710BD1A-F83F-4D90-9CDB-C9BBFFF841B8}|BrainWave.DataAccessLayer\\BrainWave.DataAccessLayer.csproj|c:\\users\\mgund\\onedrive\\masa\u00FCst\u00FC\\brainwave\\brainwave\\brainwave.dataaccesslayer\\entityframework\\efprojectrequestdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3710BD1A-F83F-4D90-9CDB-C9BBFFF841B8}|BrainWave.DataAccessLayer\\BrainWave.DataAccessLayer.csproj|solutionrelative:brainwave.dataaccesslayer\\entityframework\\efprojectrequestdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3710BD1A-F83F-4D90-9CDB-C9BBFFF841B8}|BrainWave.DataAccessLayer\\BrainWave.DataAccessLayer.csproj|c:\\users\\mgund\\onedrive\\masa\u00FCst\u00FC\\brainwave\\brainwave\\brainwave.dataaccesslayer\\entityframework\\eftaskrequestdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3710BD1A-F83F-4D90-9CDB-C9BBFFF841B8}|BrainWave.DataAccessLayer\\BrainWave.DataAccessLayer.csproj|solutionrelative:brainwave.dataaccesslayer\\entityframework\\eftaskrequestdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3710BD1A-F83F-4D90-9CDB-C9BBFFF841B8}|BrainWave.DataAccessLayer\\BrainWave.DataAccessLayer.csproj|c:\\users\\mgund\\onedrive\\masa\u00FCst\u00FC\\brainwave\\brainwave\\brainwave.dataaccesslayer\\entityframework\\effriendrequestdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3710BD1A-F83F-4D90-9CDB-C9BBFFF841B8}|BrainWave.DataAccessLayer\\BrainWave.DataAccessLayer.csproj|solutionrelative:brainwave.dataaccesslayer\\entityframework\\effriendrequestdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3710BD1A-F83F-4D90-9CDB-C9BBFFF841B8}|BrainWave.DataAccessLayer\\BrainWave.DataAccessLayer.csproj|c:\\users\\mgund\\onedrive\\masa\u00FCst\u00FC\\brainwave\\brainwave\\brainwave.dataaccesslayer\\repostories\\genericrepostory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3710BD1A-F83F-4D90-9CDB-C9BBFFF841B8}|BrainWave.DataAccessLayer\\BrainWave.DataAccessLayer.csproj|solutionrelative:brainwave.dataaccesslayer\\repostories\\genericrepostory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3710BD1A-F83F-4D90-9CDB-C9BBFFF841B8}|BrainWave.DataAccessLayer\\BrainWave.DataAccessLayer.csproj|c:\\users\\mgund\\onedrive\\masa\u00FCst\u00FC\\brainwave\\brainwave\\brainwave.dataaccesslayer\\abstract\\igenericrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3710BD1A-F83F-4D90-9CDB-C9BBFFF841B8}|BrainWave.DataAccessLayer\\BrainWave.DataAccessLayer.csproj|solutionrelative:brainwave.dataaccesslayer\\abstract\\igenericrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51819D9F-501F-4A35-830A-FF8434E08784}|BrainWave.EntityLayer\\BrainWave.EntityLayer.csproj|c:\\users\\mgund\\onedrive\\masa\u00FCst\u00FC\\brainwave\\brainwave\\brainwave.entitylayer\\concrete\\projectrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51819D9F-501F-4A35-830A-FF8434E08784}|BrainWave.EntityLayer\\BrainWave.EntityLayer.csproj|solutionrelative:brainwave.entitylayer\\concrete\\projectrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8375B371-E582-4197-BC9A-3B1CB2AE79D6}|BrainWave.PresentationLayer\\BrainWave.PresentationLayer.csproj|c:\\users\\mgund\\onedrive\\masa\u00FCst\u00FC\\brainwave\\brainwave\\brainwave.presentationlayer\\views\\connections\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8375B371-E582-4197-BC9A-3B1CB2AE79D6}|BrainWave.PresentationLayer\\BrainWave.PresentationLayer.csproj|solutionrelative:brainwave.presentationlayer\\views\\connections\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8375B371-E582-4197-BC9A-3B1CB2AE79D6}|BrainWave.PresentationLayer\\BrainWave.PresentationLayer.csproj|c:\\users\\mgund\\onedrive\\masa\u00FCst\u00FC\\brainwave\\brainwave\\brainwave.presentationlayer\\controllers\\connectionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8375B371-E582-4197-BC9A-3B1CB2AE79D6}|BrainWave.PresentationLayer\\BrainWave.PresentationLayer.csproj|solutionrelative:brainwave.presentationlayer\\controllers\\connectionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8375B371-E582-4197-BC9A-3B1CB2AE79D6}|BrainWave.PresentationLayer\\BrainWave.PresentationLayer.csproj|c:\\users\\mgund\\onedrive\\masa\u00FCst\u00FC\\brainwave\\brainwave\\brainwave.presentationlayer\\controllers\\accountsettingscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8375B371-E582-4197-BC9A-3B1CB2AE79D6}|BrainWave.PresentationLayer\\BrainWave.PresentationLayer.csproj|solutionrelative:brainwave.presentationlayer\\controllers\\accountsettingscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8375B371-E582-4197-BC9A-3B1CB2AE79D6}|BrainWave.PresentationLayer\\BrainWave.PresentationLayer.csproj|c:\\users\\mgund\\onedrive\\masa\u00FCst\u00FC\\brainwave\\brainwave\\brainwave.presentationlayer\\views\\accountsettings\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8375B371-E582-4197-BC9A-3B1CB2AE79D6}|BrainWave.PresentationLayer\\BrainWave.PresentationLayer.csproj|solutionrelative:brainwave.presentationlayer\\views\\accountsettings\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{417B786D-5CA4-42EC-8BE1-85016FD30216}|BrainWave.DtoLayer\\BrainWave.DtoLayer.csproj|c:\\users\\mgund\\onedrive\\masa\u00FCst\u00FC\\brainwave\\brainwave\\brainwave.dtolayer\\datatransferobjects\\appuserdtos\\accountsettingsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{417B786D-5CA4-42EC-8BE1-85016FD30216}|BrainWave.DtoLayer\\BrainWave.DtoLayer.csproj|solutionrelative:brainwave.dtolayer\\datatransferobjects\\appuserdtos\\accountsettingsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8375B371-E582-4197-BC9A-3B1CB2AE79D6}|BrainWave.PresentationLayer\\BrainWave.PresentationLayer.csproj|C:\\Users\\mgund\\OneDrive\\Masa\u00FCst\u00FC\\brainwave\\Brainwave\\brainwave.presentationlayer\\views\\myprojects\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8375B371-E582-4197-BC9A-3B1CB2AE79D6}|BrainWave.PresentationLayer\\BrainWave.PresentationLayer.csproj|solutionrelative:brainwave.presentationlayer\\views\\myprojects\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8375B371-E582-4197-BC9A-3B1CB2AE79D6}|BrainWave.PresentationLayer\\BrainWave.PresentationLayer.csproj|C:\\Users\\mgund\\OneDrive\\Masa\u00FCst\u00FC\\brainwave\\Brainwave\\brainwave.presentationlayer\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8375B371-E582-4197-BC9A-3B1CB2AE79D6}|BrainWave.PresentationLayer\\BrainWave.PresentationLayer.csproj|solutionrelative:brainwave.presentationlayer\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8375B371-E582-4197-BC9A-3B1CB2AE79D6}|BrainWave.PresentationLayer\\BrainWave.PresentationLayer.csproj|C:\\Users\\mgund\\OneDrive\\Masa\u00FCst\u00FC\\brainwave\\Brainwave\\brainwave.presentationlayer\\views\\mentor\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8375B371-E582-4197-BC9A-3B1CB2AE79D6}|BrainWave.PresentationLayer\\BrainWave.PresentationLayer.csproj|solutionrelative:brainwave.presentationlayer\\views\\mentor\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8375B371-E582-4197-BC9A-3B1CB2AE79D6}|BrainWave.PresentationLayer\\BrainWave.PresentationLayer.csproj|C:\\Users\\mgund\\OneDrive\\Masa\u00FCst\u00FC\\brainwave\\Brainwave\\brainwave.presentationlayer\\views\\editprofile\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8375B371-E582-4197-BC9A-3B1CB2AE79D6}|BrainWave.PresentationLayer\\BrainWave.PresentationLayer.csproj|solutionrelative:brainwave.presentationlayer\\views\\editprofile\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8375B371-E582-4197-BC9A-3B1CB2AE79D6}|BrainWave.PresentationLayer\\BrainWave.PresentationLayer.csproj|C:\\Users\\mgund\\OneDrive\\Masa\u00FCst\u00FC\\brainwave\\Brainwave\\brainwave.presentationlayer\\views\\login\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8375B371-E582-4197-BC9A-3B1CB2AE79D6}|BrainWave.PresentationLayer\\BrainWave.PresentationLayer.csproj|solutionrelative:brainwave.presentationlayer\\views\\login\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8375B371-E582-4197-BC9A-3B1CB2AE79D6}|BrainWave.PresentationLayer\\BrainWave.PresentationLayer.csproj|C:\\Users\\mgund\\OneDrive\\Masa\u00FCst\u00FC\\brainwave\\Brainwave\\brainwave.presentationlayer\\views\\createproject\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8375B371-E582-4197-BC9A-3B1CB2AE79D6}|BrainWave.PresentationLayer\\BrainWave.PresentationLayer.csproj|solutionrelative:brainwave.presentationlayer\\views\\createproject\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8375B371-E582-4197-BC9A-3B1CB2AE79D6}|BrainWave.PresentationLayer\\BrainWave.PresentationLayer.csproj|C:\\Users\\mgund\\OneDrive\\Masa\u00FCst\u00FC\\brainwave\\Brainwave\\brainwave.presentationlayer\\views\\profile\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8375B371-E582-4197-BC9A-3B1CB2AE79D6}|BrainWave.PresentationLayer\\BrainWave.PresentationLayer.csproj|solutionrelative:brainwave.presentationlayer\\views\\profile\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8375B371-E582-4197-BC9A-3B1CB2AE79D6}|BrainWave.PresentationLayer\\BrainWave.PresentationLayer.csproj|C:\\Users\\mgund\\OneDrive\\Masa\u00FCst\u00FC\\brainwave\\Brainwave\\brainwave.presentationlayer\\views\\allprojects\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8375B371-E582-4197-BC9A-3B1CB2AE79D6}|BrainWave.PresentationLayer\\BrainWave.PresentationLayer.csproj|solutionrelative:brainwave.presentationlayer\\views\\allprojects\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 20,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{6324226f-61b6-4f28-92ee-18d4b5fe1e48}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "UsersManager.cs",
+              "DocumentMoniker": "C:\\Users\\mgund\\OneDrive\\Masa\u00FCst\u00FC\\brainwave\\Brainwave\\BrainWave.BusinessLayer\\Concrete\\UsersManager.cs",
+              "RelativeDocumentMoniker": "BrainWave.BusinessLayer\\Concrete\\UsersManager.cs",
+              "ToolTip": "C:\\Users\\mgund\\OneDrive\\Masa\u00FCst\u00FC\\brainwave\\Brainwave\\BrainWave.BusinessLayer\\Concrete\\UsersManager.cs",
+              "RelativeToolTip": "BrainWave.BusinessLayer\\Concrete\\UsersManager.cs",
+              "ViewState": "AQIAAC4AAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-10T18:38:14.351Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "UserProjectManager.cs",
+              "DocumentMoniker": "C:\\Users\\mgund\\OneDrive\\Masa\u00FCst\u00FC\\brainwave\\Brainwave\\BrainWave.BusinessLayer\\Concrete\\UserProjectManager.cs",
+              "RelativeDocumentMoniker": "BrainWave.BusinessLayer\\Concrete\\UserProjectManager.cs",
+              "ToolTip": "C:\\Users\\mgund\\OneDrive\\Masa\u00FCst\u00FC\\brainwave\\Brainwave\\BrainWave.BusinessLayer\\Concrete\\UserProjectManager.cs",
+              "RelativeToolTip": "BrainWave.BusinessLayer\\Concrete\\UserProjectManager.cs",
+              "ViewState": "AQIAACoAAAAAAAAAAAAowAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-10T18:38:11.807Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "TaskRequestManager.cs",
+              "DocumentMoniker": "C:\\Users\\mgund\\OneDrive\\Masa\u00FCst\u00FC\\brainwave\\Brainwave\\BrainWave.BusinessLayer\\Concrete\\TaskRequestManager.cs",
+              "RelativeDocumentMoniker": "BrainWave.BusinessLayer\\Concrete\\TaskRequestManager.cs",
+              "ToolTip": "C:\\Users\\mgund\\OneDrive\\Masa\u00FCst\u00FC\\brainwave\\Brainwave\\BrainWave.BusinessLayer\\Concrete\\TaskRequestManager.cs",
+              "RelativeToolTip": "BrainWave.BusinessLayer\\Concrete\\TaskRequestManager.cs",
+              "ViewState": "AQIAACcAAAAAAAAAAAAowAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-10T18:38:08.424Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ProjectRequestManager.cs",
+              "DocumentMoniker": "C:\\Users\\mgund\\OneDrive\\Masa\u00FCst\u00FC\\brainwave\\Brainwave\\BrainWave.BusinessLayer\\Concrete\\ProjectRequestManager.cs",
+              "RelativeDocumentMoniker": "BrainWave.BusinessLayer\\Concrete\\ProjectRequestManager.cs",
+              "ToolTip": "C:\\Users\\mgund\\OneDrive\\Masa\u00FCst\u00FC\\brainwave\\Brainwave\\BrainWave.BusinessLayer\\Concrete\\ProjectRequestManager.cs",
+              "RelativeToolTip": "BrainWave.BusinessLayer\\Concrete\\ProjectRequestManager.cs",
+              "ViewState": "AQIAACcAAAAAAAAAAAAowAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-10T18:38:04.737Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "FriendRequestManager.cs",
+              "DocumentMoniker": "C:\\Users\\mgund\\OneDrive\\Masa\u00FCst\u00FC\\brainwave\\Brainwave\\BrainWave.BusinessLayer\\Concrete\\FriendRequestManager.cs",
+              "RelativeDocumentMoniker": "BrainWave.BusinessLayer\\Concrete\\FriendRequestManager.cs",
+              "ToolTip": "C:\\Users\\mgund\\OneDrive\\Masa\u00FCst\u00FC\\brainwave\\Brainwave\\BrainWave.BusinessLayer\\Concrete\\FriendRequestManager.cs",
+              "RelativeToolTip": "BrainWave.BusinessLayer\\Concrete\\FriendRequestManager.cs",
+              "ViewState": "AQIAACQAAAAAAAAAAAA7wAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-10T18:37:54.901Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "IUsersService.cs",
+              "DocumentMoniker": "C:\\Users\\mgund\\OneDrive\\Masa\u00FCst\u00FC\\brainwave\\Brainwave\\BrainWave.BusinessLayer\\Abstract\\IUsersService.cs",
+              "RelativeDocumentMoniker": "BrainWave.BusinessLayer\\Abstract\\IUsersService.cs",
+              "ToolTip": "C:\\Users\\mgund\\OneDrive\\Masa\u00FCst\u00FC\\brainwave\\Brainwave\\BrainWave.BusinessLayer\\Abstract\\IUsersService.cs",
+              "RelativeToolTip": "BrainWave.BusinessLayer\\Abstract\\IUsersService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-10T18:37:52.414Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "IUserProjectService.cs",
+              "DocumentMoniker": "C:\\Users\\mgund\\OneDrive\\Masa\u00FCst\u00FC\\brainwave\\Brainwave\\BrainWave.BusinessLayer\\Abstract\\IUserProjectService.cs",
+              "RelativeDocumentMoniker": "BrainWave.BusinessLayer\\Abstract\\IUserProjectService.cs",
+              "ToolTip": "C:\\Users\\mgund\\OneDrive\\Masa\u00FCst\u00FC\\brainwave\\Brainwave\\BrainWave.BusinessLayer\\Abstract\\IUserProjectService.cs",
+              "RelativeToolTip": "BrainWave.BusinessLayer\\Abstract\\IUserProjectService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-10T18:37:50.735Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "IProjectRequestService.cs",
+              "DocumentMoniker": "C:\\Users\\mgund\\OneDrive\\Masa\u00FCst\u00FC\\brainwave\\Brainwave\\BrainWave.BusinessLayer\\Abstract\\IProjectRequestService.cs",
+              "RelativeDocumentMoniker": "BrainWave.BusinessLayer\\Abstract\\IProjectRequestService.cs",
+              "ToolTip": "C:\\Users\\mgund\\OneDrive\\Masa\u00FCst\u00FC\\brainwave\\Brainwave\\BrainWave.BusinessLayer\\Abstract\\IProjectRequestService.cs",
+              "RelativeToolTip": "BrainWave.BusinessLayer\\Abstract\\IProjectRequestService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-10T18:37:48.875Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "IGenericService.cs",
+              "DocumentMoniker": "C:\\Users\\mgund\\OneDrive\\Masa\u00FCst\u00FC\\brainwave\\Brainwave\\BrainWave.BusinessLayer\\Abstract\\IGenericService.cs",
+              "RelativeDocumentMoniker": "BrainWave.BusinessLayer\\Abstract\\IGenericService.cs",
+              "ToolTip": "C:\\Users\\mgund\\OneDrive\\Masa\u00FCst\u00FC\\brainwave\\Brainwave\\BrainWave.BusinessLayer\\Abstract\\IGenericService.cs",
+              "RelativeToolTip": "BrainWave.BusinessLayer\\Abstract\\IGenericService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-10T18:37:44.062Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "IFriendRequestService.cs",
+              "DocumentMoniker": "C:\\Users\\mgund\\OneDrive\\Masa\u00FCst\u00FC\\brainwave\\Brainwave\\BrainWave.BusinessLayer\\Abstract\\IFriendRequestService.cs",
+              "RelativeDocumentMoniker": "BrainWave.BusinessLayer\\Abstract\\IFriendRequestService.cs",
+              "ToolTip": "C:\\Users\\mgund\\OneDrive\\Masa\u00FCst\u00FC\\brainwave\\Brainwave\\BrainWave.BusinessLayer\\Abstract\\IFriendRequestService.cs",
+              "RelativeToolTip": "BrainWave.BusinessLayer\\Abstract\\IFriendRequestService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-10T18:37:40.155Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AppRole.cs",
+              "DocumentMoniker": "C:\\Users\\mgund\\OneDrive\\Masa\u00FCst\u00FC\\brainwave\\Brainwave\\BrainWave.EntityLayer\\Concrete\\AppRole.cs",
+              "RelativeDocumentMoniker": "BrainWave.EntityLayer\\Concrete\\AppRole.cs",
+              "ToolTip": "C:\\Users\\mgund\\OneDrive\\Masa\u00FCst\u00FC\\brainwave\\Brainwave\\BrainWave.EntityLayer\\Concrete\\AppRole.cs",
+              "RelativeToolTip": "BrainWave.EntityLayer\\Concrete\\AppRole.cs",
+              "ViewState": "AQIAAAIAAAAAAAAAAAAwwAgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-10T18:27:00.399Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "20240511134952_appuser_approle_added.cs",
+              "DocumentMoniker": "C:\\Users\\mgund\\OneDrive\\Masa\u00FCst\u00FC\\brainwave\\Brainwave\\BrainWave.DataAccessLayer\\Migrations\\20240511134952_appuser_approle_added.cs",
+              "RelativeDocumentMoniker": "BrainWave.DataAccessLayer\\Migrations\\20240511134952_appuser_approle_added.cs",
+              "ToolTip": "C:\\Users\\mgund\\OneDrive\\Masa\u00FCst\u00FC\\brainwave\\Brainwave\\BrainWave.DataAccessLayer\\Migrations\\20240511134952_appuser_approle_added.cs",
+              "RelativeToolTip": "BrainWave.DataAccessLayer\\Migrations\\20240511134952_appuser_approle_added.cs",
+              "ViewState": "AQIAANAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-10T18:16:54.324Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "ProjectRepostory.cs",
+              "DocumentMoniker": "C:\\Users\\mgund\\OneDrive\\Masa\u00FCst\u00FC\\brainwave\\Brainwave\\BrainWave.DataAccessLayer\\Repostories\\ProjectRepostory.cs",
+              "RelativeDocumentMoniker": "BrainWave.DataAccessLayer\\Repostories\\ProjectRepostory.cs",
+              "ToolTip": "C:\\Users\\mgund\\OneDrive\\Masa\u00FCst\u00FC\\brainwave\\Brainwave\\BrainWave.DataAccessLayer\\Repostories\\ProjectRepostory.cs",
+              "RelativeToolTip": "BrainWave.DataAccessLayer\\Repostories\\ProjectRepostory.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-10T18:03:27.405Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\mgund\\OneDrive\\Masa\u00FCst\u00FC\\brainwave\\Brainwave\\BrainWave.PresentationLayer\\Views\\Register\\Index.cshtml",
+              "RelativeDocumentMoniker": "BrainWave.PresentationLayer\\Views\\Register\\Index.cshtml",
+              "ToolTip": "C:\\Users\\mgund\\OneDrive\\Masa\u00FCst\u00FC\\brainwave\\Brainwave\\BrainWave.PresentationLayer\\Views\\Register\\Index.cshtml",
+              "RelativeToolTip": "BrainWave.PresentationLayer\\Views\\Register\\Index.cshtml",
+              "ViewState": "AQIAAIYAAAAAAAAAAAAswJsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-10T17:44:02.47Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "AppUserInfoDtos.cs",
+              "DocumentMoniker": "C:\\Users\\mgund\\OneDrive\\Masa\u00FCst\u00FC\\brainwave\\Brainwave\\BrainWave.DtoLayer\\DataTransferObjects\\AppUserDtos\\AppUserInfoDtos.cs",
+              "RelativeDocumentMoniker": "BrainWave.DtoLayer\\DataTransferObjects\\AppUserDtos\\AppUserInfoDtos.cs",
+              "ToolTip": "C:\\Users\\mgund\\OneDrive\\Masa\u00FCst\u00FC\\brainwave\\Brainwave\\BrainWave.DtoLayer\\DataTransferObjects\\AppUserDtos\\AppUserInfoDtos.cs",
+              "RelativeToolTip": "BrainWave.DtoLayer\\DataTransferObjects\\AppUserDtos\\AppUserInfoDtos.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-10T17:43:26.817Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AppUser.cs",
+              "DocumentMoniker": "C:\\Users\\mgund\\OneDrive\\Masa\u00FCst\u00FC\\brainwave\\Brainwave\\BrainWave.EntityLayer\\Concrete\\AppUser.cs",
+              "RelativeDocumentMoniker": "BrainWave.EntityLayer\\Concrete\\AppUser.cs",
+              "ToolTip": "C:\\Users\\mgund\\OneDrive\\Masa\u00FCst\u00FC\\brainwave\\Brainwave\\BrainWave.EntityLayer\\Concrete\\AppUser.cs",
+              "RelativeToolTip": "BrainWave.EntityLayer\\Concrete\\AppUser.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAAwAkAAAACAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-10T17:39:17.639Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\mgund\\OneDrive\\Masa\u00FCst\u00FC\\brainwave\\Brainwave\\BrainWave.PresentationLayer\\Views\\Admin\\Index.cshtml",
+              "RelativeDocumentMoniker": "BrainWave.PresentationLayer\\Views\\Admin\\Index.cshtml",
+              "ToolTip": "C:\\Users\\mgund\\OneDrive\\Masa\u00FCst\u00FC\\brainwave\\Brainwave\\BrainWave.PresentationLayer\\Views\\Admin\\Index.cshtml",
+              "RelativeToolTip": "BrainWave.PresentationLayer\\Views\\Admin\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-10T17:31:27.964Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "Admin.cs",
+              "DocumentMoniker": "C:\\Users\\mgund\\OneDrive\\Masa\u00FCst\u00FC\\brainwave\\Brainwave\\BrainWave.PresentationLayer\\Controllers\\Admin.cs",
+              "RelativeDocumentMoniker": "BrainWave.PresentationLayer\\Controllers\\Admin.cs",
+              "ToolTip": "C:\\Users\\mgund\\OneDrive\\Masa\u00FCst\u00FC\\brainwave\\Brainwave\\BrainWave.PresentationLayer\\Controllers\\Admin.cs",
+              "RelativeToolTip": "BrainWave.PresentationLayer\\Controllers\\Admin.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-10T17:30:47.173Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "RegisterController.cs",
+              "DocumentMoniker": "C:\\Users\\mgund\\OneDrive\\Masa\u00FCst\u00FC\\brainwave\\Brainwave\\BrainWave.PresentationLayer\\Controllers\\RegisterController.cs",
+              "RelativeDocumentMoniker": "BrainWave.PresentationLayer\\Controllers\\RegisterController.cs",
+              "ToolTip": "C:\\Users\\mgund\\OneDrive\\Masa\u00FCst\u00FC\\brainwave\\Brainwave\\BrainWave.PresentationLayer\\Controllers\\RegisterController.cs",
+              "RelativeToolTip": "BrainWave.PresentationLayer\\Controllers\\RegisterController.cs",
+              "ViewState": "AQIAAE0AAAAAAAAAAAAwwFMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-10T17:29:27.074Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AppUserRegisterDto.cs",
+              "DocumentMoniker": "C:\\Users\\mgund\\OneDrive\\Masa\u00FCst\u00FC\\brainwave\\Brainwave\\BrainWave.DtoLayer\\DataTransferObjects\\AppUserDtos\\AppUserRegisterDto.cs",
+              "RelativeDocumentMoniker": "BrainWave.DtoLayer\\DataTransferObjects\\AppUserDtos\\AppUserRegisterDto.cs",
+              "ToolTip": "C:\\Users\\mgund\\OneDrive\\Masa\u00FCst\u00FC\\brainwave\\Brainwave\\BrainWave.DtoLayer\\DataTransferObjects\\AppUserDtos\\AppUserRegisterDto.cs",
+              "RelativeToolTip": "BrainWave.DtoLayer\\DataTransferObjects\\AppUserDtos\\AppUserRegisterDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-10T17:28:18.33Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "AppUserRegisterValidator.cs",
+              "DocumentMoniker": "C:\\Users\\mgund\\OneDrive\\Masa\u00FCst\u00FC\\brainwave\\Brainwave\\BrainWave.BusinessLayer\\ValidationRules\\AppUserValidationRules\\AppUserRegisterValidator.cs",
+              "RelativeDocumentMoniker": "BrainWave.BusinessLayer\\ValidationRules\\AppUserValidationRules\\AppUserRegisterValidator.cs",
+              "ToolTip": "C:\\Users\\mgund\\OneDrive\\Masa\u00FCst\u00FC\\brainwave\\Brainwave\\BrainWave.BusinessLayer\\ValidationRules\\AppUserValidationRules\\AppUserRegisterValidator.cs",
+              "RelativeToolTip": "BrainWave.BusinessLayer\\ValidationRules\\AppUserValidationRules\\AppUserRegisterValidator.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-10T17:28:16.652Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\mgund\\OneDrive\\Masa\u00FCst\u00FC\\brainwave\\Brainwave\\BrainWave.PresentationLayer\\appsettings.json",
+              "RelativeDocumentMoniker": "BrainWave.PresentationLayer\\appsettings.json",
+              "ToolTip": "C:\\Users\\mgund\\OneDrive\\Masa\u00FCst\u00FC\\brainwave\\Brainwave\\BrainWave.PresentationLayer\\appsettings.json",
+              "RelativeToolTip": "BrainWave.PresentationLayer\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-06-10T17:18:55.758Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "EfProjectRequestDal.cs",
+              "DocumentMoniker": "C:\\Users\\mgund\\OneDrive\\Masa\u00FCst\u00FC\\brainwave\\Brainwave\\BrainWave.DataAccessLayer\\EntityFramework\\EfProjectRequestDal.cs",
+              "RelativeDocumentMoniker": "BrainWave.DataAccessLayer\\EntityFramework\\EfProjectRequestDal.cs",
+              "ToolTip": "C:\\Users\\mgund\\OneDrive\\Masa\u00FCst\u00FC\\brainwave\\Brainwave\\BrainWave.DataAccessLayer\\EntityFramework\\EfProjectRequestDal.cs",
+              "RelativeToolTip": "BrainWave.DataAccessLayer\\EntityFramework\\EfProjectRequestDal.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-10T17:15:54.439Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "EfTaskRequestDal.cs",
+              "DocumentMoniker": "C:\\Users\\mgund\\OneDrive\\Masa\u00FCst\u00FC\\brainwave\\Brainwave\\BrainWave.DataAccessLayer\\EntityFramework\\EfTaskRequestDal.cs",
+              "RelativeDocumentMoniker": "BrainWave.DataAccessLayer\\EntityFramework\\EfTaskRequestDal.cs",
+              "ToolTip": "C:\\Users\\mgund\\OneDrive\\Masa\u00FCst\u00FC\\brainwave\\Brainwave\\BrainWave.DataAccessLayer\\EntityFramework\\EfTaskRequestDal.cs",
+              "RelativeToolTip": "BrainWave.DataAccessLayer\\EntityFramework\\EfTaskRequestDal.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-10T17:15:32.911Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "EfFriendRequestDal.cs",
+              "DocumentMoniker": "C:\\Users\\mgund\\OneDrive\\Masa\u00FCst\u00FC\\brainwave\\Brainwave\\BrainWave.DataAccessLayer\\EntityFramework\\EfFriendRequestDal.cs",
+              "RelativeDocumentMoniker": "BrainWave.DataAccessLayer\\EntityFramework\\EfFriendRequestDal.cs",
+              "ToolTip": "C:\\Users\\mgund\\OneDrive\\Masa\u00FCst\u00FC\\brainwave\\Brainwave\\BrainWave.DataAccessLayer\\EntityFramework\\EfFriendRequestDal.cs",
+              "RelativeToolTip": "BrainWave.DataAccessLayer\\EntityFramework\\EfFriendRequestDal.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-10T17:14:45.759Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "IGenericRepo.cs",
+              "DocumentMoniker": "C:\\Users\\mgund\\OneDrive\\Masa\u00FCst\u00FC\\brainwave\\Brainwave\\BrainWave.DataAccessLayer\\Abstract\\IGenericRepo.cs",
+              "RelativeDocumentMoniker": "BrainWave.DataAccessLayer\\Abstract\\IGenericRepo.cs",
+              "ToolTip": "C:\\Users\\mgund\\OneDrive\\Masa\u00FCst\u00FC\\brainwave\\Brainwave\\BrainWave.DataAccessLayer\\Abstract\\IGenericRepo.cs",
+              "RelativeToolTip": "BrainWave.DataAccessLayer\\Abstract\\IGenericRepo.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-10T17:12:49.153Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "BrainWave.DataAccessLayer",
+              "DocumentMoniker": "C:\\Users\\mgund\\OneDrive\\Masa\u00FCst\u00FC\\brainwave\\Brainwave\\BrainWave.DataAccessLayer\\BrainWave.DataAccessLayer.csproj",
+              "RelativeDocumentMoniker": "BrainWave.DataAccessLayer\\BrainWave.DataAccessLayer.csproj",
+              "ToolTip": "C:\\Users\\mgund\\OneDrive\\Masa\u00FCst\u00FC\\brainwave\\Brainwave\\BrainWave.DataAccessLayer\\BrainWave.DataAccessLayer.csproj",
+              "RelativeToolTip": "BrainWave.DataAccessLayer\\BrainWave.DataAccessLayer.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-06-10T17:11:29.198Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "ProjectRequest.cs",
+              "DocumentMoniker": "C:\\Users\\mgund\\OneDrive\\Masa\u00FCst\u00FC\\brainwave\\Brainwave\\BrainWave.EntityLayer\\Concrete\\ProjectRequest.cs",
+              "RelativeDocumentMoniker": "BrainWave.EntityLayer\\Concrete\\ProjectRequest.cs",
+              "ToolTip": "C:\\Users\\mgund\\OneDrive\\Masa\u00FCst\u00FC\\brainwave\\Brainwave\\BrainWave.EntityLayer\\Concrete\\ProjectRequest.cs",
+              "RelativeToolTip": "BrainWave.EntityLayer\\Concrete\\ProjectRequest.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAxwBIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-10T17:08:40.129Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "GenericRepostory.cs",
+              "DocumentMoniker": "C:\\Users\\mgund\\OneDrive\\Masa\u00FCst\u00FC\\brainwave\\Brainwave\\BrainWave.DataAccessLayer\\Repostories\\GenericRepostory.cs",
+              "RelativeDocumentMoniker": "BrainWave.DataAccessLayer\\Repostories\\GenericRepostory.cs",
+              "ToolTip": "C:\\Users\\mgund\\OneDrive\\Masa\u00FCst\u00FC\\brainwave\\Brainwave\\BrainWave.DataAccessLayer\\Repostories\\GenericRepostory.cs",
+              "RelativeToolTip": "BrainWave.DataAccessLayer\\Repostories\\GenericRepostory.cs",
+              "ViewState": "AQIAACQAAAAAAAAAAAAowC4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-10T17:03:24.753Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\mgund\\OneDrive\\Masa\u00FCst\u00FC\\brainwave\\Brainwave\\BrainWave.PresentationLayer\\Program.cs",
+              "RelativeDocumentMoniker": "BrainWave.PresentationLayer\\Program.cs",
+              "ToolTip": "C:\\Users\\mgund\\OneDrive\\Masa\u00FCst\u00FC\\brainwave\\Brainwave\\BrainWave.PresentationLayer\\Program.cs",
+              "RelativeToolTip": "BrainWave.PresentationLayer\\Program.cs",
+              "ViewState": "AQIAAEoAAAAAAAAAAAAswF8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-10T16:19:19.332Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\mgund\\OneDrive\\Masa\u00FCst\u00FC\\brainwave\\Brainwave\\BrainWave.PresentationLayer\\Views\\PendingRequests\\Index.cshtml",
+              "RelativeDocumentMoniker": "BrainWave.PresentationLayer\\Views\\PendingRequests\\Index.cshtml",
+              "ToolTip": "C:\\Users\\mgund\\OneDrive\\Masa\u00FCst\u00FC\\brainwave\\Brainwave\\BrainWave.PresentationLayer\\Views\\PendingRequests\\Index.cshtml",
+              "RelativeToolTip": "BrainWave.PresentationLayer\\Views\\PendingRequests\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-10T16:56:44.86Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "PendingRequestController.cs",
+              "DocumentMoniker": "C:\\Users\\mgund\\OneDrive\\Masa\u00FCst\u00FC\\brainwave\\Brainwave\\BrainWave.PresentationLayer\\Controllers\\PendingRequestController.cs",
+              "RelativeDocumentMoniker": "BrainWave.PresentationLayer\\Controllers\\PendingRequestController.cs",
+              "ToolTip": "C:\\Users\\mgund\\OneDrive\\Masa\u00FCst\u00FC\\brainwave\\Brainwave\\BrainWave.PresentationLayer\\Controllers\\PendingRequestController.cs",
+              "RelativeToolTip": "BrainWave.PresentationLayer\\Controllers\\PendingRequestController.cs",
+              "ViewState": "AQIAADAAAAAAAAAAAAAiwD4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-10T16:55:27.747Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\mgund\\OneDrive\\Masa\u00FCst\u00FC\\brainwave\\Brainwave\\BrainWave.PresentationLayer\\Views\\Connections\\Index.cshtml",
+              "RelativeDocumentMoniker": "BrainWave.PresentationLayer\\Views\\Connections\\Index.cshtml",
+              "ToolTip": "C:\\Users\\mgund\\OneDrive\\Masa\u00FCst\u00FC\\brainwave\\Brainwave\\BrainWave.PresentationLayer\\Views\\Connections\\Index.cshtml",
+              "RelativeToolTip": "BrainWave.PresentationLayer\\Views\\Connections\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-10T16:33:03.74Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "ConnectionsController.cs",
+              "DocumentMoniker": "C:\\Users\\mgund\\OneDrive\\Masa\u00FCst\u00FC\\brainwave\\Brainwave\\BrainWave.PresentationLayer\\Controllers\\ConnectionsController.cs",
+              "RelativeDocumentMoniker": "BrainWave.PresentationLayer\\Controllers\\ConnectionsController.cs",
+              "ToolTip": "C:\\Users\\mgund\\OneDrive\\Masa\u00FCst\u00FC\\brainwave\\Brainwave\\BrainWave.PresentationLayer\\Controllers\\ConnectionsController.cs",
+              "RelativeToolTip": "BrainWave.PresentationLayer\\Controllers\\ConnectionsController.cs",
+              "ViewState": "AQIAABsAAAAAAAAAAAAuwDYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-10T16:32:22.088Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\mgund\\OneDrive\\Masa\u00FCst\u00FC\\brainwave\\Brainwave\\BrainWave.PresentationLayer\\Views\\AccountSettings\\Index.cshtml",
+              "RelativeDocumentMoniker": "BrainWave.PresentationLayer\\Views\\AccountSettings\\Index.cshtml",
+              "ToolTip": "C:\\Users\\mgund\\OneDrive\\Masa\u00FCst\u00FC\\brainwave\\Brainwave\\BrainWave.PresentationLayer\\Views\\AccountSettings\\Index.cshtml",
+              "RelativeToolTip": "BrainWave.PresentationLayer\\Views\\AccountSettings\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAGYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-10T16:20:36.367Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "AccountSettingsController.cs",
+              "DocumentMoniker": "C:\\Users\\mgund\\OneDrive\\Masa\u00FCst\u00FC\\brainwave\\Brainwave\\BrainWave.PresentationLayer\\Controllers\\AccountSettingsController.cs",
+              "RelativeDocumentMoniker": "BrainWave.PresentationLayer\\Controllers\\AccountSettingsController.cs",
+              "ToolTip": "C:\\Users\\mgund\\OneDrive\\Masa\u00FCst\u00FC\\brainwave\\Brainwave\\BrainWave.PresentationLayer\\Controllers\\AccountSettingsController.cs",
+              "RelativeToolTip": "BrainWave.PresentationLayer\\Controllers\\AccountSettingsController.cs",
+              "ViewState": "AQIAAG4AAAAAAAAAAAAuwHQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-10T16:19:45.131Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "AccountSettingsDto.cs",
+              "DocumentMoniker": "C:\\Users\\mgund\\OneDrive\\Masa\u00FCst\u00FC\\brainwave\\Brainwave\\BrainWave.DtoLayer\\DataTransferObjects\\AppUserDtos\\AccountSettingsDto.cs",
+              "RelativeDocumentMoniker": "BrainWave.DtoLayer\\DataTransferObjects\\AppUserDtos\\AccountSettingsDto.cs",
+              "ToolTip": "C:\\Users\\mgund\\OneDrive\\Masa\u00FCst\u00FC\\brainwave\\Brainwave\\BrainWave.DtoLayer\\DataTransferObjects\\AppUserDtos\\AccountSettingsDto.cs",
+              "RelativeToolTip": "BrainWave.DtoLayer\\DataTransferObjects\\AppUserDtos\\AccountSettingsDto.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAYwBkAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-10T16:18:52.093Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Context.cs",
+              "DocumentMoniker": "C:\\Users\\mgund\\OneDrive\\Masa\u00FCst\u00FC\\brainwave\\Brainwave\\BrainWave.DataAccessLayer\\Concrete\\Context.cs",
+              "RelativeDocumentMoniker": "BrainWave.DataAccessLayer\\Concrete\\Context.cs",
+              "ToolTip": "C:\\Users\\mgund\\OneDrive\\Masa\u00FCst\u00FC\\brainwave\\Brainwave\\BrainWave.DataAccessLayer\\Concrete\\Context.cs",
+              "RelativeToolTip": "BrainWave.DataAccessLayer\\Concrete\\Context.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAYAAAA2AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-09T21:07:08.661Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\mgund\\OneDrive\\Masa\u00FCst\u00FC\\brainwave\\Brainwave\\BrainWave.PresentationLayer\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "BrainWave.PresentationLayer\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\mgund\\OneDrive\\Masa\u00FCst\u00FC\\brainwave\\Brainwave\\BrainWave.PresentationLayer\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "BrainWave.PresentationLayer\\Views\\Home\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-09T17:36:20.347Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\mgund\\OneDrive\\Masa\u00FCst\u00FC\\brainwave\\Brainwave\\BrainWave.PresentationLayer\\Views\\Login\\Index.cshtml",
+              "RelativeDocumentMoniker": "BrainWave.PresentationLayer\\Views\\Login\\Index.cshtml",
+              "ToolTip": "C:\\Users\\mgund\\OneDrive\\Masa\u00FCst\u00FC\\brainwave\\Brainwave\\BrainWave.PresentationLayer\\Views\\Login\\Index.cshtml",
+              "RelativeToolTip": "BrainWave.PresentationLayer\\Views\\Login\\Index.cshtml",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAwAAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-09T17:36:20.395Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\mgund\\OneDrive\\Masa\u00FCst\u00FC\\brainwave\\Brainwave\\BrainWave.PresentationLayer\\Views\\MyProjects\\Index.cshtml",
+              "RelativeDocumentMoniker": "BrainWave.PresentationLayer\\Views\\MyProjects\\Index.cshtml",
+              "ToolTip": "C:\\Users\\mgund\\OneDrive\\Masa\u00FCst\u00FC\\brainwave\\Brainwave\\BrainWave.PresentationLayer\\Views\\MyProjects\\Index.cshtml",
+              "RelativeToolTip": "BrainWave.PresentationLayer\\Views\\MyProjects\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-09T17:36:20.843Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\mgund\\OneDrive\\Masa\u00FCst\u00FC\\brainwave\\Brainwave\\BrainWave.PresentationLayer\\Views\\Mentor\\Index.cshtml",
+              "RelativeDocumentMoniker": "BrainWave.PresentationLayer\\Views\\Mentor\\Index.cshtml",
+              "ToolTip": "C:\\Users\\mgund\\OneDrive\\Masa\u00FCst\u00FC\\brainwave\\Brainwave\\BrainWave.PresentationLayer\\Views\\Mentor\\Index.cshtml",
+              "RelativeToolTip": "BrainWave.PresentationLayer\\Views\\Mentor\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-09T17:36:21.209Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\mgund\\OneDrive\\Masa\u00FCst\u00FC\\brainwave\\Brainwave\\BrainWave.PresentationLayer\\Views\\EditProfile\\Index.cshtml",
+              "RelativeDocumentMoniker": "BrainWave.PresentationLayer\\Views\\EditProfile\\Index.cshtml",
+              "ToolTip": "C:\\Users\\mgund\\OneDrive\\Masa\u00FCst\u00FC\\brainwave\\Brainwave\\BrainWave.PresentationLayer\\Views\\EditProfile\\Index.cshtml",
+              "RelativeToolTip": "BrainWave.PresentationLayer\\Views\\EditProfile\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-09T17:36:21.21Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\mgund\\OneDrive\\Masa\u00FCst\u00FC\\brainwave\\Brainwave\\BrainWave.PresentationLayer\\Views\\CreateProject\\Index.cshtml",
+              "RelativeDocumentMoniker": "BrainWave.PresentationLayer\\Views\\CreateProject\\Index.cshtml",
+              "ToolTip": "C:\\Users\\mgund\\OneDrive\\Masa\u00FCst\u00FC\\brainwave\\Brainwave\\BrainWave.PresentationLayer\\Views\\CreateProject\\Index.cshtml",
+              "RelativeToolTip": "BrainWave.PresentationLayer\\Views\\CreateProject\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-09T17:36:21.211Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\mgund\\OneDrive\\Masa\u00FCst\u00FC\\brainwave\\Brainwave\\BrainWave.PresentationLayer\\Views\\ConfirmMail\\Index.cshtml",
+              "RelativeDocumentMoniker": "BrainWave.PresentationLayer\\Views\\ConfirmMail\\Index.cshtml",
+              "ToolTip": "C:\\Users\\mgund\\OneDrive\\Masa\u00FCst\u00FC\\brainwave\\Brainwave\\BrainWave.PresentationLayer\\Views\\ConfirmMail\\Index.cshtml",
+              "RelativeToolTip": "BrainWave.PresentationLayer\\Views\\ConfirmMail\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-09T17:36:21.212Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\mgund\\OneDrive\\Masa\u00FCst\u00FC\\brainwave\\Brainwave\\BrainWave.PresentationLayer\\Views\\Profile\\Index.cshtml",
+              "RelativeDocumentMoniker": "BrainWave.PresentationLayer\\Views\\Profile\\Index.cshtml",
+              "ToolTip": "C:\\Users\\mgund\\OneDrive\\Masa\u00FCst\u00FC\\brainwave\\Brainwave\\BrainWave.PresentationLayer\\Views\\Profile\\Index.cshtml",
+              "RelativeToolTip": "BrainWave.PresentationLayer\\Views\\Profile\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-09T17:36:21.213Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\mgund\\OneDrive\\Masa\u00FCst\u00FC\\brainwave\\Brainwave\\BrainWave.PresentationLayer\\Views\\AllUsers\\Index.cshtml",
+              "RelativeDocumentMoniker": "BrainWave.PresentationLayer\\Views\\AllUsers\\Index.cshtml",
+              "ToolTip": "C:\\Users\\mgund\\OneDrive\\Masa\u00FCst\u00FC\\brainwave\\Brainwave\\BrainWave.PresentationLayer\\Views\\AllUsers\\Index.cshtml",
+              "RelativeToolTip": "BrainWave.PresentationLayer\\Views\\AllUsers\\Index.cshtml",
+              "ViewState": "AQIAAM8AAAAAAAAAAAAAAM4AAAA2AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-09T17:36:21.214Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\mgund\\OneDrive\\Masa\u00FCst\u00FC\\brainwave\\Brainwave\\BrainWave.PresentationLayer\\Views\\AllProjects\\Index.cshtml",
+              "RelativeDocumentMoniker": "BrainWave.PresentationLayer\\Views\\AllProjects\\Index.cshtml",
+              "ToolTip": "C:\\Users\\mgund\\OneDrive\\Masa\u00FCst\u00FC\\brainwave\\Brainwave\\BrainWave.PresentationLayer\\Views\\AllProjects\\Index.cshtml",
+              "RelativeToolTip": "BrainWave.PresentationLayer\\Views\\AllProjects\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-09T17:36:21.214Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\mgund\\OneDrive\\Masa\u00FCst\u00FC\\brainwave\\Brainwave\\BrainWave.PresentationLayer\\Views\\AllResources\\Index.cshtml",
+              "RelativeDocumentMoniker": "BrainWave.PresentationLayer\\Views\\AllResources\\Index.cshtml",
+              "ToolTip": "C:\\Users\\mgund\\OneDrive\\Masa\u00FCst\u00FC\\brainwave\\Brainwave\\BrainWave.PresentationLayer\\Views\\AllResources\\Index.cshtml",
+              "RelativeToolTip": "BrainWave.PresentationLayer\\Views\\AllResources\\Index.cshtml",
+              "ViewState": "AQIAABgAAAAAAAAAAAAAAAwAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-09T17:36:21.215Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

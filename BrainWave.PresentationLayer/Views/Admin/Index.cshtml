@@ -1,0 +1,39 @@
+﻿@model IEnumerable<BrainWave.EntityLayer.Concrete.AppUser>
+
+@{
+    ViewBag.Title = "Admin Panel";
+}
+
+<h1>Admin Panel</h1>
+
+<h2>Manage Users</h2>
+
+<table>
+    <thead>
+        <tr>
+            <th>Username</th>
+            <th>Email</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var user in Model)
+        {
+            <tr>
+                <td>@user.UserName</td>
+                <td>@user.Email</td>
+                <td>
+                    <form asp-action="DeleteUser" method="post">
+                        <input type="hidden" name="userId" value="@user.Id" />
+                        <button type="submit">Delete</button>
+                    </form>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+@if (ViewBag.Message != null)
+{
+    <p>@ViewBag.Message</p>
+}

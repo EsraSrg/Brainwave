@@ -1,0 +1,102 @@
+﻿@model BrainWave.DtoLayer.DataTransferObjects.AppUserDtos.AppUserAccountSettingsDto
+
+@{
+    ViewData["Title"] = "Account Settings";
+}
+
+<h2>Update Account Details</h2>
+
+@if (TempData["SuccessMessage"] != null)
+{
+    <div class="alert alert-success">
+        @TempData["SuccessMessage"]
+    </div>
+}
+
+@if (!ViewData.ModelState.IsValid)
+{
+    <div class="alert alert-danger">
+        <ul>
+            @foreach (var error in ViewData.ModelState.Values.SelectMany(v => v.Errors))
+            {
+                <li>@error.ErrorMessage</li>
+            }
+        </ul>
+    </div>
+}
+
+<div class="row">
+    <div class="col-md-3">
+        <div class="list-group">
+            <a href="javascript:void(0);" class="list-group-item list-group-item-action" onclick="showSection('usernameSection')">Change Username</a>
+            <a href="javascript:void(0);" class="list-group-item list-group-item-action" onclick="showSection('emailSection')">Change Email</a>
+            <a href="javascript:void(0);" class="list-group-item list-group-item-action" onclick="showSection('passwordSection')">Change Password</a>
+        </div>
+    </div>
+    <div class="col-md-9">
+        <div id="usernameSection" class="section" style="display:none;">
+            <form asp-action="UpdateUsername" method="post">
+                <div class="form-group">
+                    <label asp-for="NewUserName"></label>
+                    <input asp-for="NewUserName" class="form-control" />
+                    <span asp-validation-for="NewUserName" class="text-danger"></span>
+                </div>
+                <input type="hidden" asp-for="NewEmail" />
+                <input type="hidden" asp-for="OldPassword" />
+                <input type="hidden" asp-for="NewPassword" />
+                <input type="hidden" asp-for="ConfirmPassword" />
+                <button type="submit" class="btn btn-primary">Update Username</button>
+            </form>
+        </div>
+        <div id="emailSection" class="section" style="display:none;">
+            <form asp-action="UpdateEmail" method="post">
+                <div class="form-group">
+                    <label asp-for="NewEmail"></label>
+                    <input asp-for="NewEmail" class="form-control" />
+                    <span asp-validation-for="NewEmail" class="text-danger"></span>
+                </div>
+                <input type="hidden" asp-for="NewUserName" />
+                <input type="hidden" asp-for="OldPassword" />
+                <input type="hidden" asp-for="NewPassword" />
+                <input type="hidden" asp-for="ConfirmPassword" />
+                <button type="submit" class="btn btn-primary">Update Email</button>
+            </form>
+        </div>
+        <div id="passwordSection" class="section" style="display:none;">
+            <form asp-action="UpdatePassword" method="post">
+                <div class="form-group">
+                    <label asp-for="OldPassword"></label>
+                    <input asp-for="OldPassword" type="password" class="form-control" />
+                    <span asp-validation-for="OldPassword" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="NewPassword"></label>
+                    <input asp-for="NewPassword" type="password" class="form-control" />
+                    <span asp-validation-for="NewPassword" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="ConfirmPassword"></label>
+                    <input asp-for="ConfirmPassword" type="password" class="form-control" />
+                    <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+                </div>
+                <input type="hidden" asp-for="NewUserName" />
+                <input type="hidden" asp-for="NewEmail" />
+                <button type="submit" class="btn btn-primary">Update Password</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+    <script>
+        function showSection(sectionId) {
+            document.getElementById('usernameSection').style.display = 'none';
+            document.getElementById('emailSection').style.display = 'none';
+            document.getElementById('passwordSection').style.display = 'none';
+            document.getElementById(sectionId).style.display = 'block';
+        }
+    </script>
+}

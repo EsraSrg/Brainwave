@@ -13,7 +13,11 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BrainWave.PresentationLayer")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
+<<<<<<< Updated upstream
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e1a4ad1a487b44b1d82b3c19a5cd6eee944f1eb4")]
+=======
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c2f9fb96f88db664ddd6661f8dbca48a33459b25")]
+>>>>>>> Stashed changes
 [assembly: System.Reflection.AssemblyProductAttribute("BrainWave.PresentationLayer")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BrainWave.PresentationLayer")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

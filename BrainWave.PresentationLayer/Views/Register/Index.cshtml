@@ -1,4 +1,5 @@
-﻿@model AppUserRegisterDto
+﻿@model BrainWave.DtoLayer.DataTransferObjects.AppUserDtos.AppUserRegisterDto
+
 @{
     Layout = null;
 }
@@ -17,7 +18,7 @@
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            width: 80%; /* Container'ın genişliğini ayarla */
+            width: 80%;
             max-width: 500px;
             padding: 40px;
             background-color: rgba(255, 255, 255, 0.062);
@@ -31,7 +32,7 @@
         }
 
         h2 {
-            margin:0px;
+            margin: 0px;
             color: #ffffff5f
         }
 
@@ -102,11 +103,17 @@
                 <span asp-validation-for="Username"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Type" class="control-label"> Kullanıcı Tipi:</label>
-                <select asp-for="Type" class="form-control">
+                <label asp-for="Role" class="control-label"> Kullanıcı Yetki Tipi:</label>
+                <select asp-for="Role" class="form-control">
+                    <option value="User">Standart</option>
+                    <option value="Admin">Admin</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label asp-for="UserType" class="control-label"> Kullanıcı Türü:</label>
+                <select asp-for="UserType" class="form-control">
                     <option value="Mentor">Mentor</option>
                     <option value="Menti">Menti</option>
-                    <option value="Standart">Standart</option>
                 </select>
             </div>
             <div class="form-group">
@@ -143,8 +150,6 @@
             color: 0xe6e6e6,
             backgroundColor: 0xc0b25
         });
-
-
     </script>
 </body>
 </html>

@@ -1,13 +1,14 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using System;
 using System.Collections.Generic;
-using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace BrainWave.EntityLayer.Concrete
 {
+  
+
     public class AppUser : IdentityUser<int>
     {
         public string Name { get; set; }
@@ -18,16 +19,12 @@ namespace BrainWave.EntityLayer.Concrete
         public string? Education { get; set; }
         public string? Experience { get; set; }
         public string? Skills { get; set; }
-		public string? MainInterest { get; set; }
-		public string? Interests { get; set; }
-		public string? Socials { get; set; }
-		public string? Type { get; set; }
-		public int ConfirmCode { get; set; }
-		//public ImageConverter? Image { get; set; }
-		public string? ProfileImagePath { get; set; }
-
-		//one to many relationship
-		public List<UserProject> UserProjects { get; set; }
-
-	}
+        public string? MainInterest { get; set; }
+        public string? Interests { get; set; }
+        public string? Socials { get; set; }
+        public string? Type { get; set; } // Admin, Standart, Mentor, Menti etc.
+        public int ConfirmCode { get; set; }
+        public string? ProfileImagePath { get; set; }
+        public List<UserProject> UserProjects { get; set; }
+    }
 }

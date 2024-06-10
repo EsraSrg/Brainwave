@@ -1,0 +1,31 @@
+﻿@model IEnumerable<BrainWave.EntityLayer.Concrete.UserRequest>
+
+@{
+    ViewBag.Title = "Bekleyen İstekler";
+}
+
+<h2>Bekleyen İstekler</h2>
+
+@if (Model.Any())
+{
+    <ul>
+        @foreach (var request in Model)
+        {
+            <li>
+                <h3>@request.SenderUsername</h3>
+                <form asp-action="ApproveRequest" method="post">
+                    <input type="hidden" name="requestId" value="@request.UserRequestID" />
+                    <button type="submit">Onayla</button>
+                </form>
+                <form asp-action="RejectRequest" method="post">
+                    <input type="hidden" name="requestId" value="@request.UserRequestID" />
+                    <button type="submit">Reddet</button>
+                </form>
+            </li>
+        }
+    </ul>
+}
+else
+{
+    <p>Bekleyen isteğiniz yok.</p>
+}

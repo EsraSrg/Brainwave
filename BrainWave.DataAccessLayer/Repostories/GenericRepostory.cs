@@ -1,46 +1,46 @@
 ﻿using BrainWave.DataAccessLayer.Abstract;
 using BrainWave.DataAccessLayer.Concrete;
-using System;
+using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace BrainWave.DataAccessLayer.Repostories
 {
-    public class GenericRepository<T> : IGenericDal<T> where T : class
+    public class GenericRepository<TEntity> : IGenericRepository<TEntity> where TEntity : class
     {
-        public void Delete(T t)
+        private readonly Context _context;
+
+        public GenericRepository(Context context)
         {
-            using var context = new Context();
-            context.Set<T>().Remove(t);
-            context.SaveChanges();
+            _context = context;
         }
 
-        public T GetByID(int id)
+        public TEntity GetByID(int id)
         {
-            using var context = new Context();
-            return context.Set<T>().Find(id);
+            return _context.Set<TEntity>().Find(id);
         }
 
-        public List<T> GetList()
+        public List<TEntity> GetList()
         {
-            using var context = new Context();
-            return context.Set<T>().ToList();
+            return _context.Set<TEntity>().ToList();
         }
 
-        public void Insert(T t)
+        public void Insert(TEntity entity)
         {
-            using var context = new Context();
-            context.Set<T>().Add(t);
-            context.SaveChanges();
+            _context.Set<TEntity>().Add(entity);
+            _context.SaveChanges();
         }
 
-        public void Update(T t)
+        public void Update(TEntity entity)
         {
-            using var context = new Context();
-            context.Set<T>().Update(t);
-            context.SaveChanges();
+            _context.Set<TEntity>().Update(entity);
+            _context.SaveChanges();
+        }
+
+        public void Delete(TEntity entity)
+        {
+            _context.Set<TEntity>().Remove(entity);
+            _context.SaveChanges();
         }
     }
 }
