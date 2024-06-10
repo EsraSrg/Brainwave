@@ -1,102 +1,279 @@
 ﻿@model BrainWave.DtoLayer.DataTransferObjects.AppUserDtos.AppUserAccountSettingsDto
 
 @{
-    ViewData["Title"] = "Account Settings";
+    Layout = null;
+    ViewData["Title"] = "Hesap Ayarları";
 }
 
-<h2>Update Account Details</h2>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brainwave</title>
+    <link rel="stylesheet" href="~/css/Style.css">
+    <style>
+        h2 {
+            color: #000000c4;
+        }
 
-@if (TempData["SuccessMessage"] != null)
-{
-    <div class="alert alert-success">
-        @TempData["SuccessMessage"]
-    </div>
-}
+        h1 {
+            color: #ffffff;
+        }
 
-@if (!ViewData.ModelState.IsValid)
-{
-    <div class="alert alert-danger">
-        <ul>
-            @foreach (var error in ViewData.ModelState.Values.SelectMany(v => v.Errors))
-            {
-                <li>@error.ErrorMessage</li>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #02031a;
+        }
+
+        .container {
+            position: absolute;
+            z-index: 1;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 300px;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.11);
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .options {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .option {
+            background-color: rgba(240, 240, 240, 0.8);
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            color: black;
+            text-align: center;
+        }
+
+            .option:hover {
+                background-color: rgba(224, 224, 224, 0.38);
             }
-        </ul>
-    </div>
-}
 
-<div class="row">
-    <div class="col-md-3">
-        <div class="list-group">
-            <a href="javascript:void(0);" class="list-group-item list-group-item-action" onclick="showSection('usernameSection')">Change Username</a>
-            <a href="javascript:void(0);" class="list-group-item list-group-item-action" onclick="showSection('emailSection')">Change Email</a>
-            <a href="javascript:void(0);" class="list-group-item list-group-item-action" onclick="showSection('passwordSection')">Change Password</a>
+        .sidebar {
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 200px;
+            height: 100%;
+            background-color: rgba(167, 167, 167, 0.192);
+            padding-top: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+            .sidebar a {
+                display: block;
+                width: 100%;
+                padding: 15px 20px;
+                margin: 10px 0;
+                color: #fff;
+                text-decoration: none;
+                text-align: center;
+            }
+
+                .sidebar a:hover {
+                    background-color: #86858545;
+                }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+            .logo img {
+                width: 120px;
+                height: auto;
+                margin-right: 5px;
+            }
+
+            .logo h1 {
+                margin: 0;
+                color: #fff;
+                font-size: 24px;
+                cursor: pointer;
+            }
+
+        .top-right {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            display: flex;
+            gap: 20px;
+        }
+
+            .top-right a {
+                color: white;
+                text-decoration: none;
+                background-color: rgba(0, 0, 0, 0.5);
+                padding: 10px 20px;
+                border-radius: 5px;
+                box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            }
+
+                .top-right a:hover {
+                    background-color: rgba(169, 169, 169, 0.332);
+                }
+
+        .form-container {
+            display: none;
+        }
+
+            .form-container.active {
+                display: block;
+                background-color: rgba(240, 240, 240, 0.8);
+                padding: 20px;
+                border-radius: 5px;
+                margin-top: 20px;
+            }
+
+        .form-group {
+            margin-bottom: 15px;
+            text-align: left;
+        }
+
+            .form-group label {
+                display: block;
+                margin-bottom: 5px;
+                color: #f0f0f0c1;
+            }
+
+            .form-group input {
+                width: 100%;
+                padding: 8px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+            }
+
+        .btn-primary {
+            background-color: #4CAF50;
+            border-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+            .btn-primary:hover {
+                background-color: #2b8c2eed;
+                border-color: #2b8c2eed;
+            }
+
+        .btn-block {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div id="background-animation"></div>
+    <div class="background"></div>
+    <div class="sidebar">
+        <div class="logo">
+            <a href="/Home/Index">
+                <img src="~/images/img1.png" alt="Brainwave Logo">
+                <h1>Brainwave</h1>
+            </a>
         </div>
+        <a href="/Home/Index">Anasayfa</a>
+        <a href="/Profile/Index">Profilim</a>
+        <a href="/Messages/Index">Mesajlar</a>
+        <a href="/Baglantilarim/Index">Bağlantılarım</a>
+        <a href="/MyProjects/Index">Projelerim</a>
     </div>
-    <div class="col-md-9">
-        <div id="usernameSection" class="section" style="display:none;">
+    <div class="top-right">
+        <a href="/Login/Index">Çıkış Yap</a>
+        <a href="/AccountSettings/Index">Ayarlar</a>
+    </div>
+    <div class="container">
+        <div class="options">
+            <a href="javascript:void(0);" class="option" onclick="showForm('usernameForm')">Kullanıcı Adını Değiştir</a>
+            <a href="javascript:void(0);" class="option" onclick="showForm('emailForm')">Email Değiştir</a>
+            <a href="javascript:void(0);" class="option" onclick="showForm('passwordForm')">Şifreni Değiştir</a>
+        </div>
+        <div id="usernameForm" class="form-container">
             <form asp-action="UpdateUsername" method="post">
                 <div class="form-group">
-                    <label asp-for="NewUserName"></label>
+                    <label asp-for="NewUserName">Yeni Kullanıcı Adı:</label>
                     <input asp-for="NewUserName" class="form-control" />
                     <span asp-validation-for="NewUserName" class="text-danger"></span>
                 </div>
-                <input type="hidden" asp-for="NewEmail" />
-                <input type="hidden" asp-for="OldPassword" />
-                <input type="hidden" asp-for="NewPassword" />
-                <input type="hidden" asp-for="ConfirmPassword" />
-                <button type="submit" class="btn btn-primary">Update Username</button>
+                <button type="submit" class="btn btn-primary btn-block">Güncelle</button>
             </form>
         </div>
-        <div id="emailSection" class="section" style="display:none;">
+        <div id="emailForm" class="form-container">
             <form asp-action="UpdateEmail" method="post">
                 <div class="form-group">
-                    <label asp-for="NewEmail"></label>
+                    <label asp-for="NewEmail">Yeni Email:</label>
                     <input asp-for="NewEmail" class="form-control" />
                     <span asp-validation-for="NewEmail" class="text-danger"></span>
                 </div>
-                <input type="hidden" asp-for="NewUserName" />
-                <input type="hidden" asp-for="OldPassword" />
-                <input type="hidden" asp-for="NewPassword" />
-                <input type="hidden" asp-for="ConfirmPassword" />
-                <button type="submit" class="btn btn-primary">Update Email</button>
+                <button type="submit" class="btn btn-primary btn-block">Güncelle</button>
             </form>
         </div>
-        <div id="passwordSection" class="section" style="display:none;">
+        <div id="passwordForm" class="form-container">
             <form asp-action="UpdatePassword" method="post">
                 <div class="form-group">
-                    <label asp-for="OldPassword"></label>
+                    <label asp-for="OldPassword">Eski Şifre:</label>
                     <input asp-for="OldPassword" type="password" class="form-control" />
                     <span asp-validation-for="OldPassword" class="text-danger"></span>
                 </div>
                 <div class="form-group">
-                    <label asp-for="NewPassword"></label>
+                    <label asp-for="NewPassword">Yeni Şifre:</label>
                     <input asp-for="NewPassword" type="password" class="form-control" />
                     <span asp-validation-for="NewPassword" class="text-danger"></span>
                 </div>
                 <div class="form-group">
-                    <label asp-for="ConfirmPassword"></label>
+                    <label asp-for="ConfirmPassword">Şifreni Onayla:</label>
                     <input asp-for="ConfirmPassword" type="password" class="form-control" />
                     <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
                 </div>
-                <input type="hidden" asp-for="NewUserName" />
-                <input type="hidden" asp-for="NewEmail" />
-                <button type="submit" class="btn btn-primary">Update Password</button>
+                <button type="submit" class="btn btn-primary btn-block">Güncelle</button>
             </form>
         </div>
     </div>
-</div>
-
-@section Scripts {
-    @{
-        await Html.RenderPartialAsync("_ValidationScriptsPartial");
-    }
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="~/js/three.r134.min.js"></script>
+    <script src="~/js/vanta.net.min.js"></script>
     <script>
-        function showSection(sectionId) {
-            document.getElementById('usernameSection').style.display = 'none';
-            document.getElementById('emailSection').style.display = 'none';
-            document.getElementById('passwordSection').style.display = 'none';
-            document.getElementById(sectionId).style.display = 'block';
+        VANTA.NET({
+            el: "#background-animation",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            scale: 1.00,
+            scaleMobile: 1.00,
+            color: 0xe6e6e6,
+            backgroundColor: 0xc0b25
+        });
+
+        function showForm(formId) {
+            document.getElementById('usernameForm').classList.remove('active');
+            document.getElementById('emailForm').classList.remove('active');
+            document.getElementById('passwordForm').classList.remove('active');
+            document.getElementById(formId).classList.add('active');
         }
     </script>
-}
+</body>
+</html>
+

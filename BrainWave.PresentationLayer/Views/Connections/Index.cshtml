@@ -2,29 +2,214 @@
 
 @{
     ViewBag.Title = "Bağlantılarım";
+    Layout = null;
 }
 
-<div style="position: relative;">
-    <a href="@Url.Action("Index", "PendingRequests")" style="position: absolute; top: 10px; right: 10px; padding: 10px 20px; background-color: #007bff; color: white; text-decoration: none; border-radius: 5px;">
-        Bekleyen İstekleri Görüntüle
-    </a>
-</div>
-
-<h2>Onaylanan Bağlantılar</h2>
-
-@if (Model.Any())
-{
-    <ul>
-        @foreach (var connection in Model)
-        {
-            <li>
-                <h3>@connection.UserName</h3>
-                <p>@connection.Email</p>
-            </li>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brainwave</title>
+    <link rel="stylesheet" href="~/css/Style.css">
+    <style>
+        h2, h3, li, ul, p {
+            color: #ffffffc4;
         }
-    </ul>
-}
-else
-{
-    <p>Hiç onaylanmış bağlantınız yok.</p>
-}
+
+        h1 {
+            color: #ffffff;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #02031a;
+        }
+
+        .container {
+            position: absolute;
+            z-index: 1;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            max-width: 800px;
+            padding: 40px;
+            background-color: rgba(255, 255, 255, 0.11);
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .user-list {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .user {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            background-color: rgba(240, 240, 240, 0.8);
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 700px;
+            text-align: left;
+        }
+
+        .sidebar {
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 200px;
+            height: 100%;
+            background-color: rgba(167, 167, 167, 0.192);
+            padding-top: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+            .sidebar a {
+                display: block;
+                width: 100%;
+                padding: 15px 20px;
+                margin: 10px 0;
+                color: #fff;
+                text-decoration: none;
+                text-align: center;
+            }
+
+                .sidebar a:hover {
+                    background-color: #86858545;
+                }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+            .logo img {
+                width: 120px;
+                height: auto;
+                margin-right: 5px;
+            }
+
+            .logo h1 {
+                margin: 0;
+                color: #fff;
+                font-size: 24px;
+                cursor: pointer;
+            }
+
+        .top-right {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            display: flex;
+            gap: 20px;
+        }
+
+            .top-right a {
+                color: white;
+                text-decoration: none;
+                background-color: rgba(0, 0, 0, 0.5);
+                padding: 10px 20px;
+                border-radius: 5px;
+                box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            }
+
+                .top-right a:hover {
+                    background-color: rgba(169, 169, 169, 0.332);
+                }
+
+        .button {
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 20px;
+        }
+
+            .button:hover {
+                background-color: #2f8132;
+            }
+    </style>
+</head>
+<body>
+    <div id="background-animation"></div>
+    <div class="background"></div>
+    <div class="sidebar">
+        <div class="logo">
+            <a href="/Home/Index">
+                <img src="~/images/img1.png" alt="Brainwave Logo">
+                <h1>Brainwave</h1>
+            </a>
+        </div>
+        <a href="/Home/Index">Anasayfa</a>
+        <a href="/Profile/Index">Profilim</a>
+        <a href="/Messages/Index">Mesajlar</a>
+        <a href="/Connections/Index">Bağlantılarım</a>
+        <a href="/MyProjects/Index">Projelerim</a>
+    </div>
+    <div class="top-right">
+        <a href="/Login/Index">Çıkış Yap</a>
+        <a href="/AccountSettings/Index">Ayarlar</a>
+    </div>
+    <div class="container">
+
+        <button class="button" onclick="window.location.href='@Url.Action("Index", "PendingRequests")';">Bekleyen İstekleri Gör</button>
+
+        <h2>Bağlantılarım</h2>
+
+        @if (Model.Any())
+        {
+            <div class="user-list">
+                @foreach (var connection in Model)
+                {
+                    <div class="user">
+                        <h3>@connection.UserName</h3>
+                        <p>@connection.Email</p>
+                    </div>
+                }
+            </div>
+        }
+        else
+        {
+            <p>Hiç onaylanmış bağlantınız yok.</p>
+        }
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="~/js/three.r134.min.js"></script>
+    <script src="~/js/vanta.net.min.js"></script>
+    <script>
+        VANTA.NET({
+            el: "#background-animation",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            scale: 1.00,
+            scaleMobile: 1.00,
+            color: 0xe6e6e6,
+            backgroundColor: 0xc0b25
+        });
+    </script>
+</body>
+</html>
+
+

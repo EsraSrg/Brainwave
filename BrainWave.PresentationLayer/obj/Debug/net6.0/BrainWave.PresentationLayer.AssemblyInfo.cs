@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BrainWave.PresentationLayer")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2fc9f552fa5f6557313c7e49a41f55b60b2ea8f1")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+415908e6e076b821e64ff4c744e646fcad53a347")]
 [assembly: System.Reflection.AssemblyProductAttribute("BrainWave.PresentationLayer")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BrainWave.PresentationLayer")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
