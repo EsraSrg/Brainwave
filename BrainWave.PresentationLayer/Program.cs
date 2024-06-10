@@ -53,6 +53,8 @@ async Task CreateRoles(IServiceProvider serviceProvider)
     {
         UserName = builder.Configuration["AppSettings:UserName"],
         Email = builder.Configuration["AppSettings:UserEmail"],
+        Name = "Admin",
+        Surname = "User"
     };
 
     string userPassword = builder.Configuration["AppSettings:UserPassword"];

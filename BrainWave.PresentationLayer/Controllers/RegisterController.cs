@@ -43,7 +43,7 @@ namespace BrainWave.PresentationLayer.Controllers
                 var result = await _userManager.CreateAsync(appUser, appUserRegisterDto.Password);
                 if (result.Succeeded)
                 {
-                    var role = appUserRegisterDto.Role == "Admin" ? "Admin" : "User";
+                    var role = appUserRegisterDto.Role == "Admin" ? "Admin" : "Standart";
                     await _userManager.AddToRoleAsync(appUser, role);
 
                     MimeMessage mimeMessage = new MimeMessage();
