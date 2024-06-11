@@ -1,0 +1,40 @@
+﻿@model IEnumerable<BrainWave.EntityLayer.Concrete.AppUser>
+
+<h2>Admin Paneli</h2>
+
+@if (TempData["Message"] != null)
+{
+    <div class="alert alert-success">@TempData["Message"]</div>
+}
+
+<a href="@Url.Action("CreateUser")" class="btn btn-primary">Kullanıcı Ekle</a>
+<a href="@Url.Action("AddDropdownOption")" class="btn btn-primary">Yeni Seçenek Ekle</a>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Kullanıcı Adı</th>
+            <th>Email</th>
+            <th>Ad</th>
+            <th>Soyad</th>
+            <th>İşlemler</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var user in Model)
+        {
+            <tr>
+                <td>@user.UserName</td>
+                <td>@user.Email</td>
+                <td>@user.Name</td>
+                <td>@user.Surname</td>
+                <td>
+                    <form asp-action="DeleteUser" method="post">
+                        <input type="hidden" name="userId" value="@user.Id" />
+                        <button type="submit" class="btn btn-danger">Sil</button>
+                    </form>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

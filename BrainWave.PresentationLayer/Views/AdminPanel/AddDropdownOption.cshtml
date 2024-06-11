@@ -1,0 +1,23 @@
+﻿@model BrainWave.DtoLayer.DataTransferObjects.AddDropdownOptionDto
+
+<h2>Yeni Seçenek Ekle</h2>
+
+<form asp-action="AddDropdownOption" method="post">
+    <div class="form-group">
+        <label for="Category">Kategori</label>
+        <select asp-for="Category" class="form-control">
+            @foreach (var category in Model.Categories)
+            {
+                <option value="@category">@category</option>
+            }
+        </select>
+        <span asp-validation-for="Category" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label for="Option">Seçenek</label>
+        <input asp-for="Option" class="form-control" />
+        <span asp-validation-for="Option" class="text-danger"></span>
+    </div>
+    <button type="submit" class="btn btn-primary">Ekle</button>
+    <a href="@Url.Action("Index")" class="btn btn-secondary">Geri Dön</a>
+</form>

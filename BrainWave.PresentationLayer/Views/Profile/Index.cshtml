@@ -1,106 +1,103 @@
-﻿@model AppUserInfoDtos
+﻿@model BrainWave.DtoLayer.DataTransferObjects.AppUserInfoDtos
 @{
-	Layout = null;
+    Layout = null;
 }
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Kullanıcı Profili</title>
-	<style>
-		body {
-			font-family: Arial, sans-serif;
-			background-color: #f5f5f5;
-			margin: 0;
-			padding: 0;
-		}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kullanıcı Profili</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
 
-		.container {
-			max-width: 800px;
-			margin: 20px auto;
-			background-color: #fff;
-			padding: 20px;
-			border-radius: 8px;
-			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-		}
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
 
-		.profile-header {
-			text-align: center;
-			margin-bottom: 20px;
-		}
+        .profile-header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
 
-			.profile-header img {
-				width: 150px;
-				height: 150px;
-				border-radius: 50%;
-				margin-bottom: 10px;
-			}
+            .profile-header img {
+                width: 150px;
+                height: 150px;
+                border-radius: 50%;
+                margin-bottom: 10px;
+            }
 
-			.profile-header h1 {
-				margin: 0;
-				color: #333;
-			}
+            .profile-header h1 {
+                margin: 0;
+                color: #333;
+            }
 
-			.profile-header p {
-				margin: 5px 0;
-				color: #666;
-			}
+            .profile-header p {
+                margin: 5px 0;
+                color: #666;
+            }
 
-		.profile-info {
-			border-top: 1px solid #ccc;
-			margin-top: 20px;
-			padding-top: 20px;
-		}
+        .profile-info {
+            border-top: 1px solid #ccc;
+            margin-top: 20px;
+            padding-top: 20px;
+        }
 
-			.profile-info h2 {
-				margin-top: 0;
-				color: #333;
-			}
+            .profile-info h2 {
+                margin-top: 0;
+                color: #333;
+            }
 
-			.profile-info p {
-				margin: 5px 0;
-				color: #666;
-			}
-	</style>
+            .profile-info p {
+                margin: 5px 0;
+                color: #666;
+            }
+    </style>
 </head>
 <body>
+    <div class="container">
+        <div class="profile-header">
+            <h1>@Model.Name @Model.Surname</h1>
+        </div>
 
-	<div class="container">
-		<div class="profile-header">
-			@* <img src="https://via.placeholder.com/150" alt="Profile Picture"> *@
+        <div class="profile-info">
+            <h2>About Me</h2>
+            <p>@Model.About</p>
+            <h2>Experience</h2>
+            <p>@Model.Experience</p>
+            <h2>Education</h2>
+            <ul>
+                <li><strong>Lise:</strong> @Model.Education</li>
+                <li><strong>Üniversite:</strong> @Model.Education</li>
+            </ul>
+            <h2>Skills</h2>
+            <p>@Model.Skills</p>
+            <h2>Interests</h2>
+            <p>@Model.Interests</p>
+            <h2>Social Media Accounts</h2>
+            <p>@Model.Socials</p>
+        </div>
 
-			@* <h3>Profil Resmi</h3> *@
-			@* @if (ViewBag.UniqueFileName != null)
-			{
-				<img src="/images/@ViewBag.UniqueFileName alt="Profile Image" style="max-width: 200px; max-height: 200px;" />
-			} *@
-			@* <img src="~/images/@ViewBag.UniqueFileName.png" alt="Profile Image" style="max-width: 200px; max-height: 200px;" />
-			<a href="/Profile/UploadProfileImage" class="btn btn-primary">Edit Profile</a>
- *@
-			<h1>@Model.Name @Model.Surname</h1>
-		</div>
+        <div class="form-group">
+            <a href="/EditProfile/Index" class="btn btn-primary">Edit Profile</a>
+        </div>
 
-		<div class="profile-info">
-			<h2>About Me</h2>
-			<p>@Model.About</p>
-			<h2>Experience</h2>
-			<p>@Model.Experience</p>
-			<h2>Education</h2>
-			<p>@Model.Education</p>
-			<h2>Skills</h2>
-			<p>@Model.Skills</p>
-			<h2>Interests</h2>
-			<p>@Model.Interests</p>
-			<h2>Social Media Accounts</h2>
-			<p>@Model.Socials</p>
-		</div>
-		<div class="form-group">
-			<a href="/EditProfile/Index" class="btn btn-primary">Edit Profile</a>
-		</div>
-
-	</div>
-	</div>
-
+        @if (User.IsInRole("Admin"))
+        {
+            <div class="form-group">
+                <a href="/AdminPanel/Index" class="btn btn-secondary">Admin Paneli</a>
+            </div>
+        }
+    </div>
 </body>
 </html>
