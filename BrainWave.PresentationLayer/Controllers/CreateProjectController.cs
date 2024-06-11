@@ -10,6 +10,7 @@ namespace BrainWave.PresentationLayer.Controllers
     {
         private readonly UserManager<AppUser> _userManager;
         private readonly Context _context;
+
         public CreateProjectController(UserManager<AppUser> userManager, Context context)
         {
             _userManager = userManager;
@@ -23,10 +24,9 @@ namespace BrainWave.PresentationLayer.Controllers
         }
 
         [HttpPost]
-
         public async Task<IActionResult> Index(CreateProjectDto createProjectDto, List<ProjectRequest> projectRequests)
         {
-            if(ModelState.IsValid)
+            if (ModelState.IsValid)
             {
                 var user = await _userManager.FindByNameAsync(User.Identity.Name);
                 UserProject userProject = new UserProject()

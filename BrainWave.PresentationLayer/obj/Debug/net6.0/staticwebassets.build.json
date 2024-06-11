@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "zAqEzi7WGIKg8XJDNQot/NGrtwT+3+hXFbxSSrbKO90=",
+  "Hash": "391779yxmR46gNog4TICboyTb5LCXMOpZWkXoiIVXV4=",
   "Source": "BrainWave.PresentationLayer",
   "BasePath": "_content/BrainWave.PresentationLayer",
   "Mode": "Default",
@@ -91,6 +91,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\Style.css"
+    },
+    {
+      "Identity": "C:\\Users\\mgund\\OneDrive\\Masaüstü\\brainwave\\Brainwave\\BrainWave.PresentationLayer\\wwwroot\\dropdownOptions.json",
+      "SourceId": "BrainWave.PresentationLayer",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\mgund\\OneDrive\\Masaüstü\\brainwave\\Brainwave\\BrainWave.PresentationLayer\\wwwroot\\",
+      "BasePath": "_content/BrainWave.PresentationLayer",
+      "RelativePath": "dropdownOptions.json",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\dropdownOptions.json"
     },
     {
       "Identity": "C:\\Users\\mgund\\OneDrive\\Masaüstü\\brainwave\\Brainwave\\BrainWave.PresentationLayer\\wwwroot\\favicon.ico",
