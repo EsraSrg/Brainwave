@@ -161,7 +161,6 @@
         </div>
         <a href="/Home/Index">Anasayfa</a>
         <a href="/Profile/Index">Profilim</a>
-        <a href="/Messages/Index">Mesajlar</a>
         <a href="/Connections/Index">Bağlantılarım</a>
         <a href="/MyProjects/Index">Projelerim</a>
     </div>
@@ -181,8 +180,8 @@
                 @foreach (var connection in Model)
                 {
                     <div class="user">
-                        <h3>@connection.UserName</h3>
-                        <p>@connection.Email</p>
+                        <h3 style="color:black">@connection.UserName</h3>
+                        <p style="color:black">@connection.About</p>
                     </div>
                 }
             </div>
@@ -192,7 +191,7 @@
             <p>Hiç onaylanmış bağlantınız yok.</p>
         }
     </div>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    @* <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="~/js/three.r134.min.js"></script>
     <script src="~/js/vanta.net.min.js"></script>
     <script>
@@ -208,7 +207,7 @@
             color: 0xe6e6e6,
             backgroundColor: 0xc0b25
         });
-    </script>
+    </script> *@
 </body>
 </html>
 

@@ -11,6 +11,6 @@ namespace BrainWave.DtoLayer.DataTransferObjects
         [Required(ErrorMessage = "Seçenek alanı zorunludur.")]
         public string Option { get; set; }
 
-        public List<string> Categories { get; set; } = new List<string> { "Lise", "Üniversite", "Yetenekler", "İlgi Alanları" };
+        public List<string> Categories { get; set; } = new List<string> {"Üniversite", "Yetenekler", "İlgi Alanları" };
     }
 }

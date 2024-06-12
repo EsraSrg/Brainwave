@@ -45,7 +45,7 @@ namespace BrainWave.PresentationLayer.Controllers
                 };
                 await _context.AddAsync(userProject);
                 _context.SaveChanges();
-                return RedirectToAction("Index", "Deneme");
+                return RedirectToAction("Index", "MyProjects");
             }
             else
             {

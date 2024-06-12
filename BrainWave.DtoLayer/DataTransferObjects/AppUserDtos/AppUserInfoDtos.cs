@@ -26,8 +26,8 @@ namespace BrainWave.DtoLayer.DataTransferObjects
         public string Interests { get; set; }
 
         public string Socials { get; set; }
-        public IFormFile ProfileImage { get; set; }
-        public string ProfileImageName { get; set; }
+        //public IFormFile ProfileImage { get; set; }
+        //public string ProfileImageName { get; set; }
 
         // Dropdown options
         public List<string> HighSchoolOptions { get; set; } = new List<string> { "İzmir Kız Lisesi", "İzmir Atatürk Lisesi", "Bornova Anadolu Lisesi" };

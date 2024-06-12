@@ -34,7 +34,9 @@ namespace BrainWave.PresentationLayer.Controllers
 				.Where(up => projectRequestIds.Contains(up.UserProjectID) || up.AppUserID == user.Id)
 				.ToListAsync();
 
-			return View(myProjects);
+            ViewBag.UserId = user.Id;
+
+            return View(myProjects);
 		}
 		[HttpGet]
 		public async Task<IActionResult> Edit(int id)
@@ -49,8 +51,12 @@ namespace BrainWave.PresentationLayer.Controllers
 				return View();
 			}
 
-
-			return View(project);
+            //if (project.AppUserID != user.Id)
+            //{
+            //    TempData["Message"] = "Bu projeyi düzenleme yetkisine sahip değilsiniz.";
+            //    return RedirectToAction("Index","MyProjects"); // Yetki yoksa anasayfaya yönlendirir
+            //}
+            return View(project);
 		}
 
 		[HttpPost]

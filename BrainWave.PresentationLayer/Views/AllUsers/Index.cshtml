@@ -13,11 +13,9 @@
     <title>All Users</title>
     @* <link rel="stylesheet" type="text/css" href="~/css/Style.css"> *@
     <style>
-        h2 {
-            color: #4A4A4A;
-        }
 
-        h1 {
+
+        h1,h2 {
             color: #FFFFFF;
         }
 
@@ -26,21 +24,16 @@
             margin: 0;
             padding: 0;
             background-color: #02031a;
-            overflow-y: scroll;
+            overflow-y: auto; /* Dikey scroll bar eklenmesi için */
         }
 
         .container {
-            position: absolute;
-            z-index: 1;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            max-width: 800px;
-            padding: 40px;
-            background-color: rgba(255, 255, 255, 0.15);
-            border-radius: 10px;
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-            text-align: center;
+            max-width: 600px;
+            margin: 20px auto;
+            background-color: #ffffff40;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
 
         .options {
@@ -50,10 +43,10 @@
         }
 
         .option {
-            width: calc(90% - 5%);
+            width: calc(80% - 10%); /* Genişliği azalttık */
             background-color: rgba(255, 255, 255, 0.9);
-            padding: 20px;
-            margin-bottom: 20px;
+            padding: 10px; /* Padding'i azalttık */
+            margin-bottom: 10px; /* Margin'i azalttık */
             border-radius: 10px;
             box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
             cursor: pointer;
@@ -77,6 +70,7 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+            overflow-y: auto; /* Yan scroll bar eklenmesi için */
         }
 
             .sidebar a {
@@ -137,9 +131,10 @@
                 }
 
         .review {
+            width: 96%;
             background-color: rgba(255, 255, 255, 0.9);
-            padding: 20px;
-            margin-bottom: 20px;
+            padding: 10px; /* Padding'i azalttık */
+            margin-bottom: 10px; /* Margin'i azalttık */
             border-radius: 10px;
             box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
             text-align: left;
@@ -184,7 +179,7 @@
         </div>
         <a href="/Home/Index">Anasayfa</a>
         <a href="/Profile/Index">Profilim</a>
-        <a href="/Baglantilarim/Index">Bağlantılarım</a>
+        <a href="/connections/Index">Bağlantılarım</a>
         <a href="/MyProjects/Index">Projelerim</a>
     </div>
     <div class="top-right">
@@ -192,22 +187,23 @@
         <a href="#">Ayarlar</a>
     </div>
     <div class="container">
-        <h2>All Users</h2>
+        <h2>Tüm Kullanıcılar</h2>
         <div>
+
+            @{
+                // Dropdown seçeneklerini dosyadan yükleme
+                string filePath = "wwwroot/dropdownOptions.json";
+                var options = System.IO.File.Exists(filePath)
+                ? System.Text.Json.JsonSerializer.Deserialize<BrainWave.PresentationLayer.Controllers.DropdownOptions>(System.IO.File.ReadAllText(filePath))
+                : new BrainWave.PresentationLayer.Controllers.DropdownOptions();
+            }
             <!-- kategori ekle -->
             <form method="get" action="/AllUsers/Index">
                 <select name="category" id="category">
-                    <option value="Web Development">Web Development</option>
-                    <option value="Software Development">Software Development</option>
-                    <option value="Data Science & AI">Data Science & AI</option>
-                    <option value="Finance">Finance</option>
-                    <option value="E-commerce">E-commerce</option>
-                    <option value="Education">Education</option>
-                    <option value="Social & Communication">Social & Communication</option>
-                    <option value="Personal & Hobby">Personal & Hobby</option>
-                    <option value="Research & Development">Research & Development</option>
-                    <option value="Healthcare">Healthcare</option>
-                    <option value="Entertainment & Media">Entertainment & Media</option>
+                    @foreach (var item in options.SkillOptions)
+                    {
+                        <option value="@item">@item</option>
+                    }
                 </select>
                 <input type="submit" value="Ara" />
             </form>
@@ -219,7 +215,8 @@
                         <h4>@user.Name @user.Surname</h4>
                         <hr />
                         <p><strong>Kullanıcı Adı:</strong> @user.UserName</p>
-                        <p><strong>İlgi Alanı:</strong> @user.MainInterest</p>
+                        <p><strong>Yetenekler:</strong> @user.Skills</p>
+                        <p><strong>İlgi Alanı:</strong> @user.Interests</p>
                         <p><strong>Hakkında:</strong> @user.About</p>
                     }
                 </div>

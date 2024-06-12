@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\mgund\\OneDrive\\Masaüstü\\brainwave\\Brainwave\\BrainWave.EntityLayer\\BrainWave.EntityLayer.csproj": {}
+    "C:\\Users\\mgund\\OneDrive\\Masaüstü\\brainwave\\BrainWave\\BrainWave.EntityLayer\\BrainWave.EntityLayer.csproj": {}
   },
   "projects": {
-    "C:\\Users\\mgund\\OneDrive\\Masaüstü\\brainwave\\Brainwave\\BrainWave.EntityLayer\\BrainWave.EntityLayer.csproj": {
+    "C:\\Users\\mgund\\OneDrive\\Masaüstü\\brainwave\\BrainWave\\BrainWave.EntityLayer\\BrainWave.EntityLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mgund\\OneDrive\\Masaüstü\\brainwave\\Brainwave\\BrainWave.EntityLayer\\BrainWave.EntityLayer.csproj",
+        "projectUniqueName": "C:\\Users\\mgund\\OneDrive\\Masaüstü\\brainwave\\BrainWave\\BrainWave.EntityLayer\\BrainWave.EntityLayer.csproj",
         "projectName": "BrainWave.EntityLayer",
-        "projectPath": "C:\\Users\\mgund\\OneDrive\\Masaüstü\\brainwave\\Brainwave\\BrainWave.EntityLayer\\BrainWave.EntityLayer.csproj",
+        "projectPath": "C:\\Users\\mgund\\OneDrive\\Masaüstü\\brainwave\\BrainWave\\BrainWave.EntityLayer\\BrainWave.EntityLayer.csproj",
         "packagesPath": "C:\\Users\\mgund\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\mgund\\OneDrive\\Masaüstü\\brainwave\\Brainwave\\BrainWave.EntityLayer\\obj\\",
         "projectStyle": "PackageReference",

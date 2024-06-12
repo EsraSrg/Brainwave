@@ -10,7 +10,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AllProjects</title>
-    @* <link rel="stylesheet" href="~/css/Style.css"> *@
+    @* <link rel="stylesheet" type="text/css" href="~/css/Style.css"> *@
     <style>
         h2 {
             color: #4A4A4A;
@@ -132,6 +132,7 @@
                 }
 
         .review {
+            width: 96%;
             background-color: rgba(255, 255, 255, 0.9);
             padding: 10px; /* Padding'i azalttık */
             margin-bottom: 10px; /* Margin'i azalttık */
@@ -179,7 +180,7 @@
         </div>
         <a href="/Home/Index">Anasayfa</a>
         <a href="/Profile/Index">Profilim</a>
-        <a href="/Baglantilarim/Index">Bağlantılarım</a>
+        <a href="/connections/Index">Bağlantılarım</a>
         <a href="/MyProjects/Index">Projelerim</a>
     </div>
     <div class="top-right">
@@ -188,9 +189,22 @@
     </div>
     <div class="container">
 
+        @{
+            // Dropdown seçeneklerini dosyadan yükleme
+            string filePath = "wwwroot/dropdownOptions.json";
+            var options = System.IO.File.Exists(filePath)
+            ? System.Text.Json.JsonSerializer.Deserialize<BrainWave.PresentationLayer.Controllers.DropdownOptions>(System.IO.File.ReadAllText(filePath))
+            : new BrainWave.PresentationLayer.Controllers.DropdownOptions();
+        }
         <!-- kategori ekle -->
         <form method="get" action="/AllProjects/Index">
             <select name="category" id="category">
+                @foreach (var item in options.SkillOptions)
+                {
+                    <option value="@item">@item</option>
+                }
+            </select>
+            @* <select name="category" id="category">
                 <option value="Web Development">Web Development</option>
                 <option value="Software Development">Software Development</option>
                 <option value="Data Science & AI">Data Science & AI</option>
@@ -202,7 +216,7 @@
                 <option value="Research & Development">Research & Development</option>
                 <option value="Healthcare">Healthcare</option>
                 <option value="Entertainment & Media">Entertainment & Media</option>
-            </select>
+            </select> *@
             <input type="submit" value="Ara" />
         </form>
         @foreach (var project in Model)
@@ -210,21 +224,20 @@
             <div class="review option">
                 @if (!string.IsNullOrEmpty(project.ProjectTitle))
                 {
-                    <h4>Başlık</h4>
+                    <h4>@project.ProjectTitle</h4>
                     <hr />
-                    <p>@project.ProjectTitle</p>
 
-                    <h6>Açıklama</h6>
+                    <h4>Açıklama</h4>
                     <p>@project.ProjectDescription</p>
 
-                    <h6>Kategori</h6>
+                    <h4>Kategori</h4>
                     <p>@project.ProjectCategories</p>
 
-                    <h6>Araçlar</h6>
+                    <h4>Araçlar</h4>
                     <p>@project.ProjectTools</p>
-
+@* 
                     <p>Project ID: @project.UserProjectID</p>
-                    <p>User ID: @project.AppUserID</p>
+                    <p>User ID: @project.AppUserID</p> *@
                 }
             </div>
             <form action="/AllProjects/Index" method="post">

@@ -2,6 +2,7 @@
 @model List<UserProject>
 @{
     Layout = null;
+    var currentUserId = ViewBag.UserId;
 }
 
 <!DOCTYPE html>
@@ -9,7 +10,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AllProjects</title>
+    <title>MyProjects</title>
     @* <link rel="stylesheet" type="text/css" href="~/css/Style.css"> *@
     <style>
         h2 {
@@ -171,7 +172,7 @@
         </div>
         <a href="/Home/Index">Anasayfa</a>
         <a href="/Profile/Index">Profilim</a>
-        <a href="/Baglantilarim/Index">Bağlantılarım</a>
+        <a href="/connections/Index">Bağlantılarım</a>
         <a href="/MyProjects/Index">Projelerim</a>
     </div>
     <div class="top-right">
@@ -180,15 +181,14 @@
     </div>
     <div class="container">
         <a href="@Url.Action("Index", "CreateProject")" class="create-button">Proje Yarat</a>
+        <a href="@Url.Action("Index", "SeeRequests")" class="create-button">Proje İstekleri</a>
         @foreach (var project in Model)
         {
             <div class="review option">
                 @if (!string.IsNullOrEmpty(project.ProjectTitle))
                 {
-                    <h4>Başlık</h4>
+                    <h4>@project.ProjectTitle</h4>
                     <hr />
-                    <p>@project.ProjectTitle</p>
-
                     <h4>Açıklama</h4>
                     <p>@project.ProjectDescription</p>
 
@@ -220,7 +220,14 @@
                     {
                         <p>Pasif proje.</p>
                     }
-                    <a href="@Url.Action("Edit", new { id = project.UserProjectID })" class="edit-button">Düzenle</a>
+                    @if (project.AppUserID == currentUserId)
+                    {
+                        <a href="@Url.Action("Edit", new { id = project.UserProjectID })" class="edit-button">Düzenle</a>
+                    }
+                    else
+                    {
+                        <a href="/MyTasks/Index" class="edit-button">Görevlerim</a>
+                    }
                 }
             </div>
         }

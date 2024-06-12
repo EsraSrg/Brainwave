@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BrainWave.EntityLayer")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bbf07722ab268055e1323615240593612db7a806")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+07805244d5c642402650758d2f77168e9c23acbe")]
 [assembly: System.Reflection.AssemblyProductAttribute("BrainWave.EntityLayer")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BrainWave.EntityLayer")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

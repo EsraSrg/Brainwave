@@ -1,39 +1,216 @@
 ﻿@using BrainWave.EntityLayer.Concrete;
 @model List<ProjectTask>
 
+@{
+    Layout = null;
+}
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
 <head>
-	<meta name="viewport" content="width=device-width" />
-	<title>Index</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Users</title>
+    @* <link rel="stylesheet" type="text/css" href="~/css/Style.css"> *@
+    <style>
+
+
+        h1, h2 {
+            color: #FFFFFF;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #02031a;
+            overflow-y: auto; /* Dikey scroll bar eklenmesi için */
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            background-color: #ffffff40;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .options {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .option {
+            width: calc(80% - 10%); /* Genişliği azalttık */
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 10px; /* Padding'i azalttık */
+            margin-bottom: 10px; /* Margin'i azalttık */
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+            text-decoration: none;
+            color: black;
+            transition: background-color 0.3s ease;
+        }
+
+            .option:hover {
+                background-color: rgba(224, 224, 224, 0.5);
+            }
+
+        .sidebar {
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 200px;
+            height: 100%;
+            background-color: rgba(167, 167, 167, 0.192);
+            padding-top: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            overflow-y: auto; /* Yan scroll bar eklenmesi için */
+        }
+
+            .sidebar a {
+                display: block;
+                width: 100%;
+                padding: 15px 20px;
+                margin: 10px 0;
+                color: #fff;
+                text-decoration: none;
+                text-align: center;
+            }
+
+                .sidebar a:hover {
+                    background-color: #86858545;
+                }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+            .logo img {
+                width: 120px;
+                height: auto;
+                margin-right: 5px;
+            }
+
+            .logo h1 {
+                margin: 0;
+                color: #fff;
+                font-size: 24px;
+                cursor: pointer;
+            }
+
+        .top-right {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            display: flex;
+            gap: 20px;
+        }
+
+            .top-right a {
+                color: white;
+                text-decoration: none;
+                background-color: rgba(0, 0, 0, 0.5);
+                padding: 10px 20px;
+                border-radius: 5px;
+                box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+                transition: background-color 0.3s ease;
+            }
+
+                .top-right a:hover {
+                    background-color: #2b8c2eed;
+                }
+
+        .review {
+            width: 96%;
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 10px; /* Padding'i azalttık */
+            margin-bottom: 10px; /* Margin'i azalttık */
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            text-align: left;
+        }
+
+        form {
+            margin-top: 20px;
+        }
+
+        input[type="text"], select {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+            input[type="submit"]:hover {
+                background-color: #45a049;
+            }
+    </style>
 </head>
 <body>
-	<h2>Görevlerim</h2>
-	<div>
-		@foreach (var task in Model)
-		{
-			<div class="review">
-				<p>@task.TaskDescription</p>
+    <div class="sidebar">
+        <div class="logo">
+            <a href="/Home/Index">
+                <img src="~/images/img1.png" alt="Brainwave Logo">
+                <h1>Brainwave</h1>
+            </a>
+        </div>
+        <a href="/Home/Index">Anasayfa</a>
+        <a href="/Profile/Index">Profilim</a>
+        <a href="/connections/Index">Bağlantılarım</a>
+        <a href="/MyProjects/Index">Projelerim</a>
+    </div>
+    <div class="top-right">
+        <a href="/Login/Index">Çıkış Yap</a>
+        <a href="#">Ayarlar</a>
+    </div>
+    <div class="container">
+        <h2>Görevlerim</h2>
+        <div>
+            @foreach (var task in Model)
+            {
+                <div class="review">
+                    <p>@task.TaskDescription</p>
 
-				<form action="/MyTasks/Index" method="post">
-					<input type="hidden" name="projecttaskId" value="@task.ProjectTaskID" />
-					<input type="text" name="message" value="@task.TaskFinishedNote" placeholder="Enter your finish note" />
-					<input type="submit" value="Tamamlandı" class="btn btn-primary" />
-				</form>
-			</div>
-		}
-	</div>
+                    <form action="/MyTasks/Index" method="post">
+                        <input type="hidden" name="projecttaskId" value="@task.ProjectTaskID" />
+                        <input type="text" name="message" value="@task.TaskFinishedNote" placeholder="Enter your finish note" />
+                        <input type="submit" value="Tamamlandı" class="btn btn-primary" />
+                    </form>
+                </div>
+            }
+        </div>
+    </div>
+    @if (ViewData.ModelState.ErrorCount > 0)
+    {
 
-	@if (ViewData.ModelState.ErrorCount > 0)
-	{
+        @foreach (var error in ViewData.ModelState.Values.SelectMany(v => v.Errors))
+        {
+            <p style="color:red;">@error.ErrorMessage</p>
+        }
 
-		@foreach (var error in ViewData.ModelState.Values.SelectMany(v => v.Errors))
-		{
-			<p style="color:red;">@error.ErrorMessage</p>
-		}
-
-	}
+    }
 </body>
 </html>
 

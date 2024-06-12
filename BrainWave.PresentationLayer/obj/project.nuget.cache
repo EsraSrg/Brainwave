@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "DTnXYvDDGMDB1avWYBcQ9Q0VCaeGSKrAeuRklH5UBS5yyz8kLhJyoWs1gi1aUguivD+g2Edm/2cBYl8DvXhbKA==",
+  "dgSpecHash": "87lFx1OrBg+LjJQgQjKBrM5XwtPE18llf6DqRzfdpTr2j4Tozd18CbIXiIzOqYdxthcBq7UiwNuwBHiZU8BJMg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\mgund\\OneDrive\\Masaüstü\\brainwave\\Brainwave\\BrainWave.PresentationLayer\\BrainWave.PresentationLayer.csproj",
+  "projectFilePath": "C:\\Users\\mgund\\OneDrive\\Masaüstü\\brainwave\\BrainWave\\BrainWave.PresentationLayer\\BrainWave.PresentationLayer.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\mgund\\.nuget\\packages\\fluentvalidation\\11.9.1\\fluentvalidation.11.9.1.nupkg.sha512",
     "C:\\Users\\mgund\\.nuget\\packages\\fluentvalidation.aspnetcore\\11.3.0\\fluentvalidation.aspnetcore.11.3.0.nupkg.sha512",

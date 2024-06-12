@@ -2,69 +2,232 @@
 @{
     Layout = null;
 }
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brainwave</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="~/css/Style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #02031a;
+            color: #ffffff;
+        }
 
-<h2>Kitap Ekle</h2>
+        .container {
+            position: absolute;
+            z-index: 1;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            height: 670px;
+            max-width: 800px;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.11);
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
 
-<form asp-action="Index" method="post">
-    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        h2 {
+            color: #ffffffc4;
+        }
 
-    <div class="form-group">
-        <label asp-for="ProjectTitle" class="control-label"> Project Title:</label>
-        <input asp-for="ProjectTitle" class="form-control" />
-        <span asp-validation-for="ProjectTitle" class="text-danger"></span>
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .control-label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .text-danger {
+            color: #ff0000;
+        }
+
+        .btn-primary {
+            background-color: #4CAF50;
+            border: none;
+            padding: 10px 20px;
+            color: #fff;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+            .btn-primary:hover {
+                background-color: #2b8c2e6c;
+            }
+
+        .sidebar {
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 200px;
+            height: 100%;
+            background-color: rgba(167, 167, 167, 0.192);
+            padding-top: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+            .sidebar a {
+                display: block;
+                width: 100%;
+                padding: 15px 20px;
+                margin: 10px 0;
+                color: #fff;
+                text-decoration: none;
+                text-align: center;
+            }
+
+                .sidebar a:hover {
+                    background-color: #86858545;
+                }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+            .logo img {
+                width: 120px;
+                height: auto;
+                margin-right: 5px;
+            }
+
+            .logo h1 {
+                margin: 0;
+                color: #fff;
+                font-size: 24px;
+                cursor: pointer;
+            }
+
+        .top-right {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            display: flex;
+            gap: 20px;
+        }
+
+            .top-right a {
+                color: white;
+                text-decoration: none;
+                background-color: rgba(0, 0, 0, 0.5);
+                padding: 10px 20px;
+                border-radius: 5px;
+                box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            }
+
+                .top-right a:hover {
+                    background-color: rgba(169, 169, 169, 0.332);
+                }
+    </style>
+</head>
+<body>
+    <div id="background-animation"></div>
+    <div class="background"></div>
+    <div class="sidebar">
+        <div class="logo">
+            <a href="/Home/Index">
+                <img src="~/images/img1.png" alt="Brainwave Logo">
+                <h1>Brainwave</h1>
+            </a>
+        </div>
+        <a href="/Home/Index">Anasayfa</a>
+        <a href="/Profile/Index">Profilim</a>
+        <a href="/Connections/Index">Bağlantılarım</a>
+        <a href="/MyProjects/Index">Projelerim</a>
+    </div>
+    <div class="top-right">
+        <a href="/Login/Index">Çıkış Yap</a>
+        <a href="/AccountSettings/Index">Ayarlar</a>
+    </div>
+    <div class="container">
+
+        <h2>Proje Ekle</h2>
+        @{
+            // Dropdown seçeneklerini dosyadan yükleme
+            string filePath = "wwwroot/dropdownOptions.json";
+            var options = System.IO.File.Exists(filePath)
+            ? System.Text.Json.JsonSerializer.Deserialize<BrainWave.PresentationLayer.Controllers.DropdownOptions>(System.IO.File.ReadAllText(filePath))
+            : new BrainWave.PresentationLayer.Controllers.DropdownOptions();
+        }
+
+        <form asp-action="Index" method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            <div class="form-group">
+                <label asp-for="ProjectTitle" class="control-label"> Project Title:</label>
+                <input asp-for="ProjectTitle" class="form-control" />
+                <span asp-validation-for="ProjectTitle" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="ProjectDescription" class="control-label"> Project Desc:</label>
+                <input asp-for="ProjectDescription" class="form-control" />
+                <span asp-validation-for="ProjectDescription" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="ProjectCategories" class="control-label"> Project Categories:</label>
+                <select asp-for="ProjectCategories" class="form-control">
+                    @foreach (var item in options.SkillOptions)
+                    {
+                        <option value="@item">@item</option>
+                    }
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="ProjectTools" class="control-label">Project Tools:</label>
+                <input asp-for="ProjectTools" class="form-control" />
+            </div>
+
+            <div class="form-group">
+                <label asp-for="ProjectSources" class="control-label">Project Sources:</label>
+                <input asp-for="ProjectSources" class="form-control" />
+            </div>
+            <div>
+                <label style="display: inline-block;">
+                    <input asp-for="ProjectPrivacy" class="form-control" type="radio" value="true" /> Profilde Göster
+                </label>
+                <label style="display: inline-block;">
+                    <input asp-for="ProjectPrivacy" class="form-control" type="radio" value="false" /> Profilde Gösterme
+                </label>
+            </div>
+
+            <div>
+                <label style="display: inline-block;">
+                    <input asp-for="ProjectStatus" class="form-control" type="radio" value="true" /> Devam Ediyor
+                </label>
+                <label style="display: inline-block;">
+                    <input asp-for="ProjectStatus" class="form-control" type="radio" value="false" /> Tamamlandı
+                </label>
+            </div>
+            <br />
+            <div class="form-group">
+                <input type="submit" value="Add Project" class="btn btn-primary" />
+            </div>
+        </form>
+
     </div>
 
-    <div class="form-group">
-        <label asp-for="ProjectDescription" class="control-label"> Project Desc:</label>
-        <input asp-for="ProjectDescription" class="form-control" />
-        <span asp-validation-for="ProjectDescription" class="text-danger"></span>
-    </div>
-
-    <div class="form-group">
-        <label asp-for="ProjectCategories" class="control-label"> Project Categories:</label>
-        <select asp-for="ProjectCategories" class="form-control">
-            <option value="Web Development">Web Development</option>
-            <option value="Software Development">Software Development</option>
-            <option value="Data Science & AI">Data Science & AI</option>
-            <option value="Finance">Finance</option>
-            <option value="E-commerce">E-commerce</option>
-            <option value="Education">Education</option>
-            <option value="Social & Communication">Social & Communication</option>
-            <option value="Personal & Hobby">Personal & Hobby</option>
-            <option value="Research & Development">Research & Development</option>
-            <option value="Healthcare">Healthcare</option>
-            <option value="Entertainment & Media">Entertainment & Media</option>
-        </select>
-    </div>
-    
-    <div class="form-group">
-        <label asp-for="ProjectTools" class="control-label">Project Tools:</label>
-        <input asp-for="ProjectTools" class="form-control" />
-    </div>
-
-    <div class="form-group">
-        <label asp-for="ProjectSources" class="control-label">Project Sources:</label>
-        <input asp-for="ProjectSources" class="form-control" />
-    </div>
-
-    <div class="form-group">
-        <label asp-for="ProjectPrivacy" class="control-label">Project Privacy:</label>
-        <input asp-for="ProjectPrivacy" class="form-control" type="radio" value="true" /> Profilde Göster
-        <input asp-for="ProjectPrivacy" class="form-control" type="radio" value="false" /> Profilde Gösterme
-    </div>
-
-    <div class="form-group">
-        <label asp-for="ProjectStatus" class="control-label">Project Status:</label>
-        <input asp-for="ProjectStatus" class="form-control" type="radio" value="true" /> Aktif
-        <input asp-for="ProjectStatus" class="form-control" type="radio" value="false" /> Pasif
-    </div>
-
-    <div class="form-group">
-        <label asp-for="ProjectTasks" class="control-label"> Project Tasks:</label>
-        <input asp-for="ProjectTasks" class="form-control"/>
-    </div>
-    <br />
-    <div class="form-group">
-        <input type="submit" value="Add Project" class="btn btn-primary" />
-    </div>
-</form>
+</body>
+</html>

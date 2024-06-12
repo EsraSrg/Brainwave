@@ -29,7 +29,7 @@ namespace BrainWave.PresentationLayer.Controllers
 
 			if (!string.IsNullOrEmpty(category))
 			{
-				usersQuery = usersQuery.Where(b => b.MainInterest.Contains(category));
+				usersQuery = usersQuery.Where(b => b.Skills.Contains(category));
 			}
 
 			var allUsers = await usersQuery

@@ -1,41 +1,219 @@
 ﻿@using BrainWave.EntityLayer.Concrete;
 @model List<ProjectRequest>
-
+@{
+    Layout = null;
+}
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
 <head>
-	<meta name="viewport" content="width=device-width" />
-	<title>Index</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brainwave</title>
+    <link rel="stylesheet" href="~/css/Style.css">
+    <style>
+        h2 {
+            color: #000000c4;
+        }
+
+        h1, h2, h3 {
+            color: #ffffffd1;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #02031a;
+        }
+
+        .container {
+            position: absolute;
+            z-index: 1;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            max-width: 800px;
+            padding: 40px;
+            background-color: rgba(255, 255, 255, 0.11);
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .options {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .option {
+            width: calc(45% - 20px);
+            background-color: rgba(240, 240, 240, 0.8);
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            text-decoration: none;
+            color: black;
+        }
+
+            .option:hover {
+                background-color: rgba(224, 224, 224, 0.38);
+            }
+
+        .sidebar {
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 200px;
+            height: 100%;
+            background-color: rgba(167, 167, 167, 0.192);
+            padding-top: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+            .sidebar a {
+                display: block;
+                width: 100%;
+                padding: 15px 20px;
+                margin: 10px 0;
+                color: #fff;
+                text-decoration: none;
+                text-align: center;
+            }
+
+                .sidebar a:hover {
+                    background-color: #86858545;
+                }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+            .logo img {
+                width: 120px;
+                height: auto;
+                margin-right: 5px;
+            }
+
+            .logo h1 {
+                margin: 0;
+                color: #fff;
+                font-size: 24px;
+                cursor: pointer;
+            }
+
+        .top-right {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            display: flex;
+            gap: 20px;
+        }
+
+            .top-right a {
+                color: white;
+                text-decoration: none;
+                background-color: rgba(0, 0, 0, 0.5);
+                padding: 10px 20px;
+                border-radius: 5px;
+                box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            }
+
+                .top-right a:hover {
+                    background-color: rgba(169, 169, 169, 0.332);
+                }
+
+        .button {
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+            .button:hover {
+                background-color: #2f8132;
+            }
+
+        .button2 {
+            background-color: #a10c0c;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+            .button2:hover {
+                background-color: #520909;
+            }
+    </style>
 </head>
 <body>
-	<h2>All Reviews</h2>
-	<div>
-		@foreach (var request in Model)
-		{
-			<div class="review">
-				<a asp-controller="UserProfile" asp-action="Index" asp-route-username="@request.SenderUsername">
-				<h3>@request.SenderUsername</h3>
-				</a>
-				<h6>Mesaj</h6>
-				<p>@request.RequestMessage</p>
+    <div id="background-animation"></div>
+    <div class="background"></div>
+    <div class="sidebar">
+        <div class="logo">
+            <a href="/Home/Index">
+                <img src="~/images/img1.png" alt="Brainwave Logo">
+                <h1>Brainwave</h1>
+            </a>
+        </div>
+        <a href="/Home/Index">Anasayfa</a>
+        <a href="/Profile/Index">Profilim</a>
+        <a href="/Connections/Index">Bağlantılarım</a>
+        <a href="/MyProjects/Index">Projelerim</a>
+    </div>
+    <div class="top-right">
+        <a href="/Login/Index">Çıkış Yap</a>
+        <a href="/AccountSettings/Index">Ayarlar</a>
+    </div>
+    <div class="container">
+        <h2>Bekleyen İstekler</h2>
+        @if (Model.Any())
+        {
 
-				<form asp-controller="SeeRequests" asp-action="Index" method="post">
-					<input type="hidden" name="requestId" value="@request.ProjectRequestID" />
-					<button type="submit">Accept</button>
-				</form>
-			</div>
-		}
-	</div>
-	
-	@if (ViewData.ModelState.ErrorCount > 0)
-	{
+            @foreach (var request in Model)
+            {
+                <div class="review">
+                    <a asp-controller="UserProfile" asp-action="Index" asp-route-username="@request.SenderUsername">
+                        <h3>@request.SenderUsername</h3>
+                    </a>
+                    <p style="color:white">@request.RequestMessage</p>
 
-			@foreach (var error in ViewData.ModelState.Values.SelectMany(v => v.Errors))
-			{
-				<p style="color:red;">@error.ErrorMessage</p>
-			}
-		
-	}
+                    <form asp-controller="SeeRequests" asp-action="Index" method="post">
+                        <input type="hidden" name="requestId" value="@request.ProjectRequestID" />
+                        <button class="button" type="submit">Accept</button>
+                    </form>
+                </div>
+            }
+
+        }
+        else
+        {
+            <p>Bekleyen isteğiniz yok.</p>
+        }
+    </div>
+    @*
+    @if (ViewData.ModelState.ErrorCount > 0)
+    {
+
+    @foreach (var error in ViewData.ModelState.Values.SelectMany(v => v.Errors))
+    {
+    <p style="color:red;">@error.ErrorMessage</p>
+    }
+
+    } *@
 </body>
 </html>

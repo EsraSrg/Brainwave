@@ -33,7 +33,7 @@ namespace BrainWave.PresentationLayer.Controllers
                 Skills = values.Skills,
                 Interests = values.Interests,
                 Socials = values.Socials,
-                ProfileImageName = values.ProfileImagePath
+                //ProfileImageName = values.ProfileImagePath
             };
 
             return View(appUserInfoDtos);
@@ -56,20 +56,20 @@ namespace BrainWave.PresentationLayer.Controllers
                     user.Interests = appUserInfoDtos.Interests;
                     user.Socials = appUserInfoDtos.Socials;
 
-                    // Profil resmini yükle
-                    if (appUserInfoDtos.ProfileImage != null)
-                    {
-                        string uploadsFolder = Path.Combine(_webHostEnvironment.WebRootPath, "images");
-                        string uniqueFileName = Guid.NewGuid().ToString() + "_" + appUserInfoDtos.ProfileImage.FileName;
-                        string filePath = Path.Combine(uploadsFolder, uniqueFileName);
+                    //// Profil resmini yükle
+                    //if (appUserInfoDtos.ProfileImage != null)
+                    //{
+                    //    string uploadsFolder = Path.Combine(_webHostEnvironment.WebRootPath, "images");
+                    //    string uniqueFileName = Guid.NewGuid().ToString() + "_" + appUserInfoDtos.ProfileImage.FileName;
+                    //    string filePath = Path.Combine(uploadsFolder, uniqueFileName);
 
-                        using (var fileStream = new FileStream(filePath, FileMode.Create))
-                        {
-                            await appUserInfoDtos.ProfileImage.CopyToAsync(fileStream);
-                        }
+                    //    using (var fileStream = new FileStream(filePath, FileMode.Create))
+                    //    {
+                    //        await appUserInfoDtos.ProfileImage.CopyToAsync(fileStream);
+                    //    }
 
-                        user.ProfileImagePath = uniqueFileName;
-                    }
+                    //    user.ProfileImagePath = uniqueFileName;
+                    //}
 
                     var result = await _userManager.UpdateAsync(user);
                     if (result.Succeeded)

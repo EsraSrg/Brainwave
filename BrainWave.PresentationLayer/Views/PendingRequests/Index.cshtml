@@ -174,7 +174,6 @@
         </div>
         <a href="/Home/Index">Anasayfa</a>
         <a href="/Profile/Index">Profilim</a>
-        <a href="/Messages/Index">Mesajlar</a>
         <a href="/Connections/Index">Bağlantılarım</a>
         <a href="/MyProjects/Index">Projelerim</a>
     </div>
@@ -192,6 +191,7 @@
                 {
                     <li>
                         <h3>@request.SenderUsername</h3>
+                        <p style="color:white">@request.RequestMessage</p>
                         <form asp-action="ApproveRequest" method="post">
                             <input type="hidden" name="requestId" value="@request.UserRequestID" />
                             <button class="button" type="submit">Onayla</button>
@@ -209,7 +209,7 @@
             <p>Bekleyen isteğiniz yok.</p>
         }
     </div>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  @*   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="~/js/three.r134.min.js"></script>
     <script src="~/js/vanta.net.min.js"></script>
     <script>
@@ -225,6 +225,6 @@
             color: 0xe6e6e6,
             backgroundColor: 0xc0b25
         });
-    </script>
+    </script> *@
 </body>
 </html>

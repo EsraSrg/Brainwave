@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "8C+YWstcMZOZ6iJp726avaeEQZu0GUGdH8dmzpilacU2QTPiyMAG2FeYbIMLUCp77O96/1KSWwz5o7GLktMxHw==",
+  "dgSpecHash": "JlRFcGbBW6dndjHQ6D7ezhrMtXPLTPvB2JK5zVp/qeXF+l6yMCpnpD43NPKRPvDhaGcclRUKaapfWcbkIjhjLA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\mgund\\OneDrive\\Masaüstü\\brainwave\\Brainwave\\BrainWave.EntityLayer\\BrainWave.EntityLayer.csproj",
+  "projectFilePath": "C:\\Users\\mgund\\OneDrive\\Masaüstü\\brainwave\\BrainWave\\BrainWave.EntityLayer\\BrainWave.EntityLayer.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\mgund\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\mgund\\.nuget\\packages\\microsoft.aspnetcore.authentication\\2.2.0\\microsoft.aspnetcore.authentication.2.2.0.nupkg.sha512",

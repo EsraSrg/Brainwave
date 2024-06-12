@@ -96,9 +96,9 @@ namespace BrainWave.PresentationLayer.Controllers
 
                 switch (model.Category)
                 {
-                    case "Lise":
-                        options.HighSchoolOptions.Add(model.Option);
-                        break;
+                    //case "Lise":
+                      //  options.HighSchoolOptions.Add(model.Option);
+                        //break;
                     case "Üniversite":
                         options.UniversityOptions.Add(model.Option);
                         break;
@@ -112,7 +112,7 @@ namespace BrainWave.PresentationLayer.Controllers
 
                 System.IO.File.WriteAllText(filePath, System.Text.Json.JsonSerializer.Serialize(options));
                 TempData["Message"] = "Yeni seçenek başarıyla eklendi!";
-                return RedirectToAction("Index");
+                return RedirectToAction("AddDropdownOption");
             }
             return View(model);
         }
@@ -120,7 +120,7 @@ namespace BrainWave.PresentationLayer.Controllers
 
     public class DropdownOptions
     {
-        public List<string> HighSchoolOptions { get; set; } = new List<string>();
+        //public List<string> HighSchoolOptions { get; set; } = new List<string>();
         public List<string> UniversityOptions { get; set; } = new List<string>();
         public List<string> SkillOptions { get; set; } = new List<string>();
         public List<string> InterestOptions { get; set; } = new List<string>();

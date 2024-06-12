@@ -10,7 +10,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AllProjects</title>
+    <title>Kaynak İncele </title>
     @* <link rel="stylesheet" type="text/css" href="~/css/Style.css"> *@
     <style>
         h2 {
@@ -196,7 +196,7 @@
         </div>
         <a href="/Home/Index">Anasayfa</a>
         <a href="/Profile/Index">Profilim</a>
-        <a href="/Baglantilarim/Index">Bağlantılarım</a>
+        <a href="/connections/Index">Bağlantılarım</a>
         <a href="/MyProjects/Index">Projelerim</a>
     </div>
     <div class="top-right">
@@ -204,19 +204,19 @@
         <a href="#">Ayarlar</a>
     </div>
     <div class="container">
-        <form method="get" action="/AllProjects/Index">
+        @{
+            // Dropdown seçeneklerini dosyadan yükleme
+            string filePath = "wwwroot/dropdownOptions.json";
+            var options = System.IO.File.Exists(filePath)
+            ? System.Text.Json.JsonSerializer.Deserialize<BrainWave.PresentationLayer.Controllers.DropdownOptions>(System.IO.File.ReadAllText(filePath))
+            : new BrainWave.PresentationLayer.Controllers.DropdownOptions();
+        }
+        <form method="get" action="/AllResources/Index">
             <select name="category" id="category">
-                <option value="Web Development">Web Development</option>
-                <option value="Software Development">Software Development</option>
-                <option value="Data Science & AI">Data Science & AI</option>
-                <option value="Finance">Finance</option>
-                <option value="E-commerce">E-commerce</option>
-                <option value="Education">Education</option>
-                <option value="Social & Communication">Social & Communication</option>
-                <option value="Personal & Hobby">Personal & Hobby</option>
-                <option value="Research & Development">Research & Development</option>
-                <option value="Healthcare">Healthcare</option>
-                <option value="Entertainment & Media">Entertainment & Media</option>
+                @foreach (var item in options.SkillOptions)
+                {
+                    <option value="@item">@item</option>
+                }
             </select>
             <input type="submit" value="Ara" />
         </form>
@@ -225,9 +225,8 @@
             <div class="review">
                 @if (!string.IsNullOrEmpty(resource.ResourceTitle))
                 {
-                    <h4>Başlık</h4>
+                    <h4>@resource.ResourceTitle</h4>
                     <hr />
-                    <p>@resource.ResourceTitle</p>
 
                     <h4>Açıklama</h4>
                     <p>@resource.ResourceDescription</p>
@@ -245,13 +244,13 @@
                     <p>@resource.ResourceUrl</p>
 
 
-
+@* 
                     <p>Resource ID: @resource.UserResourceID</p>
-                    <p>User ID: @resource.AppUserID</p>
+                    <p>User ID: @resource.AppUserID</p> *@
                 }
             </div>
         }
-        <a href="kaynakekle.html" class="add-resource-btn">Kaynak Ekle</a>
+        <a href="/CreateResource/Index" class="add-resource-btn">Kaynak Ekle</a>
     </div>
 </body>
 </html>

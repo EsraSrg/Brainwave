@@ -1,109 +1,274 @@
 ﻿@model BrainWave.DtoLayer.DataTransferObjects.AppUserInfoDtos
-
-@if (TempData["Message"] != null)
-{
-    <div class="alert alert-success">@TempData["Message"]</div>
-}
-
-@if (TempData["ErrorMessage"] != null)
-{
-    <div class="alert alert-danger">@TempData["ErrorMessage"]</div>
-}
-
-@if (!ViewData.ModelState.IsValid)
-{
-    <div class="alert alert-danger">
-        <ul>
-            @foreach (var error in ViewData.ModelState.Values.SelectMany(v => v.Errors))
-            {
-                <li>@error.ErrorMessage</li>
-            }
-        </ul>
-    </div>
-}
-
 @{
-    // Dropdown seçeneklerini dosyadan yükleme
-    string filePath = "wwwroot/dropdownOptions.json";
-    var options = System.IO.File.Exists(filePath)
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kullanıcı Profili</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #02031a;
+            color: #ffffff;
+        }
+
+        .container {
+            position: absolute;
+            z-index: 1;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            height: 670px;
+            width: 450px;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.11);
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #ffffffc4;
+        }
+
+        .form-group {
+            width: 96%;
+            margin-bottom: 15px;
+        }
+
+        .control-label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .text-danger {
+            color: #ff0000;
+        }
+
+        .btn-primary {
+            background-color: #4CAF50;
+            border: none;
+            padding: 10px 20px;
+            color: #fff;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+            .btn-primary:hover {
+                background-color: #2b8c2e6c;
+            }
+
+        .sidebar {
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 200px;
+            height: 100%;
+            background-color: rgba(167, 167, 167, 0.192);
+            padding-top: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+            .sidebar a {
+                display: block;
+                width: 100%;
+                padding: 15px 20px;
+                margin: 10px 0;
+                color: #fff;
+                text-decoration: none;
+                text-align: center;
+            }
+
+                .sidebar a:hover {
+                    background-color: #86858545;
+                }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+            .logo img {
+                width: 120px;
+                height: auto;
+                margin-right: 5px;
+            }
+
+            .logo h1 {
+                margin: 0;
+                color: #fff;
+                font-size: 24px;
+                cursor: pointer;
+            }
+
+        .top-right {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            display: flex;
+            gap: 20px;
+        }
+
+            .top-right a {
+                color: white;
+                text-decoration: none;
+                background-color: rgba(0, 0, 0, 0.5);
+                padding: 10px 20px;
+                border-radius: 5px;
+                box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            }
+
+                .top-right a:hover {
+                    background-color: rgba(169, 169, 169, 0.332);
+                }
+
+        .btn-secondary {
+            background-color: darkgray;
+            border: none;
+            padding: 10px 20px;
+            color: #fff;
+            border-radius: 5px;
+            cursor: pointer;
+    </style>
+</head>
+<body>
+    <div id="background-animation"></div>
+    <div class="background"></div>
+    <div class="sidebar">
+        <div class="logo">
+            <a href="/Home/Index">
+                <img src="~/images/img1.png" alt="Brainwave Logo">
+                <h1>Brainwave</h1>
+            </a>
+        </div>
+        <a href="/Home/Index">Anasayfa</a>
+        <a href="/Profile/Index">Profilim</a>
+        <a href="/Connections/Index">Bağlantılarım</a>
+        <a href="/MyProjects/Index">Projelerim</a>
+    </div>
+    <div class="top-right">
+        <a href="/Login/Index">Çıkış Yap</a>
+        <a href="/AccountSettings/Index">Ayarlar</a>
+    </div>
+    <div class="container">
+    @if (TempData["Message"] != null)
+    {
+        <div class="alert alert-success">@TempData["Message"]</div>
+    }
+
+    @if (TempData["ErrorMessage"] != null)
+    {
+        <div class="alert alert-danger">@TempData["ErrorMessage"]</div>
+    }
+
+    @if (!ViewData.ModelState.IsValid)
+    {
+        <div class="alert alert-danger">
+            <ul>
+                @foreach (var error in ViewData.ModelState.Values.SelectMany(v => v.Errors))
+                {
+                    <li>@error.ErrorMessage</li>
+                }
+            </ul>
+        </div>
+    }
+
+    @{
+        // Dropdown seçeneklerini dosyadan yükleme
+        string filePath = "wwwroot/dropdownOptions.json";
+        var options = System.IO.File.Exists(filePath)
         ? System.Text.Json.JsonSerializer.Deserialize<BrainWave.PresentationLayer.Controllers.DropdownOptions>(System.IO.File.ReadAllText(filePath))
         : new BrainWave.PresentationLayer.Controllers.DropdownOptions();
-}
-
-<form asp-action="Index" method="post" enctype="multipart/form-data">
-    <div class="form-group">
-        <label for="Name">Ad</label>
-        <input asp-for="Name" class="form-control" />
-        <span asp-validation-for="Name" class="text-danger"></span>
-    </div>
-    <div class="form-group">
-        <label for="Surname">Soyad</label>
-        <input asp-for="Surname" class="form-control" />
-        <span asp-validation-for="Surname" class="text-danger"></span>
-    </div>
-    <div class="form-group">
-        <label for="About">Hakkında</label>
-        <input asp-for="About" class="form-control" />
-        <span asp-validation-for="About" class="text-danger"></span>
-    </div>
-    <div class="form-group">
-        <label for="Experience">Deneyim</label>
-        <input asp-for="Experience" class="form-control" />
-        <span asp-validation-for="Experience" class="text-danger"></span>
-    </div>
-    <div class="form-group">
-        <label for="Education">Eğitim</label>
-        <select asp-for="Education" class="form-control">
-            <optgroup label="Lise">
-                @foreach (var item in options.HighSchoolOptions)
-                {
-                    <option value="@item">@item</option>
-                }
-            </optgroup>
-            <optgroup label="Üniversite">
-                @foreach (var item in options.UniversityOptions)
-                {
-                    <option value="@item">@item</option>
-                }
-            </optgroup>
-        </select>
-        <span asp-validation-for="Education" class="text-danger"></span>
-    </div>
-    <div class="form-group">
-        <label for="Skills">Yetenekler</label>
-        <select asp-for="Skills" class="form-control">
-            @foreach (var item in options.SkillOptions)
-            {
-                <option value="@item">@item</option>
-            }
-        </select>
-        <span asp-validation-for="Skills" class="text-danger"></span>
-    </div>
-    <div class="form-group">
-        <label for="Interests">İlgi Alanları</label>
-        <select asp-for="Interests" class="form-control">
-            @foreach (var item in options.InterestOptions)
-            {
-                <option value="@item">@item</option>
-            }
-        </select>
-        <span asp-validation-for="Interests" class="text-danger"></span>
-    </div>
-    <div class="form-group">
-        <label for="Socials">Sosyal Medya</label>
-        <input asp-for="Socials" class="form-control" />
-        <span asp-validation-for="Socials" class="text-danger"></span>
-    </div>
-    <div class="form-group">
-        <label for="ProfileImage">Profil Resmi</label>
-        <input asp-for="ProfileImage" type="file" class="form-control" />
-    </div>
-    <button type="submit" class="btn btn-primary">Güncelle</button>
-    <a href="@Url.Action("Index", "Profile")" class="btn btn-secondary">Profil Sayfasına Dön</a>
-</form>
-
-@section Scripts {
-    @{
-        await Html.RenderPartialAsync("_ValidationScriptsPartial");
     }
-}
+ 
+        <form asp-action="Index" method="post" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="Name">Ad</label>
+                <input asp-for="Name" class="form-control" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label for="Surname">Soyad</label>
+                <input asp-for="Surname" class="form-control" />
+                <span asp-validation-for="Surname" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label for="About">Hakkında</label>
+                <input asp-for="About" class="form-control" />
+                <span asp-validation-for="About" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label for="Experience">Deneyim</label>
+                <input asp-for="Experience" class="form-control" />
+                <span asp-validation-for="Experience" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label for="Education">Eğitim</label>
+                <select asp-for="Education" class="form-control">
+
+                    <optgroup label="Üniversite">
+                        @foreach (var item in options.UniversityOptions)
+                        {
+                            <option value="@item">@item</option>
+                        }
+                    </optgroup>
+                </select>
+                <span asp-validation-for="Education" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label for="Skills">Yetenekler</label>
+                <select asp-for="Skills" class="form-control">
+                    @foreach (var item in options.SkillOptions)
+                    {
+                        <option value="@item">@item</option>
+                    }
+                </select>
+                <span asp-validation-for="Skills" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label for="Interests">İlgi Alanları</label>
+                <select asp-for="Interests" class="form-control">
+                    @foreach (var item in options.InterestOptions)
+                    {
+                        <option value="@item">@item</option>
+                    }
+                </select>
+                <span asp-validation-for="Interests" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label for="Socials">Sosyal Medya</label>
+                <input asp-for="Socials" class="form-control" />
+                <span asp-validation-for="Socials" class="text-danger"></span>
+            </div>
+            @* <div class="form-group">
+            <label for="ProfileImage">Profil Resmi</label>
+            <input asp-for="ProfileImage" type="file" class="form-control" />
+            </div> *@
+            <button type="submit" class="btn btn-primary">Güncelle</button>
+            <a href="@Url.Action("Index", "Profile")" class="btn btn-secondary">Profil Sayfasına Dön</a>
+        </form>
+    </div>
+    @section Scripts {
+        @{
+            await Html.RenderPartialAsync("_ValidationScriptsPartial");
+        }
+    }
+</body>
+</html>

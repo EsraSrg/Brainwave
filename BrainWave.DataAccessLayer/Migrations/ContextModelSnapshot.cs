@@ -175,9 +175,6 @@ namespace BrainWave.DataAccessLayer.Migrations
                     b.Property<int>("ProjectID")
                         .HasColumnType("int");
 
-                    b.Property<int?>("ProjectRequestID1")
-                        .HasColumnType("int");
-
                     b.Property<int?>("ReceiverID")
                         .HasColumnType("int");
 
@@ -196,7 +193,9 @@ namespace BrainWave.DataAccessLayer.Migrations
 
                     b.HasKey("ProjectRequestID");
 
-                    b.HasIndex("ProjectRequestID1");
+                    b.HasIndex("ReceiverID");
+
+                    b.HasIndex("SenderID");
 
                     b.ToTable("ProjectRequests");
                 });
@@ -473,9 +472,17 @@ namespace BrainWave.DataAccessLayer.Migrations
 
             modelBuilder.Entity("BrainWave.EntityLayer.Concrete.ProjectRequest", b =>
                 {
-                    b.HasOne("BrainWave.EntityLayer.Concrete.ProjectRequest", null)
-                        .WithMany("ProjectRequests")
-                        .HasForeignKey("ProjectRequestID1");
+                    b.HasOne("BrainWave.EntityLayer.Concrete.AppUser", "ReceiverUser")
+                        .WithMany()
+                        .HasForeignKey("ReceiverID");
+
+                    b.HasOne("BrainWave.EntityLayer.Concrete.AppUser", "SenderUser")
+                        .WithMany()
+                        .HasForeignKey("SenderID");
+
+                    b.Navigation("ReceiverUser");
+
+                    b.Navigation("SenderUser");
                 });
 
             modelBuilder.Entity("BrainWave.EntityLayer.Concrete.ProjectTask", b =>
@@ -555,11 +562,6 @@ namespace BrainWave.DataAccessLayer.Migrations
             modelBuilder.Entity("BrainWave.EntityLayer.Concrete.AppUser", b =>
                 {
                     b.Navigation("UserProjects");
-                });
-
-            modelBuilder.Entity("BrainWave.EntityLayer.Concrete.ProjectRequest", b =>
-                {
-                    b.Navigation("ProjectRequests");
                 });
 
             modelBuilder.Entity("BrainWave.EntityLayer.Concrete.ProjectTask", b =>

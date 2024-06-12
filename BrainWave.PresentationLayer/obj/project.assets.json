@@ -11930,9 +11930,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\mgund\\OneDrive\\Masaüstü\\brainwave\\Brainwave\\BrainWave.PresentationLayer\\BrainWave.PresentationLayer.csproj",
+      "projectUniqueName": "C:\\Users\\mgund\\OneDrive\\Masaüstü\\brainwave\\BrainWave\\BrainWave.PresentationLayer\\BrainWave.PresentationLayer.csproj",
       "projectName": "BrainWave.PresentationLayer",
-      "projectPath": "C:\\Users\\mgund\\OneDrive\\Masaüstü\\brainwave\\Brainwave\\BrainWave.PresentationLayer\\BrainWave.PresentationLayer.csproj",
+      "projectPath": "C:\\Users\\mgund\\OneDrive\\Masaüstü\\brainwave\\BrainWave\\BrainWave.PresentationLayer\\BrainWave.PresentationLayer.csproj",
       "packagesPath": "C:\\Users\\mgund\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\mgund\\OneDrive\\Masaüstü\\brainwave\\Brainwave\\BrainWave.PresentationLayer\\obj\\",
       "projectStyle": "PackageReference",
@@ -11956,14 +11956,14 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\mgund\\OneDrive\\Masaüstü\\brainwave\\Brainwave\\BrainWave.BusinessLayer\\BrainWave.BusinessLayer.csproj": {
-              "projectPath": "C:\\Users\\mgund\\OneDrive\\Masaüstü\\brainwave\\Brainwave\\BrainWave.BusinessLayer\\BrainWave.BusinessLayer.csproj"
+            "C:\\Users\\mgund\\OneDrive\\Masaüstü\\brainwave\\BrainWave\\BrainWave.BusinessLayer\\BrainWave.BusinessLayer.csproj": {
+              "projectPath": "C:\\Users\\mgund\\OneDrive\\Masaüstü\\brainwave\\BrainWave\\BrainWave.BusinessLayer\\BrainWave.BusinessLayer.csproj"
             },
-            "C:\\Users\\mgund\\OneDrive\\Masaüstü\\brainwave\\Brainwave\\BrainWave.DataAccessLayer\\BrainWave.DataAccessLayer.csproj": {
-              "projectPath": "C:\\Users\\mgund\\OneDrive\\Masaüstü\\brainwave\\Brainwave\\BrainWave.DataAccessLayer\\BrainWave.DataAccessLayer.csproj"
+            "C:\\Users\\mgund\\OneDrive\\Masaüstü\\brainwave\\BrainWave\\BrainWave.DataAccessLayer\\BrainWave.DataAccessLayer.csproj": {
+              "projectPath": "C:\\Users\\mgund\\OneDrive\\Masaüstü\\brainwave\\BrainWave\\BrainWave.DataAccessLayer\\BrainWave.DataAccessLayer.csproj"
             },
-            "C:\\Users\\mgund\\OneDrive\\Masaüstü\\brainwave\\Brainwave\\BrainWave.EntityLayer\\BrainWave.EntityLayer.csproj": {
-              "projectPath": "C:\\Users\\mgund\\OneDrive\\Masaüstü\\brainwave\\Brainwave\\BrainWave.EntityLayer\\BrainWave.EntityLayer.csproj"
+            "C:\\Users\\mgund\\OneDrive\\Masaüstü\\brainwave\\BrainWave\\BrainWave.EntityLayer\\BrainWave.EntityLayer.csproj": {
+              "projectPath": "C:\\Users\\mgund\\OneDrive\\Masaüstü\\brainwave\\BrainWave\\BrainWave.EntityLayer\\BrainWave.EntityLayer.csproj"
             }
           }
         }

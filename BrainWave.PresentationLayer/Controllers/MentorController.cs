@@ -28,7 +28,7 @@ namespace BrainWave.PresentationLayer.Controllers
 
             if (!string.IsNullOrEmpty(type))
             {
-                usersQuery = usersQuery.Where(b => b.MainInterest.Contains(type));
+                usersQuery = usersQuery.Where(b => b.Type.Contains(type));
             }
 
             var allUsers = await usersQuery
